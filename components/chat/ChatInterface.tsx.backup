@@ -1,0 +1,1224 @@
+"use client";
+
+import { useState, useRef, useEffect, useCallback, FormEvent } from "react";
+import { useSearchParams } from "next/navigation";
+import { Send, Loader2, Paperclip, X, Image as ImageIcon, Bot, User as UserIcon, RefreshCw, Mic, SlidersHorizontal, Headphones } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import ReactMarkdown from "react-markdown";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { VoiceRecorder } from "@/components/voice/VoiceRecorder";
+import { DEFAULT_TTS_PROVIDER, TTS_PROVIDERS, type TTSProviderId } from "@/lib/voice/config";
+
+interface Message {
+  id: string;
+  role: "user" | "assistant";
+  content: string;
+  createdAt: Date;
+  attachments?: { name: string; type: string; url: string }[];
+}
+
+interface ModelOption {
+  id: string;
+  name: string;
+  provider: "gemini" | "groq";
+}
+
+const MODELS: ModelOption[] = [
+  { id: "gemini-2.5-flash", name: "Gemini 2.5 Flash", provider: "gemini" },
+  { id: "gemini-2.5-flash-lite", name: "Gemini 2.5 Flash Lite", provider: "gemini" },
+  { id: "gemini-2.5-pro", name: "Gemini 2.5 Pro", provider: "gemini" },
+  { id: "gemini-2.0-flash", name: "Gemini 2.0 Flash", provider: "gemini" },
+  { id: "llama-3.3-70b-versatile", name: "Llama 3.3 70B", provider: "groq" },
+  { id: "llama-3.1-8b-instant", name: "Llama 3.1 8B", provider: "groq" },
+  { id: "openai/gpt-oss-120b", name: "GPT OSS 120B", provider: "groq" },
+  { id: "openai/gpt-oss-20b", name: "GPT OSS 20B", provider: "groq" },
+  { id: "moonshotai/kimi-k2-instruct-0905", name: "Kimi K2", provider: "groq" },
+  { id: "qwen/qwen3-32b", name: "Qwen3 32B", provider: "groq" },
+];
+
+export function ChatInterface() {
+  const searchParams = useSearchParams();
+  const [messages, setMessages] = useState<Message[]>([]);
+  const [input, setInput] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isHistoryLoading, setIsHistoryLoading] = useState(false);
+  const [conversationId, setConversationId] = useState<string | null>(null);
+  const [selectedModel, setSelectedModel] = useState<string>("gemini-2.5-flash");
+  const [attachments, setAttachments] = useState<File[]>([]);
+  const [lastUserPayload, setLastUserPayload] = useState<{ message: string; attachments: File[] }>({
+    message: "",
+    attachments: [],
+  });
+  const [voiceModeEnabled, setVoiceModeEnabled] = useState(false);
+  const [voiceNotice, setVoiceNotice] = useState<{ type: "info" | "error" | "success"; message: string } | null>(null);
+  const [ttsProvider, setTtsProvider] = useState<TTSProviderId>("groq-tts");
+  const [voiceConfigOpen, setVoiceConfigOpen] = useState(false);
+  const [voiceDraft, setVoiceDraft] = useState("");
+  const [voiceSending, setVoiceSending] = useState(false);
+  const [autoSpeakReplies, setAutoSpeakReplies] = useState(true);
+  const [isSynthesizing, setIsSynthesizing] = useState(false);
+  const [streamingMessage, setStreamingMessage] = useState<string>("");
+  const [isStreaming, setIsStreaming] = useState(false);
+  const [ttsRateLimited, setTtsRateLimited] = useState(false);
+  const messagesEndRef = useRef<HTMLDivElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const voiceSendInFlight = useRef(false);
+  const lastSpokenMessageId = useRef<string | null>(null);
+  const abortControllerRef = useRef<AbortController | null>(null);
+  const ttsQueueRef = useRef<string[]>([]);
+  const ttsProcessingRef = useRef(false);
+  const streamBufferRef = useRef<string>("");
+  const voiceModeRef = useRef(voiceModeEnabled);
+  const autoSpeakRef = useRef(autoSpeakReplies);
+  const selectedModelConfig = MODELS.find((model) => model.id === selectedModel);
+  const supportsImages = selectedModelConfig?.provider === "gemini";
+  const latestMessage = messages[messages.length - 1];
+  const canRegenerate =
+    Boolean(lastUserPayload.message) &&
+    !isLoading &&
+    latestMessage?.role === "assistant";
+  const sendDisabled = (!input.trim() && attachments.length === 0) || isLoading;
+  const voiceRecorderListening = voiceModeEnabled && !voiceSending && !isLoading;
+
+  const scrollToBottom = () => {
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  useEffect(() => {
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current = null;
+      }
+    };
+  }, []);
+
+  useEffect(() => {
+    scrollToBottom();
+  }, [messages]);
+
+  useEffect(() => {
+    const id = searchParams.get("id");
+    if (id) {
+      setConversationId(id);
+      setMessages([]);
+      loadConversationHistory(id);
+    }
+  }, [searchParams]);
+
+  useEffect(() => {
+    if (!supportsImages && attachments.length > 0) {
+      setAttachments([]);
+    }
+  }, [supportsImages, attachments.length]);
+
+  useEffect(() => {
+    voiceModeRef.current = voiceModeEnabled;
+    console.log("[Voice Mode] Changed to:", voiceModeEnabled);
+    
+    if (voiceModeEnabled) {
+      setAttachments([]);
+      setInput("");
+      setVoiceNotice({ type: "info", message: "Hands-free listening enabled. Start talking whenever." });
+      setVoiceDraft("");
+      setVoiceSending(false);
+      voiceSendInFlight.current = false;
+      lastSpokenMessageId.current = null;
+      return;
+    }
+    setVoiceNotice(null);
+    setVoiceDraft("");
+    setVoiceSending(false);
+    voiceSendInFlight.current = false;
+    lastSpokenMessageId.current = null;
+  }, [voiceModeEnabled]);
+
+  useEffect(() => {
+    autoSpeakRef.current = autoSpeakReplies;
+  }, [autoSpeakReplies]);
+
+  const loadConversationHistory = async (id: string) => {
+    setIsHistoryLoading(true);
+    try {
+      const response = await fetch(`/api/chat/conversations/${id}/messages`);
+      if (response.ok) {
+        const data = await response.json();
+        const loadedMessages: Message[] = data.messages.map((msg: any) => ({
+          id: msg.id,
+          role: msg.role,
+          content: msg.content,
+          createdAt: new Date(msg.createdAt),
+        }));
+        setMessages(loadedMessages);
+      }
+    } catch (error) {
+      console.error("Failed to load conversation:", error);
+    } finally {
+      setIsHistoryLoading(false);
+    }
+  };
+
+  const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    if (!supportsImages) return;
+    if (e.target.files) {
+      const files = Array.from(e.target.files).filter((file) => file.type.startsWith("image/"));
+      if (files.length) {
+        setAttachments((prev) => [...prev, ...files]);
+      }
+      e.target.value = "";
+    }
+  };
+
+  const removeAttachment = (index: number) => {
+    setAttachments((prev) => prev.filter((_, i) => i !== index));
+  };
+
+  const sendMessage = async ({
+    messageText,
+    attachmentsFiles,
+    skipUserMessage = false,
+  }: {
+    messageText: string;
+    attachmentsFiles: File[];
+    skipUserMessage?: boolean;
+  }) => {
+    const trimmedMessage = messageText.trim();
+    if ((!trimmedMessage && attachmentsFiles.length === 0) || isLoading) return;
+
+    if (!skipUserMessage) {
+      const userMessage: Message = {
+        id: `${Date.now()}`,
+        role: "user",
+        content: trimmedMessage,
+        createdAt: new Date(),
+        attachments: attachmentsFiles.map((file) => ({
+          name: file.name,
+          type: file.type,
+          url: URL.createObjectURL(file),
+        })),
+      };
+      setMessages((prev) => [...prev, userMessage]);
+    }
+
+    setLastUserPayload({
+      message: trimmedMessage,
+      attachments: attachmentsFiles.map((file) => file),
+    });
+
+    setIsLoading(true);
+    setIsStreaming(true);
+    setStreamingMessage("");
+
+    try {
+      const formData = new FormData();
+      formData.append("message", trimmedMessage);
+      formData.append("model", selectedModel);
+      formData.append("stream", "true");
+      if (conversationId) {
+        formData.append("conversationId", conversationId);
+      }
+      attachmentsFiles.forEach((file) => {
+        formData.append("files", file);
+      });
+
+      abortControllerRef.current = new AbortController();
+      const response = await fetch("/api/chat/message", {
+        method: "POST",
+        body: formData,
+        signal: abortControllerRef.current.signal,
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to send message");
+      }
+
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
+      let accumulatedText = "";
+      let messageId = "";
+      let newConversationId = conversationId;
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value, { stream: true });
+          const lines = chunk.split("\n");
+
+          for (const line of lines) {
+            if (line.startsWith("data: ")) {
+              try {
+                const data = JSON.parse(line.slice(6));
+                
+                if (data.conversationId && !newConversationId) {
+                  newConversationId = data.conversationId;
+                  setConversationId(data.conversationId);
+                  console.log("[TTS] Conversation ID received:", data.conversationId);
+                }
+                
+                if (data.token) {
+                  accumulatedText += data.token;
+                  setStreamingMessage(accumulatedText);
+                  
+                  // Streaming TTS: buffer text and speak when we have complete sentences
+                  // Use newConversationId instead of conversationId state (which may not be updated yet)
+                  const shouldDoTTS = voiceModeRef.current && autoSpeakRef.current && !ttsRateLimited && newConversationId;
+                  console.log("[TTS] Check:", { voiceMode: voiceModeRef.current, autoSpeak: autoSpeakRef.current, rateLimited: ttsRateLimited, hasConvId: !!newConversationId, shouldDoTTS });
+                  
+                  if (shouldDoTTS) {
+                    streamBufferRef.current += data.token;
+                    
+                    // Look for sentence boundaries (. ! ? followed by space or newline)
+                    const sentenceEndRegex = /[.!?][\s\n]+/g;
+                    const matches = [...streamBufferRef.current.matchAll(sentenceEndRegex)];
+                    
+                    if (matches.length > 0) {
+                      console.log("[TTS] Found sentence boundaries, buffer length:", streamBufferRef.current.length);
+                      const lastMatch = matches[matches.length - 1];
+                      const endIndex = lastMatch.index! + lastMatch[0].length;
+                      
+                      // Extract complete sentences
+                      // Reduced to 40 chars minimum and keep chunks small to avoid token limits
+                      const textToSpeak = streamBufferRef.current.slice(0, endIndex).trim();
+                      if (textToSpeak.length >= 40 && textToSpeak.length <= 800) {
+                        streamBufferRef.current = streamBufferRef.current.slice(endIndex);
+                        
+                        // Queue synthesis and start processing
+                        console.log("[TTS] Queueing chunk for synthesis:", textToSpeak.slice(0, 50));
+                        synthesizeChunk(textToSpeak, newConversationId!).then((audioUrl) => {
+                          if (audioUrl) {
+                            console.log("[TTS] Audio chunk ready, adding to queue");
+                            ttsQueueRef.current.push(audioUrl);
+                            if (!ttsProcessingRef.current) {
+                              setIsSynthesizing(true);
+                              setVoiceNotice({ type: "info", message: "Speaking the assistant's reply" });
+                              processAudioQueue();
+                            }
+                          } else {
+                            console.warn("[TTS] Chunk synthesis returned null");
+                          }
+                        });
+                      } else if (textToSpeak.length > 800) {
+                        // If buffer is too large, split it
+                        const firstPart = textToSpeak.slice(0, 800);
+                        streamBufferRef.current = textToSpeak.slice(800) + streamBufferRef.current.slice(endIndex);
+                        
+                        synthesizeChunk(firstPart, newConversationId!).then((audioUrl) => {
+                          if (audioUrl) {
+                            ttsQueueRef.current.push(audioUrl);
+                            if (!ttsProcessingRef.current) {
+                              setIsSynthesizing(true);
+                              processAudioQueue();
+                            }
+                          }
+                        });
+                      }
+                    }
+                  }
+                }
+                
+                if (data.done && data.messageId) {
+                  messageId = data.messageId;
+                }
+                
+                if (data.error) {
+                  throw new Error(data.error);
+                }
+              } catch (e) {
+                console.error("SSE parse error:", e);
+              }
+            }
+          }
+        }
+      }
+
+      // Speak any remaining buffered text (split into chunks if needed)
+      if (voiceModeEnabled && autoSpeakReplies && !ttsRateLimited && streamBufferRef.current.trim() && newConversationId) {
+        const finalText = streamBufferRef.current.trim();
+        streamBufferRef.current = "";
+        
+        // Split into 800 char chunks if needed
+        const chunks: string[] = [];
+        for (let i = 0; i < finalText.length; i += 800) {
+          chunks.push(finalText.slice(i, i + 800));
+        }
+        
+        // Queue all chunks
+        for (const chunk of chunks) {
+          synthesizeChunk(chunk, newConversationId!).then((audioUrl) => {
+            if (audioUrl) {
+              ttsQueueRef.current.push(audioUrl);
+              if (!ttsProcessingRef.current) {
+                setIsSynthesizing(true);
+                processAudioQueue();
+              }
+            }
+          });
+        }
+      } else {
+        streamBufferRef.current = "";
+      }
+
+      const assistantMessage: Message = {
+        id: messageId || `${Date.now()}`,
+        role: "assistant",
+        content: accumulatedText,
+        createdAt: new Date(),
+      };
+
+      setMessages((prev) => [...prev, assistantMessage]);
+      setStreamingMessage("");
+      return true;
+    } catch (error: any) {
+      if (error.name === "AbortError") {
+        console.log("Request aborted by user");
+        setStreamingMessage("");
+        return false;
+      }
+      console.error("Error sending message:", error);
+      const errorMessage: Message = {
+        id: `${Date.now()}`,
+        role: "assistant",
+        content: "Sorry, I encountered an error. Please try again.",
+        createdAt: new Date(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
+      return false;
+    } finally {
+      setIsLoading(false);
+      setIsStreaming(false);
+      streamBufferRef.current = "";
+      abortControllerRef.current = null;
+    }
+  };
+
+  const handleSendMessage = async () => {
+    if ((!input.trim() && attachments.length === 0) || isLoading) return;
+    const queuedAttachments = Array.from(attachments);
+    const currentInput = input;
+    setInput("");
+    setAttachments([]);
+    await sendMessage({ messageText: currentInput, attachmentsFiles: queuedAttachments });
+  };
+
+  const handleRegenerate = async () => {
+    if (!lastUserPayload.message || isLoading) return;
+    setMessages((prev) => {
+      if (prev.length && prev[prev.length - 1].role === "assistant") {
+        return prev.slice(0, -1);
+      }
+      return prev;
+    });
+    await sendMessage({
+      messageText: lastUserPayload.message,
+      attachmentsFiles: lastUserPayload.attachments,
+      skipUserMessage: true,
+    });
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      handleSendMessage();
+    }
+  };
+
+  const handleComposerSubmit = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    handleSendMessage();
+  };
+
+  const handleVoiceTranscription = async (transcription: string) => {
+    if (voiceModeEnabled) {
+      const text = transcription.trim();
+      if (!text || voiceSendInFlight.current) {
+        return;
+      }
+      voiceSendInFlight.current = true;
+      setVoiceSending(true);
+      setVoiceDraft(text);
+      setVoiceNotice({ type: "info", message: "Heard you. Sending automatically…" });
+      const success = await sendMessage({ messageText: text, attachmentsFiles: [] });
+      voiceSendInFlight.current = false;
+      setVoiceSending(false);
+      if (success) {
+        setVoiceNotice({ type: "success", message: "Assistant is thinking…" });
+        setVoiceDraft("");
+      } else {
+        setVoiceNotice({ type: "error", message: "Unable to send voice message" });
+      }
+      return;
+    }
+    setInput((prev) => (prev ? `${prev.trim()} ${transcription}` : transcription));
+  };
+
+  const synthesizeChunk = useCallback(async (text: string, convId: string) => {
+    if (!text.trim() || ttsRateLimited) {
+      console.log("[TTS] Skipping chunk:", { hasText: !!text.trim(), ttsRateLimited, hasConversationId: !!convId });
+      return;
+    }
+    if (!convId) {
+      console.warn("[TTS] No conversationId provided");
+      return;
+    }
+    
+    console.log("[TTS] Synthesizing chunk:", text.slice(0, 50) + "...");
+    
+    // Limit to ~800 characters (~200 tokens) to stay well under Groq's 1200 token limit
+    const MAX_CHUNK_LENGTH = 800;
+    let textToSynthesize = text.trim();
+    
+    if (textToSynthesize.length > MAX_CHUNK_LENGTH) {
+      // Truncate at sentence boundary if possible
+      const truncated = textToSynthesize.slice(0, MAX_CHUNK_LENGTH);
+      const lastPeriod = Math.max(
+        truncated.lastIndexOf('. '),
+        truncated.lastIndexOf('! '),
+        truncated.lastIndexOf('? ')
+      );
+      if (lastPeriod > MAX_CHUNK_LENGTH * 0.6) {
+        textToSynthesize = truncated.slice(0, lastPeriod + 1);
+      } else {
+        textToSynthesize = truncated;
+      }
+    }
+    
+    try {
+      const response = await fetch("/api/voice/synthesize", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: textToSynthesize,
+          conversationId: convId,
+          provider: ttsProvider,
+        }),
+      });
+
+      const data = await response.json();
+      if (response.status === 429 || response.status === 413 || data.rateLimitHit) {
+        console.warn("TTS rate/size limit hit, skipping chunk");
+        // Don't disable voice mode entirely, just skip this chunk
+        return null;
+      }
+      if (!response.ok || !data.audioUrl) {
+        console.error("TTS synthesis failed:", data.error);
+        return null;
+      }
+      console.log("[TTS] Chunk synthesized successfully, audio URL length:", data.audioUrl.length);
+      return data.audioUrl;
+    } catch (error) {
+      console.error("TTS chunk synthesis error:", error);
+      return null;
+    }
+  }, [ttsProvider, ttsRateLimited]);
+
+  const processAudioQueue = useCallback(async () => {
+    if (ttsProcessingRef.current || ttsQueueRef.current.length === 0) return;
+    
+    console.log("[TTS] Starting audio queue processing, queue length:", ttsQueueRef.current.length);
+    ttsProcessingRef.current = true;
+    
+    while (ttsQueueRef.current.length > 0) {
+      const audioUrl = ttsQueueRef.current.shift();
+      if (!audioUrl) continue;
+      
+      console.log("[TTS] Playing audio chunk...");
+      try {
+        if (audioRef.current) {
+          audioRef.current.pause();
+        }
+        
+        const audio = new Audio(audioUrl);
+        audioRef.current = audio;
+        
+        await new Promise<void>((resolve, reject) => {
+          audio.onended = () => {
+            console.log("[TTS] Audio chunk finished playing");
+            resolve();
+          };
+          audio.onerror = () => reject(new Error("Audio playback failed"));
+          audio.play().catch(reject);
+        });
+      } catch (error) {
+        console.error("[TTS] Audio playback error:", error);
+      }
+    }
+    
+    console.log("[TTS] Queue processing complete");
+    ttsProcessingRef.current = false;
+    setIsSynthesizing(false);
+  }, []);
+
+  const handleVoicePlay = useCallback(async () => {
+    if (!conversationId || !latestMessage || latestMessage.role !== "assistant") {
+      return;
+    }
+    if (ttsRateLimited) {
+      setVoiceNotice({ type: "error", message: "TTS rate limit reached. Voice disabled temporarily." });
+      return;
+    }
+    setIsSynthesizing(true);
+    if (voiceModeEnabled) {
+      setVoiceNotice({ type: "info", message: "Synthesizing the latest reply…" });
+    }
+    try {
+      const response = await fetch("/api/voice/synthesize", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          text: latestMessage.content,
+          conversationId,
+          provider: ttsProvider,
+        }),
+      });
+
+      const data = await response.json();
+      if (response.status === 429 || data.rateLimitHit) {
+        setTtsRateLimited(true);
+        setVoiceNotice({ type: "error", message: "Rate limit reached. Voice mode disabled." });
+        return;
+      }
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to generate audio");
+      }
+      if (!data.audioUrl) {
+        throw new Error("Audio payload missing");
+      }
+
+      if (audioRef.current) {
+        audioRef.current.pause();
+      }
+
+      const audio = new Audio(data.audioUrl);
+      audioRef.current = audio;
+      await audio.play();
+      lastSpokenMessageId.current = latestMessage.id;
+      if (voiceModeEnabled) {
+        setVoiceNotice({ type: "success", message: "Speaking the assistant’s reply" });
+      }
+    } catch (error) {
+      console.error("Voice playback error:", error);
+      if (voiceModeEnabled) {
+        setVoiceNotice({ type: "error", message: "Could not play audio. Try again." });
+      }
+    } finally {
+      setIsSynthesizing(false);
+    }
+  }, [conversationId, latestMessage, ttsProvider, voiceModeEnabled, ttsRateLimited]);
+
+  // Note: Auto-speak is now handled via streaming TTS during message generation
+  // This effect is kept only for manual "Listen to last reply" button
+  useEffect(() => {
+    if (!voiceModeEnabled || !autoSpeakReplies || isStreaming) {
+      return;
+    }
+    if (!latestMessage || latestMessage.role !== "assistant") {
+      return;
+    }
+    if (lastSpokenMessageId.current === latestMessage.id) {
+      return;
+    }
+    // Only auto-play if this message wasn't spoken during streaming
+    if (ttsQueueRef.current.length === 0 && !ttsProcessingRef.current) {
+      handleVoicePlay();
+    }
+  }, [voiceModeEnabled, autoSpeakReplies, latestMessage?.id, handleVoicePlay, isStreaming]);
+
+
+  const handleInterrupt = useCallback(() => {
+    // Stop any playing audio
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current = null;
+    }
+    // Clear TTS queue and buffer
+    ttsQueueRef.current = [];
+    streamBufferRef.current = "";
+    ttsProcessingRef.current = false;
+    // Abort ongoing AI request
+    if (abortControllerRef.current) {
+      abortControllerRef.current.abort();
+      abortControllerRef.current = null;
+    }
+    setIsLoading(false);
+    setIsStreaming(false);
+    setStreamingMessage("");
+    setIsSynthesizing(false);
+  }, []);
+
+  const handleTtsChange = (value: TTSProviderId) => setTtsProvider(value);
+
+  return (
+    <div className="relative flex flex-col min-h-[calc(100vh-4rem)] bg-background text-foreground">
+      {isHistoryLoading && (
+        <div className="absolute inset-0 z-40 flex flex-col items-center justify-center bg-background/85 backdrop-blur">
+          <Loader2 className="h-10 w-10 animate-spin text-blue-500" />
+          <p className="mt-3 text-sm text-muted-foreground">Loading conversation…</p>
+        </div>
+      )}
+      <div className="border-b border-border bg-card/80 px-4 py-4 backdrop-blur dark:bg-[#050b18]/80">
+        <div className="mx-auto flex max-w-4xl flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
+          <div>
+            <p className="text-sm uppercase tracking-wide text-muted-foreground">AI Chat Assistant</p>
+            <h2 className="text-2xl font-semibold text-foreground">Student Advisor Workspace</h2>
+          </div>
+          <Select value={selectedModel} onValueChange={setSelectedModel}>
+            <SelectTrigger className="w-full border-border bg-card text-foreground hover:bg-accent hover:text-accent-foreground focus:ring-blue-500 lg:w-[240px] dark:border-white/10 dark:bg-white/5 dark:text-white">
+              <SelectValue placeholder="Select model" />
+            </SelectTrigger>
+            <SelectContent className="bg-popover text-popover-foreground dark:bg-slate-900 dark:text-white">
+              <div className="px-2 py-1.5 text-xs font-semibold text-muted-foreground dark:text-white/60">Gemini Models</div>
+              {MODELS.filter((m) => m.provider === "gemini").map((model) => (
+                <SelectItem key={model.id} value={model.id}>
+                  {model.name}
+                </SelectItem>
+              ))}
+              <div className="mt-2 border-t border-border px-2 py-1.5 text-xs font-semibold text-muted-foreground dark:border-white/10 dark:text-white/60">
+                Groq Models
+              </div>
+              {MODELS.filter((m) => m.provider === "groq").map((model) => (
+                <SelectItem key={model.id} value={model.id}>
+                  {model.name}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+      </div>
+
+      <div className="flex-1 overflow-y-auto px-4 py-6">
+        {messages.length === 0 ? (
+          <div className="h-full flex items-center justify-center p-4">
+            <div className="text-center space-y-6 max-w-2xl">
+              <div className="flex justify-center">
+                <Bot className="h-16 w-16 text-blue-600 dark:text-blue-400" />
+              </div>
+              <h2 className="text-3xl font-bold text-gray-900 dark:text-white">
+                Welcome to AI Student Advisor
+              </h2>
+              <p className="text-gray-600 dark:text-gray-400 text-lg">
+                Choose a model and start a conversation. I can help with academics, career guidance, or wellness support.
+              </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                <button
+                  onClick={() => setInput("What courses should I take next semester?")}
+                  className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-blue-500 dark:hover:border-blue-500 transition-all text-left group bg-white dark:bg-gray-900"
+                >
+                  <div className="text-2xl mb-2">📚</div>
+                  <span className="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                    Academic
+                  </span>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                    Course selection and study strategies
+                  </p>
+                </button>
+                <button
+                  onClick={() => setInput("How can I prepare for job interviews?")}
+                  className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-blue-500 dark:hover:border-blue-500 transition-all text-left group bg-white dark:bg-gray-900"
+                >
+                  <div className="text-2xl mb-2">💼</div>
+                  <span className="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                    Career
+                  </span>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                    Career advice and job preparation
+                  </p>
+                </button>
+                <button
+                  onClick={() => setInput("I'm feeling overwhelmed with my workload")}
+                  className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl hover:border-blue-500 dark:hover:border-blue-500 transition-all text-left group bg-white dark:bg-gray-900"
+                >
+                  <div className="text-2xl mb-2">🧘</div>
+                  <span className="font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400">
+                    Wellness
+                  </span>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mt-2">
+                    Stress management and support
+                  </p>
+                </button>
+              </div>
+            </div>
+          </div>
+        ) : (
+          <div className="mx-auto flex w-full max-w-4xl flex-col gap-6">
+            {messages.map((message) => (
+              <div
+                key={message.id}
+                className={`flex gap-4 ${message.role === "assistant" ? "justify-start" : "justify-end"}`}
+              >
+                {message.role === "assistant" && (
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
+                    <Bot className="h-5 w-5 text-white" />
+                  </div>
+                )}
+                <div
+                  className={`flex-1 max-w-[80%] rounded-2xl p-4 ${
+                    message.role === "user"
+                      ? "ml-auto bg-gradient-to-r from-blue-600 via-indigo-500 to-purple-600 text-white shadow-lg"
+                      : "border border-border bg-muted text-foreground dark:border-white/10 dark:bg-white/5 dark:text-white"
+                  }`}
+                >
+                  {message.attachments && message.attachments.length > 0 && (
+                    <div className="mb-3 flex flex-wrap gap-2">
+                      {message.attachments.map((att, idx) => (
+                        <div
+                          key={idx}
+                          className={`flex items-center gap-2 px-3 py-1.5 rounded-lg ${
+                            message.role === "user"
+                              ? "bg-white/20 text-white"
+                              : "bg-muted text-muted-foreground dark:bg-white/10 dark:text-white"
+                          }`}
+                        >
+                          {att.type.startsWith("image/") ? (
+                            <ImageIcon className="h-4 w-4" />
+                          ) : (
+                            <Paperclip className="h-4 w-4" />
+                          )}
+                          <span className="text-sm">{att.name}</span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                  {message.role === "assistant" ? (
+                    <ReactMarkdown
+                      className="prose prose-sm dark:prose-invert max-w-none"
+                      components={{
+                        p: ({ children }) => <p className="mb-4 last:mb-0 leading-relaxed text-base">{children}</p>,
+                        h1: ({ children }) => <h1 className="text-2xl font-bold mt-6 mb-4 first:mt-0 pb-2 border-b border-gray-200 dark:border-gray-700">{children}</h1>,
+                        h2: ({ children }) => <h2 className="text-xl font-bold mt-6 mb-3 first:mt-0">{children}</h2>,
+                        h3: ({ children }) => <h3 className="text-lg font-semibold mt-5 mb-2 first:mt-0">{children}</h3>,
+                        h4: ({ children }) => <h4 className="text-base font-semibold mt-4 mb-2 first:mt-0">{children}</h4>,
+                        ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-2 my-3">{children}</ul>,
+                        ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-2 my-3">{children}</ol>,
+                        li: ({ children }) => <li className="leading-relaxed text-base">{children}</li>,
+                        hr: () => <hr className="my-6 border-t-2 border-gray-200 dark:border-gray-700" />,
+                        blockquote: ({ children }) => (
+                          <blockquote className="border-l-4 border-blue-500 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20 pl-4 pr-3 py-3 my-4 italic rounded-r">
+                            {children}
+                          </blockquote>
+                        ),
+                        strong: ({ children }) => <strong className="font-bold text-gray-900 dark:text-white">{children}</strong>,
+                        em: ({ children }) => <em className="italic text-gray-700 dark:text-gray-300">{children}</em>,
+                        code: ({ children, className }) => {
+                          const isInline = !className;
+                          return isInline ? (
+                            <code className="bg-gray-200 dark:bg-gray-700 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600 dark:text-pink-400">
+                              {children}
+                            </code>
+                          ) : (
+                            <code className="block bg-gray-100 dark:bg-gray-800 p-3 rounded-lg overflow-x-auto my-3 text-sm font-mono">
+                              {children}
+                            </code>
+                          );
+                        },
+                        pre: ({ children }) => (
+                          <pre className="bg-gray-900 dark:bg-gray-950 p-4 rounded-lg overflow-x-auto my-4 text-green-400">
+                            {children}
+                          </pre>
+                        ),
+                        table: ({ children }) => (
+                          <div className="overflow-x-auto my-4">
+                            <table className="min-w-full divide-y divide-gray-300 dark:divide-gray-700 border border-gray-300 dark:border-gray-700">
+                              {children}
+                            </table>
+                          </div>
+                        ),
+                        thead: ({ children }) => (
+                          <thead className="bg-gray-100 dark:bg-gray-800">
+                            {children}
+                          </thead>
+                        ),
+                        tbody: ({ children }) => (
+                          <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-900">
+                            {children}
+                          </tbody>
+                        ),
+                        tr: ({ children }) => <tr>{children}</tr>,
+                        th: ({ children }) => (
+                          <th className="px-4 py-3 text-left text-xs font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider">
+                            {children}
+                          </th>
+                        ),
+                        td: ({ children }) => (
+                          <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">
+                            {children}
+                          </td>
+                        ),
+                        a: ({ children, href }) => (
+                          <a 
+                            href={href} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                          >
+                            {children}
+                          </a>
+                        ),
+                      }}
+                    >
+                      {message.content}
+                    </ReactMarkdown>
+                  ) : (
+                    <p className="whitespace-pre-wrap">{message.content}</p>
+                  )}
+                  <p
+                    className={`text-xs mt-2 text-muted-foreground ${
+                      message.role === "user" ? "dark:text-white/70" : "dark:text-white/60"
+                    }`}
+                  >
+                    {new Date(message.createdAt).toLocaleTimeString()}
+                  </p>
+                </div>
+                {message.role === "user" && (
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-600 flex items-center justify-center">
+                    <UserIcon className="h-5 w-5 text-white" />
+                  </div>
+                )}
+              </div>
+            ))}
+            {isStreaming && streamingMessage && (
+              <div className="flex gap-4 justify-start">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
+                  <Bot className="h-5 w-5 text-white" />
+                </div>
+                <div className="flex-1 max-w-[80%] rounded-2xl p-4 border border-border bg-muted text-foreground dark:border-white/10 dark:bg-white/5 dark:text-white">
+                  <ReactMarkdown
+                    className="prose prose-sm dark:prose-invert max-w-none"
+                    components={{
+                      p: ({ children }) => <p className="mb-4 last:mb-0 leading-relaxed text-base">{children}</p>,
+                      h1: ({ children }) => <h1 className="text-2xl font-bold mt-6 mb-4 first:mt-0 pb-2 border-b border-gray-200 dark:border-gray-700">{children}</h1>,
+                      h2: ({ children }) => <h2 className="text-xl font-bold mt-6 mb-3 first:mt-0">{children}</h2>,
+                      h3: ({ children }) => <h3 className="text-lg font-semibold mt-5 mb-2 first:mt-0">{children}</h3>,
+                      h4: ({ children }) => <h4 className="text-base font-semibold mt-4 mb-2 first:mt-0">{children}</h4>,
+                      ul: ({ children }) => <ul className="list-disc pl-6 mb-4 space-y-2 my-3">{children}</ul>,
+                      ol: ({ children }) => <ol className="list-decimal pl-6 mb-4 space-y-2 my-3">{children}</ol>,
+                      li: ({ children }) => <li className="leading-relaxed text-base">{children}</li>,
+                      hr: () => <hr className="my-6 border-t-2 border-gray-200 dark:border-gray-700" />,
+                      blockquote: ({ children }) => (
+                        <blockquote className="border-l-4 border-blue-500 dark:border-blue-400 bg-blue-50 dark:bg-blue-900/20 pl-4 pr-3 py-3 my-4 italic rounded-r">
+                          {children}
+                        </blockquote>
+                      ),
+                      strong: ({ children }) => <strong className="font-bold text-gray-900 dark:text-white">{children}</strong>,
+                      em: ({ children }) => <em className="italic text-gray-700 dark:text-gray-300">{children}</em>,
+                      code: ({ children, className }) => {
+                        const isInline = !className;
+                        return isInline ? (
+                          <code className="bg-gray-200 dark:bg-gray-700 px-1.5 py-0.5 rounded text-sm font-mono text-pink-600 dark:text-pink-400">
+                            {children}
+                          </code>
+                        ) : (
+                          <code className="block bg-gray-100 dark:bg-gray-800 p-3 rounded-lg overflow-x-auto my-3 text-sm font-mono">
+                            {children}
+                          </code>
+                        );
+                      },
+                      pre: ({ children }) => (
+                        <pre className="bg-gray-900 dark:bg-gray-950 p-4 rounded-lg overflow-x-auto my-4 text-green-400">
+                          {children}
+                        </pre>
+                      ),
+                      table: ({ children }) => (
+                        <div className="overflow-x-auto my-4">
+                          <table className="min-w-full divide-y divide-gray-300 dark:divide-gray-700 border border-gray-300 dark:border-gray-700">
+                            {children}
+                          </table>
+                        </div>
+                      ),
+                      thead: ({ children }) => (
+                        <thead className="bg-gray-100 dark:bg-gray-800">
+                          {children}
+                        </thead>
+                      ),
+                      tbody: ({ children }) => (
+                        <tbody className="divide-y divide-gray-200 dark:divide-gray-700 bg-white dark:bg-gray-900">
+                          {children}
+                        </tbody>
+                      ),
+                      tr: ({ children }) => <tr>{children}</tr>,
+                      th: ({ children }) => (
+                        <th className="px-4 py-3 text-left text-xs font-semibold text-gray-900 dark:text-gray-100 uppercase tracking-wider">
+                          {children}
+                        </th>
+                      ),
+                      td: ({ children }) => (
+                        <td className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300">
+                          {children}
+                        </td>
+                      ),
+                      a: ({ children, href }) => (
+                        <a 
+                          href={href} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                        >
+                          {children}
+                        </a>
+                      ),
+                    }}
+                  >
+                    {streamingMessage}
+                  </ReactMarkdown>
+                  <span className="inline-block w-1 h-4 bg-blue-600 animate-pulse ml-1" />
+                </div>
+              </div>
+            )}
+            {isLoading && (
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 flex items-center justify-center">
+                  <Bot className="h-5 w-5 text-white" />
+                </div>
+                <div className="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <Loader2 className="h-5 w-5 animate-spin text-blue-600" />
+                </div>
+              </div>
+            )}
+            <div ref={messagesEndRef} />
+          </div>
+        )}
+      </div>
+
+        <div className="border-t border-border bg-card/90 px-4 py-4 backdrop-blur dark:border-white/5 dark:bg-[#050b18]/90">
+          <div className="mx-auto w-full max-w-4xl space-y-3">
+            <div className="flex flex-wrap items-center gap-2">
+            <Button
+              type="button"
+              variant={voiceModeEnabled ? "default" : "outline"}
+              size="sm"
+              onClick={() => setVoiceModeEnabled((prev) => !prev)}
+              className="flex items-center gap-2"
+            >
+              <Mic className="h-4 w-4" />
+              {voiceModeEnabled ? "Voice mode enabled" : "Enable voice mode"}
+            </Button>
+            <Dialog open={voiceConfigOpen} onOpenChange={setVoiceConfigOpen}>
+              <DialogTrigger asChild>
+                <Button type="button" variant="ghost" size="sm" className="flex items-center gap-2 text-muted-foreground dark:text-white/80">
+                  <SlidersHorizontal className="h-4 w-4" />
+                  Voice config
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="border border-border bg-card text-foreground dark:border-white/10 dark:bg-[#020617] dark:text-white">
+                <DialogHeader>
+                  <DialogTitle>Voice preferences</DialogTitle>
+                  <DialogDescription className="text-muted-foreground dark:text-white/70">
+                      Choose which text-to-speech engine should speak responses.
+                  </DialogDescription>
+                </DialogHeader>
+                  <div>
+                    <p className="mb-2 text-sm font-semibold text-foreground dark:text-white/90">Text-to-speech engine</p>
+                    <Select value={ttsProvider} onValueChange={(value: string) => handleTtsChange(value as TTSProviderId)}>
+                      <SelectTrigger className="border border-border bg-card text-foreground dark:border-white/10 dark:bg-white/10 dark:text-white">
+                        <SelectValue placeholder="Pick a provider" />
+                      </SelectTrigger>
+                      <SelectContent className="bg-popover text-popover-foreground dark:bg-slate-900 dark:text-white">
+                        {TTS_PROVIDERS.map((provider) => (
+                          <SelectItem key={provider.id} value={provider.id}>
+                            {provider.label} • {provider.freeTier}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                    <p className="mt-2 text-xs text-muted-foreground dark:text-white/60">
+                      Requirements: {TTS_PROVIDERS.find((p) => p.id === ttsProvider)?.requirements.join(", ") || "None"}
+                    </p>
+                    <div className="mt-4 flex items-start justify-between rounded-2xl border border-border bg-card/60 p-3 dark:border-white/10 dark:bg-white/5">
+                      <div>
+                        <p className="text-sm font-semibold text-foreground dark:text-white/90">Auto-play responses</p>
+                        <p className="text-xs text-muted-foreground dark:text-white/70">
+                          Read the latest assistant reply aloud whenever voice mode is active.
+                        </p>
+                      </div>
+                      <Button
+                        type="button"
+                        size="sm"
+                        variant={autoSpeakReplies ? "default" : "outline"}
+                        onClick={() => setAutoSpeakReplies((prev) => !prev)}
+                        className="ml-4 min-w-[72px]"
+                      >
+                        {autoSpeakReplies ? "On" : "Off"}
+                      </Button>
+                    </div>
+                  </div>
+              </DialogContent>
+            </Dialog>
+          </div>
+
+          {voiceModeEnabled ? (
+            <div className="relative overflow-hidden rounded-3xl border border-blue-200 bg-gradient-to-br from-blue-50 via-white to-blue-100 p-5 text-slate-900 shadow-2xl shadow-blue-900/20 dark:border-blue-500/30 dark:from-slate-900 dark:via-slate-900/80 dark:to-blue-950 dark:text-white">
+              <div className="pointer-events-none absolute inset-0 opacity-40">
+                <div className="absolute -left-16 top-1/2 h-48 w-48 -translate-y-1/2 rounded-full bg-blue-300/40 blur-[100px] dark:bg-blue-500/30" />
+                <div className="absolute right-0 top-0 h-32 w-32 rounded-full bg-purple-200/40 blur-[80px] dark:bg-purple-500/30" />
+              </div>
+              <div className="relative flex flex-col gap-6">
+                <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+                  <div className="flex flex-col items-center gap-3 text-center md:w-1/3">
+                    <div className="relative flex h-28 w-28 items-center justify-center">
+                      <span className="absolute h-28 w-28 rounded-full border border-blue-300/60 animate-ping dark:border-blue-500/40" />
+                      <span className="absolute h-20 w-20 rounded-full bg-blue-200/60 blur-2xl dark:bg-blue-500/30" />
+                      <VoiceRecorder
+                        onTranscription={handleVoiceTranscription}
+                        listening={voiceRecorderListening}
+                        autoLoop
+                        onInterrupt={handleInterrupt}
+                        className="flex-col gap-3 text-slate-900 dark:text-white"
+                      />
+                    </div>
+                    <p className="text-sm text-slate-600 dark:text-white/70">Listening automatically—no button press needed (60s max)</p>
+                  </div>
+                  <div className="flex-1 space-y-3">
+                    <p className="text-xs uppercase tracking-[0.3em] text-blue-700 dark:text-blue-200">Voice mode</p>
+                    <h3 className="text-2xl font-semibold">Immersive, hands-free advising</h3>
+                    <p className="text-sm text-slate-600 dark:text-white/70">
+                      Speak naturally—your transcript appears below for quick confirmation before sending.
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        className="flex items-center gap-2 text-slate-900 dark:text-white"
+                        onClick={handleVoicePlay}
+                        disabled={!latestMessage || latestMessage.role !== "assistant" || !conversationId || isSynthesizing}
+                      >
+                        {isSynthesizing ? (
+                          <Loader2 className="h-4 w-4 animate-spin" />
+                        ) : (
+                          <Headphones className="h-4 w-4" />
+                        )}
+                        Listen to last reply
+                      </Button>
+                    </div>
+                  </div>
+                </div>
+                <div className="rounded-2xl border border-border bg-card/80 p-4 dark:border-white/10 dark:bg-black/40">
+                  {voiceDraft ? (
+                    <div className="space-y-3">
+                      <p className="text-sm text-slate-800 whitespace-pre-wrap dark:text-white/90">{voiceDraft}</p>
+                      <div className="flex items-center justify-between text-xs text-slate-500 dark:text-white/60">
+                        <span>
+                          {voiceSending
+                            ? "Sending automatically…"
+                            : "Captured. Waiting for the assistant…"}
+                        </span>
+                        <span className="font-mono text-slate-600 dark:text-white/70">live transcript</span>
+                      </div>
+                    </div>
+                  ) : (
+                    <p className="text-sm text-slate-600 dark:text-white/60">
+                      We’ll keep listening and display each transcript here while it’s being sent in the background.
+                    </p>
+                  )}
+                </div>
+                {voiceNotice && (
+                  <div
+                    className={`rounded-xl px-3 py-2 text-sm ${
+                      voiceNotice.type === "error"
+                        ? "bg-rose-100 text-rose-800 dark:bg-rose-500/15 dark:text-rose-100"
+                        : voiceNotice.type === "success"
+                        ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-500/15 dark:text-emerald-100"
+                        : "bg-blue-100 text-blue-900 dark:bg-white/10 dark:text-white"
+                    }`}
+                  >
+                    {voiceNotice.message}
+                  </div>
+                )}
+              </div>
+            </div>
+          ) : (
+            <>
+              {attachments.length > 0 && (
+                <div className="flex flex-wrap gap-2">
+                  {attachments.map((file, index) => (
+                    <div
+                      key={index}
+                      className="flex items-center gap-2 rounded-lg bg-muted px-3 py-2 text-sm text-muted-foreground dark:bg-white/5 dark:text-white/80"
+                    >
+                      {file.type.startsWith("image/") ? (
+                        <ImageIcon className="h-4 w-4 text-muted-foreground dark:text-white/70" />
+                      ) : (
+                        <Paperclip className="h-4 w-4 text-muted-foreground dark:text-white/70" />
+                      )}
+                      <span>{file.name}</span>
+                      <button
+                        onClick={() => removeAttachment(index)}
+                        className="rounded p-1 text-muted-foreground hover:text-foreground dark:text-white/60"
+                      >
+                        <X className="h-3 w-3" />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              )}
+              <form
+                onSubmit={handleComposerSubmit}
+                className="rounded-2xl border border-border bg-card/60 px-4 py-3 shadow-lg shadow-blue-500/5 dark:border-white/10 dark:bg-white/[0.03]"
+              >
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  multiple
+                  accept="image/*"
+                  onChange={handleFileSelect}
+                  className="hidden"
+                />
+                <div className="flex items-end gap-3">
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="icon"
+                    onClick={() => fileInputRef.current?.click()}
+                    disabled={!supportsImages || isLoading}
+                    className="flex-shrink-0"
+                    title={supportsImages ? "Attach an image" : "Multimodal models only (Gemini)"}
+                  >
+                    <Paperclip className="h-5 w-5" />
+                  </Button>
+                  <Textarea
+                    value={input}
+                    onChange={(e) => setInput(e.target.value)}
+                    onKeyDown={handleKeyDown}
+                    placeholder="Share your question or context..."
+                    className="min-h-[56px] max-h-[240px] flex-1 resize-none border-0 bg-transparent text-base text-foreground placeholder:text-muted-foreground focus-visible:ring-0 focus-visible:ring-offset-0 dark:text-white dark:placeholder:text-white/60"
+                    disabled={isLoading}
+                  />
+                  <Button
+                    type="submit"
+                    disabled={sendDisabled}
+                    size="icon"
+                    className="flex-shrink-0 h-14 w-14 rounded-2xl"
+                  >
+                    {isLoading ? <Loader2 className="h-5 w-5 animate-spin" /> : <Send className="h-5 w-5" />}
+                  </Button>
+                </div>
+                <div className="mt-2 flex flex-wrap items-center justify-between gap-2 text-xs text-muted-foreground dark:text-white/70">
+                  <span>Press Enter to send, Shift+Enter for a new line</span>
+                  {canRegenerate && (
+                    <button
+                      type="button"
+                      onClick={handleRegenerate}
+                      className="inline-flex items-center gap-1 text-blue-600 transition hover:text-blue-500 dark:text-blue-300 dark:hover:text-blue-200"
+                    >
+                      <RefreshCw className="h-3.5 w-3.5" />
+                      Regenerate response
+                    </button>
+                  )}
+                </div>
+              </form>
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}

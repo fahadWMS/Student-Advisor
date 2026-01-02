@@ -1,0 +1,386 @@
+[
+  {
+    "id": "resume-action-verbs",
+    "category": "career",
+    "title": "Resume Action Verbs and Quantification",
+    "content": "Strong resumes use action verbs and quantify achievements. Instead of 'Responsible for sales', write 'Increased sales by 25% over 6 months'. Top action verbs by category: Leadership (Led, Directed, Coordinated, Managed), Achievement (Achieved, Exceeded, Improved, Increased), Technical (Developed, Implemented, Engineered, Automated), Communication (Presented, Negotiated, Collaborated, Authored). Always quantify: numbers, percentages, dollar amounts, time saved, people managed. Make every bullet point demonstrate impact, not just duties.",
+    "tags": ["resume", "job-search", "writing", "applications"],
+    "source": "curated"
+  },
+  {
+    "id": "resume-structure",
+    "category": "career",
+    "title": "Resume Structure and Formatting Best Practices",
+    "content": "Effective resumes follow a clear structure: Header (name, contact info, LinkedIn), Summary (2-3 lines, optional for students), Education (degree, GPA if >3.5, relevant coursework, honors), Experience (reverse chronological, 3-5 bullets each), Skills (technical, languages, certifications), Optional sections (projects, activities, awards). Format: One page for undergrads, consistent formatting, 10-12pt font, 0.5-1 inch margins, plenty of white space, ATS-friendly (no tables, columns, or graphics). Save as PDF. Tailor to each job - emphasize relevant experience.",
+    "tags": ["resume", "formatting", "job-applications", "career"],
+    "source": "curated"
+  },
+  {
+    "id": "cover-letter-structure",
+    "category": "career",
+    "title": "Effective Cover Letter Structure",
+    "content": "Cover letters complement resumes by telling your story. Structure: Opening (specific position, how you found it, enthusiasm), Body 1 (why them - research company, mention specific initiatives), Body 2 (why you - highlight 2-3 relevant achievements with results), Body 3 (fit - connect your skills to their needs), Closing (thank you, call to action, availability). Tips: Address to specific person if possible, don't repeat resume, show personality, keep to 3-4 paragraphs, proofread carefully. Tailor every letter - generic ones are obvious.",
+    "tags": ["cover-letter", "applications", "job-search", "writing"],
+    "source": "curated"
+  },
+  {
+    "id": "behavioral-interviews",
+    "category": "career",
+    "title": "Mastering Behavioral Interview Questions",
+    "content": "Behavioral questions assess past performance to predict future behavior. Use STAR method: Situation (context), Task (challenge/responsibility), Action (what you did specifically), Result (outcome with metrics). Common questions: Tell me about a time you... led a team, solved a problem, failed, handled conflict, showed leadership, worked under pressure. Preparation: Identify 5-7 stories from experiences, practice STAR responses aloud, quantify results, keep responses 2-3 minutes, end with lessons learned. Have stories ready for: leadership, teamwork, problem-solving, failure, conflict, achievement.",
+    "tags": ["interview", "behavioral", "preparation", "STAR-method"],
+    "source": "curated"
+  },
+  {
+    "id": "technical-interviews",
+    "category": "career",
+    "title": "Preparing for Technical Interviews",
+    "content": "Technical interviews assess problem-solving and domain knowledge. Types: Coding challenges (whiteboard, online platform), system design, domain knowledge questions, case studies. Preparation: Practice on LeetCode/HackerRank for coding, review data structures and algorithms, understand time/space complexity, practice explaining your thinking process aloud, review relevant coursework. During interview: Clarify question before coding, think aloud, test with examples, discuss trade-offs, ask questions, handle hints gracefully. It's okay to not know everything - show how you approach problems you haven't seen before.",
+    "tags": ["technical-interview", "coding", "problem-solving", "preparation"],
+    "source": "curated"
+  },
+  {
+    "id": "case-interviews",
+    "category": "career",
+    "title": "Case Interview Strategy for Consulting",
+    "content": "Case interviews evaluate structured thinking and business acumen. Types: Market sizing ('How many coffee shops in Seattle?'), profitability, market entry, M&A. Framework: 1) Clarify the question, 2) Structure your approach (draw framework), 3) Analyze systematically, 4) Make calculations (estimate intelligently), 5) Synthesize recommendation. Key skills: Structured thinking, comfortable with numbers, business intuition, communication. Practice: Case in Point book, mock interviews with peers, consulting club prep, practice thinking aloud. Stay calm if you make mistakes - recovery and thinking process matter more than perfect answer.",
+    "tags": ["case-interview", "consulting", "business", "problem-solving"],
+    "source": "curated"
+  },
+  {
+    "id": "interview-questions-to-ask",
+    "category": "career",
+    "title": "Smart Questions to Ask Interviewers",
+    "content": "Asking good questions shows engagement and helps you assess fit. Ask different types: About role ('What does success look like in first 90 days?', 'What are biggest challenges?'), About team ('How does team collaborate?', 'What's team culture?'), About growth ('What development opportunities exist?', 'Where have people in this role progressed?'), About company ('How has COVID changed operations?', 'What excites you about company direction?'). Avoid: Salary/benefits in first interview, anything easily Googleable, yes/no questions. Prepare 5-7 questions, ask 2-3 to each interviewer. Take notes on answers.",
+    "tags": ["interview", "questions", "preparation", "engagement"],
+    "source": "curated"
+  },
+  {
+    "id": "networking-fundamentals",
+    "category": "career",
+    "title": "Networking Fundamentals and Strategies",
+    "content": "Most jobs come from networking, not applications. Mindset shift: Networking is building genuine relationships, not transactional. Strategies: Informational interviews (coffee chats to learn about field/company), alumni connections (shared school is instant connection), LinkedIn outreach (personalized messages), career fairs (quality over quantity), professional associations (student memberships often discounted). Template: Brief intro, genuine interest in their work/path, specific question or ask, respect their time. Follow up: Send thank you within 24 hours, stay in touch periodically, offer value when you can. Build network before you need it.",
+    "tags": ["networking", "career-development", "relationships", "job-search"],
+    "source": "curated"
+  },
+  {
+    "id": "linkedin-profile-optimization",
+    "category": "career",
+    "title": "LinkedIn Profile Optimization for Students",
+    "content": "LinkedIn is your professional online presence. Profile essentials: Professional headshot (not selfie), compelling headline (not just 'Student at X'), summary that tells your story and career interests, detailed experience with bullet points and results, skills endorsements, recommendations from professors/supervisors, join relevant groups, post or engage occasionally. SEO: Use keywords from target job descriptions, list relevant skills, complete profile (increases visibility). Activity: Share industry articles, congratulate connections, post about projects/achievements. Settings: Open to recruiters if job searching, custom LinkedIn URL. Aim for 500+ connections but quality matters - connect with classmates, professors, alumni, professionals you meet.",
+    "tags": ["linkedin", "personal-branding", "online-presence", "networking"],
+    "source": "curated"
+  },
+  {
+    "id": "internship-search-strategy",
+    "category": "career",
+    "title": "Strategic Internship Search and Application",
+    "content": "Internships are critical for career launch. Timeline: Start searching 6-9 months before desired start (many big companies recruit early). Where to search: Company career pages, Handshake, Indeed, LinkedIn, career fairs, professor connections, family/friend networks. Strategy: Apply broadly (aim for 20-50), tailor resume/cover letter for each, follow up after applying, leverage any connections, prepare for rejection (normal), consider unpaid if career-critical (but paid is better). Types: Corporate programs, startup roles, research positions, nonprofit work, government. Even one internship significantly boosts full-time job prospects. Some industries (finance, consulting) hire full-time from intern pools.",
+    "tags": ["internship", "job-search", "applications", "career-development"],
+    "source": "curated"
+  },
+  {
+    "id": "elevator-pitch",
+    "category": "career",
+    "title": "Crafting Your Elevator Pitch",
+    "content": "Elevator pitch is your 30-60 second professional introduction. Structure: Who you are (name, school, major/year), what you do/study (relevant experience or focus area), what you're interested in (career goals or current project), conversation starter or ask. Example: 'Hi, I'm Maria, a junior studying computer science at State U. I just finished a software engineering internship at TechCorp where I worked on mobile app development. I'm really interested in product management and would love to learn about your experience in that field.' Keep it: Natural (not memorized), adaptable (adjust for audience), concise, conversation-starting. Practice until comfortable. Have versions for different contexts (career fair, networking event, interview).",
+    "tags": ["elevator-pitch", "networking", "introduction", "communication"],
+    "source": "curated"
+  },
+  {
+    "id": "salary-negotiation",
+    "category": "career",
+    "title": "Salary Negotiation Basics for New Grads",
+    "content": "Most entry-level salaries are negotiable - but do it right. Research first: Use Glassdoor, PayScale, levels.fyi, talk to career center. Know market rate for role/location/industry. When to negotiate: After offer, before accepting. Never discuss salary expectations in early interviews if possible. How to negotiate: Express enthusiasm for role, provide market data, mention other offers if applicable (professionally), ask for 10-20% above their offer or give range with your target as low end, be prepared to discuss other components (signing bonus, relocation, start date, remote work). If they can't budge on salary: Negotiate sign-on bonus, additional PTO, professional development budget, review timeline. Stay professional throughout.",
+    "tags": ["salary", "negotiation", "compensation", "job-offers"],
+    "source": "curated"
+  },
+  {
+    "id": "job-offer-evaluation",
+    "category": "career",
+    "title": "Evaluating and Comparing Job Offers",
+    "content": "Don't just compare salaries - evaluate total compensation and fit. Consider: Base salary, bonus/equity, benefits (health insurance, 401k match, PTO), location (cost of living, commute), growth opportunities (training, promotion path, mentorship), work-life balance (hours, flexibility, culture), role alignment (responsibilities, learning opportunities), company trajectory (growing/stable/struggling). Create comparison matrix. Calculate take-home pay after taxes, rent, expenses. Visit offices if possible. Trust your gut about culture fit. It's okay to ask for time to decide (typically 1-2 weeks). Don't accept immediately out of relief - this is a big decision. Talk to current employees on Glassdoor or LinkedIn.",
+    "tags": ["job-offers", "decision-making", "evaluation", "compensation"],
+    "source": "curated"
+  },
+  {
+    "id": "career-fairs-strategy",
+    "category": "career",
+    "title": "Maximizing Career Fair Effectiveness",
+    "content": "Career fairs can be overwhelming - have a strategy. Before: Research attending companies, prioritize 5-10 targets, prepare tailored elevator pitches, print 20+ resumes, dress professionally, review your resume. At fair: Hit priority companies first (lines get long), wait in lines strategically (senior year > junior > sophomore), have 2-3 minute conversation (intro, why interested, 1-2 questions, resume exchange), collect business cards, take notes after each conversation, visit other companies if time. After: Send personalized thank you emails within 24 hours, apply online if required, follow up in 1-2 weeks if promised. Quality over quantity - better to have 5 good conversations than 20 rushed ones.",
+    "tags": ["career-fair", "recruiting", "networking", "job-search"],
+    "source": "curated"
+  },
+  {
+    "id": "informational-interviews",
+    "category": "career",
+    "title": "Conducting Effective Informational Interviews",
+    "content": "Informational interviews build network and gather career insights. How to request: Find connection through LinkedIn/alumni database, send personalized message (mention specific interest in their path), ask for 20-30 minute call or coffee, make it easy to say yes. Preparation: Research their background, prepare 5-7 questions, be ready to discuss yourself briefly. Questions to ask: How did you get into this field? What's a typical day like? What do you wish you knew when starting? What skills are most important? How can someone like me break into this field? Who else should I talk to? During: Show genuine curiosity, take notes, respect time limit, don't ask for job. Follow-up: Thank you note within 24 hours, update them on your progress occasionally, offer help if you can.",
+    "tags": ["informational-interview", "networking", "career-exploration", "mentorship"],
+    "source": "curated"
+  },
+  {
+    "id": "personal-branding",
+    "category": "career",
+    "title": "Building Your Personal Brand as a Student",
+    "content": "Personal brand is your professional reputation and how you're perceived. Components: Online presence (LinkedIn, professional Twitter, personal website/portfolio), expertise area (what you're known for), content creation (blog posts, projects, presentations), consistent messaging across platforms. How to build: Define your niche and target audience, share your knowledge and learning journey, engage with industry content, attend events, speak or present, maintain consistent professional image. For students: Class projects can become portfolio pieces, write about what you're learning, contribute to open source, start small. Clean up social media - Google yourself. Think: What do you want to be known for? What value do you provide?",
+    "tags": ["personal-brand", "professional-identity", "online-presence", "career"],
+    "source": "curated"
+  },
+  {
+    "id": "portfolio-development",
+    "category": "career",
+    "title": "Creating a Professional Portfolio",
+    "content": "Portfolios showcase your work tangibly. Essential for: Design, writing, engineering, marketing, architecture, arts. Platform options: Personal website (best - shows tech skills), Behance/Dribbble (design), GitHub (code), Medium (writing), LinkedIn (all fields). What to include: 3-5 best projects, case studies with process and results, about/contact page, resume/CV. For each project: Context, your role, challenges, approach, final outcome, results/impact, visuals. Quality over quantity. Keep updated. Get feedback from professors/professionals. For students without work experience: Class projects (with permission), personal projects, volunteer work, hackathon projects, redesign concepts. Even one strong project can open doors.",
+    "tags": ["portfolio", "projects", "showcase", "career-materials"],
+    "source": "curated"
+  },
+  {
+    "id": "job-search-organization",
+    "category": "career",
+    "title": "Organizing Your Job Search Process",
+    "content": "Job searching is a project - manage it systematically. Tracking system: Spreadsheet or tool (Huntr, Trello, Notion) with columns: Company, Position, Date Applied, Contact, Status, Follow-up Date, Notes. Weekly goals: Set application targets (e.g., 5 per week), schedule networking time, practice interview questions. Job search schedule: Dedicate specific hours, treat it like a job, track time spent. Organization tips: Save all job descriptions (they get taken down), track application deadlines, note where you heard about roles, keep versions of tailored resumes/cover letters, set reminders for follow-ups. Review weekly: What's working? What needs adjustment? Celebrate small wins. Job searching is hard - structure helps manage the process and emotions.",
+    "tags": ["job-search", "organization", "tracking", "productivity"],
+    "source": "curated"
+  },
+  {
+    "id": "remote-work-skills",
+    "category": "career",
+    "title": "Remote Work Skills and Best Practices",
+    "content": "Remote work is now common - develop these skills early. Technical: Video call etiquette (camera on, good lighting, quiet background, mute when not speaking), collaboration tools (Slack, Zoom, Google Workspace, project management software), written communication (clear, concise emails and messages). Work habits: Dedicated workspace, routine/schedule, overcommunicate to compensate for lack of face-to-face, regular check-ins with manager, boundaries between work and personal time. Challenges: Isolation (schedule virtual coffee chats), distraction (minimize interruptions), overwork (set end time). Benefits: Flexibility, no commute, focus time. Many internships and entry-level roles now remote or hybrid - embrace this skill.",
+    "tags": ["remote-work", "digital-skills", "workplace", "productivity"],
+    "source": "curated"
+  },
+  {
+    "id": "industry-research",
+    "category": "career",
+    "title": "Researching Industries and Career Paths",
+    "content": "Understanding industries helps you target job search and interviews. Research methods: Industry publications and news, professional association websites, LinkedIn industry pages, company annual reports, informational interviews, job descriptions (what skills are required?), career center resources. Questions to explore: What are industry trends? Growth or decline? Key players? Required skills? Typical career progression? Work-life balance? Salary ranges? Educational requirements? Create industry comparison matrix for top 3 interests. Deep dive on companies: Mission, products/services, competitors, recent news, culture (Glassdoor), financial health. This knowledge shows up in cover letters, interviews, and helps you make informed decisions.",
+    "tags": ["industry-research", "career-exploration", "job-search", "preparation"],
+    "source": "curated"
+  },
+  {
+    "id": "professional-communication",
+    "category": "career",
+    "title": "Professional Email and Communication Etiquette",
+    "content": "Professional communication builds credibility. Email best practices: Clear subject line, professional greeting (Dear Dr./Professor/Mr./Ms.), concise body (get to point quickly), professional tone (no slang, emojis, or text-speak), proofread carefully, appropriate signature (name, contact info). When to email vs. other channels: Email for formal requests, phone for urgent matters, Slack for quick questions, in-person for sensitive topics. Response time: Within 24 hours for professional contacts. Networking emails: Personalize each message, explain connection/reason for reaching out, make clear ask, show you've done research. Thank you notes: Send within 24 hours of interviews or help received. Phone etiquette: Answer professionally, find quiet location, prepare agenda. First impressions matter in every interaction.",
+    "tags": ["communication", "email", "professionalism", "etiquette"],
+    "source": "curated"
+  },
+  {
+    "id": "startup-vs-corporate",
+    "category": "career",
+    "title": "Startup vs. Corporate Career Paths",
+    "content": "Each path offers different experiences and trade-offs. Startups: Pros - Wear many hats, high learning curve, direct impact, equity potential, fast-paced, informal culture. Cons - Less structure, uncertain job security, potentially long hours, fewer resources/benefits, brand name less recognized. Best for: Risk-takers, self-starters, wanting rapid growth. Corporate: Pros - Structured training, established processes, better benefits, job stability, recognized brand name, clear career path, resources. Cons - Slower pace, bureaucracy, potentially less ownership, longer decision-making. Best for: Wanting stability, formal development, clear progression. Hybrid: Mid-size or fast-growing companies. You can switch between paths - many do both over career. For first job, consider: What will you learn? What's your risk tolerance?",
+    "tags": ["startup", "corporate", "career-path", "decision-making"],
+    "source": "curated"
+  },
+  {
+    "id": "graduate-school-vs-work",
+    "category": "career",
+    "title": "Deciding Between Graduate School and Work",
+    "content": "Graduate school is not always the answer - evaluate strategically. Go to grad school if: 1) Career requires it (PhD for research/academia, law/medical school, licensed clinical psychology), 2) You have clear research questions you want to answer, 3) Fully funded (especially PhD - don't pay for PhD), 4) You've researched career outcomes and they align with goals. Work first if: Unsure about career direction, need real-world experience, want to earn money, can advance without degree, employer might pay for future degree. Consider: Master's vs. PhD, full-time vs. part-time, funding options, opportunity cost (lost wages), ROI of degree. Many fields value experience over additional degrees. Gap of 1-2 years working often strengthens grad school applications. Don't go just to delay career decisions.",
+    "tags": ["graduate-school", "career-decisions", "education", "planning"],
+    "source": "curated"
+  },
+  {
+    "id": "skills-gap-analysis",
+    "category": "career",
+    "title": "Conducting Personal Skills Gap Analysis",
+    "content": "Identify skill gaps to target development. Process: 1) Research target roles - compile job descriptions for positions you want, 2) List required skills from 10+ job postings, 3) Categorize: Technical skills, soft skills, tools/software, domain knowledge, 4) Self-assess: What do you have? What's missing? 5) Prioritize gaps: Which are most critical? Which can you develop quickly? 6) Create action plan: Online courses, projects, volunteering, certifications. Update regularly as you gain skills. Focus on transferable skills: Communication, problem-solving, leadership, data analysis, project management. These transcend specific roles. Document skill growth: Track courses completed, projects finished, certifications earned. This becomes resume content and interview talking points.",
+    "tags": ["skills", "professional-development", "gap-analysis", "career-planning"],
+    "source": "curated"
+  },
+  {
+    "id": "professional-development-plan",
+    "category": "career",
+    "title": "Creating a Professional Development Plan",
+    "content": "Continuous learning is essential for career growth. Annual planning: 1) Reflect on past year (what went well, what didn't, feedback received), 2) Define career goals (where in 1-3-5 years?), 3) Identify skills/knowledge needed, 4) Set specific development goals (SMART: Specific, Measurable, Achievable, Relevant, Time-bound), 5) Determine resources (courses, books, mentorship, conferences), 6) Schedule time for development (block calendar). Development activities: Online courses (Coursera, LinkedIn Learning), professional certifications, reading (books, industry publications), conferences/webinars, side projects, mentorship, teaching/presenting, job rotations. Track progress quarterly. Professional development is investment in yourself - prioritize it even when busy.",
+    "tags": ["professional-development", "career-growth", "learning", "planning"],
+    "source": "curated"
+  },
+  {
+    "id": "mentorship-finding",
+    "category": "career",
+    "title": "Finding and Building Mentorship Relationships",
+    "content": "Mentors accelerate career growth through guidance and connections. Finding mentors: Within company (skip-level managers, senior colleagues), alumni networks, professional associations, former professors, industry conferences, online (LinkedIn, virtual mentorship programs). Organic approach works best: Build relationship over time, show genuine interest in their work, ask for specific advice, be respectful of their time, offer value (share articles, make introductions, help with their projects). Formal programs: Many companies and associations have structured programs. What to ask: Career advice, feedback on work/decisions, industry insights, skill development recommendations, introductions. Mentorship is two-way street: Come prepared, implement advice, update them on progress, express gratitude. You can have multiple mentors for different needs. Be someone else's mentor too.",
+    "tags": ["mentorship", "career-development", "networking", "guidance"],
+    "source": "curated"
+  },
+  {
+    "id": "first-job-success",
+    "category": "career",
+    "title": "Succeeding in Your First Professional Job",
+    "content": "First 90 days set the tone for your tenure. First week: Learn names, understand team structure, set up accounts/systems, ask about norms (communication, hours, dress code), schedule 1-on-1s with key colleagues, review any onboarding materials thoroughly. First month: Deliver quick wins (complete tasks ahead of schedule), ask questions (better to ask than mess up), take initiative (volunteer for tasks), build relationships (lunch with colleagues), observe culture (how are decisions made? who has influence?), take detailed notes. First 90 days: Understand how your success is measured, establish routine, seek feedback frequently, find a buddy/mentor, learn the business. Common mistakes: Being too passive, not asking questions, not adapting to culture, overpromising. Remember: Everyone was new once. It's okay to not know everything.",
+    "tags": ["first-job", "onboarding", "career-success", "professional-growth"],
+    "source": "curated"
+  },
+  {
+    "id": "workplace-professionalism",
+    "category": "career",
+    "title": "Workplace Professionalism and Etiquette",
+    "content": "Professionalism encompasses behaviors that build credibility. Key components: Punctuality (arrive 5-10 min early, meet deadlines), reliability (do what you say you'll do), appropriate dress (match company norms, err on formal side initially), respectful communication (active listening, no interrupting), discretion (don't gossip, respect confidentiality), positive attitude (solution-focused, not complaining), accountability (own mistakes, learn from them). Meeting etiquette: Come prepared, contribute meaningfully, don't multitask, follow up on action items. Email: Respond promptly, proofread, professional tone. Office politics: Stay neutral in conflicts, build broad relationships, don't burn bridges. Unwritten rules exist - observe and adapt. Small behaviors matter: greeting people, saying thank you, helping others. Professionalism = treating work seriously and people respectfully.",
+    "tags": ["professionalism", "workplace", "etiquette", "career-success"],
+    "source": "curated"
+  },
+  {
+    "id": "feedback-receiving",
+    "category": "career",
+    "title": "Receiving and Acting on Professional Feedback",
+    "content": "How you handle feedback defines your growth trajectory. Receiving feedback: Listen fully without defending, ask clarifying questions, thank the person (even if critical), reflect before reacting, assume positive intent. Types: Positive (reinforces good behavior), constructive (identifies improvement areas), developmental (long-term growth). Processing: Separate ego from feedback (about behavior not worth), identify patterns (multiple people saying same thing?), determine what's actionable. Acting on feedback: Create action plan with specific steps, share plan with feedback giver, implement changes, follow up to show improvement. Seeking feedback: Don't wait for annual reviews, ask specific questions ('How could I have handled that better?'), make it easy to give honest feedback, check in regularly with manager. View feedback as gift - free coaching for improvement.",
+    "tags": ["feedback", "professional-growth", "self-improvement", "workplace"],
+    "source": "curated"
+  },
+  {
+    "id": "side-projects-portfolio",
+    "category": "career",
+    "title": "Building Side Projects for Your Portfolio",
+    "content": "Side projects demonstrate skills and passion beyond coursework. Project ideas: Build an app solving a problem you have, contribute to open source, redesign existing websites, analyze public datasets, write technical blog posts, create YouTube tutorials, participate in hackathons, freelance for small businesses or nonprofits. Benefits: Real experience to discuss in interviews, portfolio content, learn new skills, show initiative, potentially generate income. Project management: Start small and finish (better than many incomplete projects), document your process (write about challenges and solutions), share work publicly (GitHub, blog, LinkedIn), get feedback from others. Balance: Don't overcommit - quality over quantity. One polished project better than five half-done. Side projects fill gap between coursework and professional experience. Shows you code/design/write because you enjoy it, not just for grades.",
+    "tags": ["side-projects", "portfolio", "skill-building", "career-development"],
+    "source": "curated"
+  },
+  {
+    "id": "rejection-resilience",
+    "category": "career",
+    "title": "Building Resilience Through Job Search Rejection",
+    "content": "Rejection is normal part of job search - everyone faces it. Reality check: Average applications per job offer: 100-200. Response rate: 10-20%. Interview rate: 1-5%. Offer rate: 0.5-2%. You'll get rejected more than accepted - that's math, not personal failure. Handling rejection: Allow yourself to feel disappointed briefly, don't take it personally (many factors beyond your control), ask for feedback if possible (most won't respond), reflect on what you can improve, celebrate small wins (interview requests, positive feedback), maintain routines (exercise, sleep, social time), take breaks when needed. Growth mindset: Each application is practice, each interview improves your skills, rejection redirects you to better fit. Track your funnel - it takes numbers. Stay connected with rejecters professionally - circumstances change. The 'no' before the 'yes' is part of everyone's story.",
+    "tags": ["rejection", "resilience", "job-search", "mental-health"],
+    "source": "curated"
+  },
+  {
+    "id": "transferable-skills",
+    "category": "career",
+    "title": "Identifying and Marketing Transferable Skills",
+    "content": "Transferable skills apply across roles and industries - your secret weapon. Key transferable skills: Communication (written, verbal, presentation), critical thinking and problem-solving, leadership and team collaboration, time management and organization, adaptability and learning agility, data analysis and technical literacy, project management, conflict resolution. Identifying yours: Review past experiences (jobs, clubs, sports, projects), ask: What did you do? How did you do it? What skills did that require? Get feedback from others. Marketing them: Translate experiences to business language (team captain → managed team of 15), quantify impact where possible, use in resume bullets and interview stories. Examples: Retail job → customer service, conflict resolution, sales. RA → leadership, crisis management, community building. Student org treasurer → budgeting, financial management, reporting. Every experience has transferable skills if you frame them right.",
+    "tags": ["transferable-skills", "career-transition", "resume", "interview"],
+    "source": "curated"
+  },
+  {
+    "id": "industry-specific-paths",
+    "category": "career",
+    "title": "Understanding Industry-Specific Career Paths",
+    "content": "Different industries have distinct career trajectories and norms. Consulting: Up-or-out model, 2-3 years per level (Analyst → Consultant → Manager → Principal → Partner), exit opportunities prized. Finance: Investment banking (Analyst → Associate → VP → Director → MD), long hours early career, prestige-driven. Tech: Individual contributor vs. management tracks, equity common, rapid advancement possible, job-hopping normal. Academia: PhD → Postdoc → Assistant Professor → Associate (tenure) → Full Professor, publish or perish. Government: GS levels, promotion by time and merit, job security, bureaucracy. Non-profit: Passion-driven, lower pay, mission alignment critical. Research your target industry: typical entry points, promotion timeline, credentials required, work-life balance norms, compensation structure. Each has different values and expectations.",
+    "tags": ["career-paths", "industries", "progression", "career-planning"],
+    "source": "curated"
+  },
+  {
+    "id": "gig-economy",
+    "category": "career",
+    "title": "Navigating the Gig Economy and Freelancing",
+    "content": "Gig work offers flexibility but requires self-management. Types: Freelancing (Upwork, Fiverr), contract work, consulting, ride-sharing, delivery. Pros: Flexibility, variety, potential for high income, work-life control, skill diversity. Cons: Income instability, no benefits, self-employment taxes, need to find own clients, isolation. Success factors: Build portfolio and reputation, set competitive rates (don't undervalue yourself), create contracts for every project, track expenses for taxes, maintain emergency fund (6+ months expenses), network constantly, deliver excellent work consistently, ask for testimonials. Financial management: Set aside 25-30% income for taxes, separate business and personal finances, invoice promptly, chase late payments. Gig work can be full-time career, side income, or bridge between jobs. Valuable for building diverse experience early career.",
+    "tags": ["gig-economy", "freelancing", "self-employment", "flexible-work"],
+    "source": "curated"
+  },
+  {
+    "id": "certifications-value",
+    "category": "career",
+    "title": "Strategic Value of Professional Certifications",
+    "content": "Certifications can boost credentials but aren't always necessary. High-value certifications: PMP (Project Management), CPA (Accounting), Professional Engineer (Engineering), CFA (Finance), AWS/Azure/Google Cloud (Tech), Scrum Master (Agile), SHRM/PHR (HR), Six Sigma (Operations). When certifications help: Required for role/licensure, signal expertise in specific skill, show commitment to field, fill gap on resume, career change to demonstrate competency. When to skip: Not valued in target industry, too expensive relative to benefit, better to gain experience instead, credential is unknown/not respected. Research before committing: Ask professionals in field, check job postings (do they require it?), consider cost vs. ROI, assess time commitment. Some certifications expire and require ongoing education. Don't collect certifications indiscriminately - be strategic about which add real value to your goals.",
+    "tags": ["certifications", "credentials", "professional-development", "career"],
+    "source": "curated"
+  },
+  {
+    "id": "performance-review-prep",
+    "category": "career",
+    "title": "Preparing for Performance Reviews",
+    "content": "Performance reviews are critical career moments - prepare thoroughly. Throughout year: Keep achievement journal (projects completed, problems solved, metrics improved, feedback received), save praise emails, track goals progress, note challenges and how you overcame them. Pre-review preparation: Review your job description and last review, self-assess against goals, prepare examples of achievements with quantified impact, identify areas for growth and how you'll address, think about career aspirations to discuss, gather any relevant data/documentation. During review: Listen actively, ask clarifying questions, discuss your achievements confidently (not boastfully), receive feedback gracefully, discuss career development, ask about raise/promotion timeline if appropriate. After review: Summarize action items in writing, send thank you email, create development plan, schedule follow-ups. View reviews as dialogue, not judgment. Advocate for yourself - no one else will.",
+    "tags": ["performance-review", "career-advancement", "workplace", "professional-development"],
+    "source": "curated"
+  },
+  {
+    "id": "career-pivot-strategy",
+    "category": "career",
+    "title": "Making Strategic Career Pivots",
+    "content": "Career changes are common and manageable with strategy. Assessment: Why pivot? (running from something vs. toward something - latter is better), What transferable skills do you have?, What additional skills/credentials needed?, What's your risk tolerance (can you take pay cut? start over?). Pivot strategies: Internal transfer (easiest - same company, different role), adjacent move (similar role, different industry or vice versa), volunteer/side project to gain experience, additional education/certification, contract/freelance to try field, informational interviews to learn reality. Bridge roles: Roles that combine old and new (e.g., consultant helping your old industry with your new skillset). Timeline: Pivots take 1-3 years typically. Build new skills while still employed. Network in target field. Test waters before full leap. Biggest mistake: Quitting before having plan. Story framing: Explain why pivot makes sense given your background and interests.",
+    "tags": ["career-pivot", "career-change", "transition", "strategy"],
+    "source": "curated"
+  },
+  {
+    "id": "professional-presence",
+    "category": "career",
+    "title": "Developing Executive Presence and Gravitas",
+    "content": "Executive presence is how you show up and command respect. Components: Confidence (not arrogance), composure (especially under pressure), clear communication (concise, articulate), decisiveness, authenticity, appearance (polished, appropriate). Developing it: Speak up in meetings with prepared thoughts, make eye contact, use strong body language (stand tall, firm handshake), think before speaking (pause is okay), ask smart questions, admit what you don't know confidently ('Good question, I'll find out'), handle mistakes gracefully, dress slightly above your level. Communication: Eliminate filler words (um, like), lower voice pitch (conveys authority), vary pace and tone, use silence strategically. Mindset: You belong in the room, your perspective adds value, confidence comes from preparation. Watch leaders you admire - what do they do? This develops over time, not overnight. Even entry-level employees can demonstrate presence.",
+    "tags": ["executive-presence", "leadership", "professional-development", "communication"],
+    "source": "curated"
+  },
+  {
+    "id": "work-life-integration",
+    "category": "career",
+    "title": "Work-Life Integration for Early Career",
+    "content": "Early career often demands long hours - manage strategically. Mindset shift: Work-life 'balance' is myth (implies 50/50 always). Instead, think 'integration' (blending effectively) and 'harmony' (adjusting based on life season). Strategies: Set boundaries (define when you're truly off), protect personal time (calendar it like meetings), be present where you are (work time = work, personal time = personal), use PTO (don't leave days unused), find non-negotiables (exercise, family dinner, hobby), communicate limits professionally, work smart not just hard (efficiency matters), assess periodically (is this sustainable?). Red flags: Consistent 60+ hour weeks, no time for health/relationships, resenting your job, burnout symptoms. Early career investment is real, but martyrdom isn't required. Companies with chronic overwork have retention problems. Your career is marathon, not sprint. Protect your health and relationships - you can't get those back.",
+    "tags": ["work-life-balance", "boundaries", "wellness", "sustainability"],
+    "source": "curated"
+  },
+  {
+    "id": "negotiation-skills",
+    "category": "career",
+    "title": "Developing General Negotiation Skills",
+    "content": "Negotiation is critical career skill beyond salary. What's negotiable: Project assignments, deadlines, resources, responsibilities, flexibility, professional development, visibility opportunities. Fundamentals: Preparation (know your position and theirs, BATNA - Best Alternative To Negotiated Agreement), find mutual benefit (not win-lose), listen actively, ask questions to understand their constraints, creative problem-solving (expand the pie). Framing: Make business case (how does this benefit them/company?), use data, express enthusiasm while negotiating, stay professional if hearing no. Practice: Small negotiations build skill (deadline extension, meeting time, project scope). Common mistakes: Not negotiating at all, accepting first offer without discussion, getting emotional, ultimatums. Everything is negotiable until explicitly stated otherwise. Women and minorities often negotiate less - practice this skill actively. Advocating for yourself is professional, not problematic.",
+    "tags": ["negotiation", "communication", "career-skills", "advocacy"],
+    "source": "curated"
+  },
+  {
+    "id": "job-search-while-employed",
+    "category": "career",
+    "title": "Discrete Job Search While Employed",
+    "content": "Searching while employed requires discretion and ethics. Discretion: Don't use work devices for search, don't search during work hours, be careful with LinkedIn (turn off activity broadcasts for updates, don't post 'open to work' publicly), schedule interviews before/after work or during lunch/PTO, don't tell coworkers, be vague about 'appointments'. References: Use former managers or colleagues from previous jobs initially, ask current manager only if you have strong relationship and they're supportive of your growth, give heads up if asked for current manager as reference. Ethics: Don't bad-mouth current employer in interviews, continue performing well in current role, give proper notice (typically 2 weeks), offer to train replacement, leave on good terms (industry is small). It's okay to look while employed - most people do. Professional way to leave: brief resignation letter, exit interview with constructive feedback, thank you notes to key people, keep connections on LinkedIn.",
+    "tags": ["job-search", "career-transition", "discretion", "professionalism"],
+    "source": "curated"
+  },
+  {
+    "id": "promotion-readiness",
+    "category": "career",
+    "title": "Assessing and Achieving Promotion Readiness",
+    "content": "Promotions require demonstrating next-level performance before title changes. Readiness signals: Consistently exceeding current role expectations, taking on projects beyond scope, mentoring junior colleagues, demonstrating leadership, solving problems proactively, building relationships across teams, showing business acumen. Timing: Understand promotion cycles in your company (annual, continuous), typical time in role (don't ask after 6 months), company performance (growing companies promote faster). Building case: Document achievements with metrics, show expanded scope, demonstrate next-level skills, get visible with senior leadership, seek feedback from manager ('What does ready-for-promotion look like?'), find sponsors (senior advocates). Having conversation: Schedule dedicated meeting with manager, present your case with evidence, ask directly 'What do I need to do to be promoted?', if not now 'What's the timeline and criteria?', get development plan in writing. If repeatedly passed over: Assess if it's you or company (some have limited advancement), consider external opportunities. Don't wait passively - advocate for yourself.",
+    "tags": ["promotion", "career-advancement", "workplace", "advocacy"],
+    "source": "curated"
+  },
+  {
+    "id": "international-careers",
+    "category": "career",
+    "title": "Pursuing International Career Opportunities",
+    "content": "International experience can differentiate your career. Paths: Study abroad, international internship, teach English abroad (TEFL), work for multinational company (internal transfer later), direct hire abroad, Peace Corps/Fulbright, working holiday visas. Considerations: Work visa requirements (often need company sponsorship or special programs), language skills (not always required but helpful), cost of living differences, cultural adaptation, distance from support system, impact on career trajectory (some fields value it more). Benefits: Global perspective, adaptability, language skills, network expansion, life experience. Challenges: Visa uncertainty, potential isolation, career path less linear, repatriation can be harder than expected. Research: Visa processes for target countries, job markets for your field, tax implications, healthcare, housing. International experience early career is often easier (fewer commitments). Some companies specifically recruit globally - research which value international candidates. Digital nomad lifestyle increasingly viable for some fields.",
+    "tags": ["international", "global-career", "work-abroad", "career-path"],
+    "source": "curated"
+  },
+  {
+    "id": "workplace-culture-fit",
+    "category": "career",
+    "title": "Assessing and Adapting to Workplace Culture",
+    "content": "Culture fit affects job satisfaction as much as role itself. Assessing during job search: Ask about culture in interviews ('How would you describe the culture?', 'What type of person thrives here?'), observe during interview (how do people interact? office vibe?), research on Glassdoor, talk to current/former employees, notice communication style (formal vs. casual), ask about work hours and flexibility. Culture dimensions: Hierarchy (flat vs. hierarchical), pace (fast vs. steady), decision-making (consensus vs. top-down), communication (direct vs. indirect), work-life balance, diversity and inclusion, innovation vs. tradition. Once hired: Observe norms (hours, dress, communication channels), adapt appropriately, find culture champions (people who embody it), give yourself 3-6 months before judging fit. Culture mismatch: Assess if it's adaptable or fundamental (values misalignment harder to overcome). Sometimes leaving is right answer. Consider culture when evaluating offers - money can't compensate for miserable culture fit.",
+    "tags": ["workplace-culture", "culture-fit", "job-satisfaction", "assessment"],
+    "source": "curated"
+  },
+  {
+    "id": "layoff-navigation",
+    "category": "career",
+    "title": "Navigating Layoffs and Unexpected Job Loss",
+    "content": "Layoffs happen - how you respond matters. Immediate actions: Understand severance package (review carefully, potentially negotiate), file for unemployment immediately (in most places), update LinkedIn and resume, reach out to network, assess finances (how long can you last?), take time to process emotions. Job search: Treat it as full-time job with structure, leverage severance period, be honest about layoff in interviews (common and not stigmatized anymore), consider contract/temp work for income and gap-filling. Frame positively: 'Company restructured and eliminated position' (not personal failure), focus on accomplishments in role, what you're looking for next. Financial management: Cut discretionary spending, explore health insurance options (COBRA, marketplace, spouse's plan), prioritize essential expenses. Mental health: Layoffs are traumatic - allow grief, maintain routines, exercise, stay connected socially, consider counseling if needed. Silver lining: Opportunity to reassess career, potentially better fit. Many people look back on layoffs as career catalysts. Not reflection of your worth.",
+    "tags": ["layoff", "job-loss", "career-transition", "resilience"],
+    "source": "curated"
+  },
+  {
+    "id": "career-journal",
+    "category": "career",
+    "title": "Maintaining a Career Development Journal",
+    "content": "Career journal tracks growth and aids self-advocacy. What to document: Accomplishments (projects completed, metrics improved, problems solved), new skills learned, positive feedback received, challenges overcome, lessons learned, career goals and progress, networking contacts, ideas and observations, mistakes and how you recovered. When to update: Weekly is ideal (Friday afternoon reflection), after major projects, after feedback/reviews, after key meetings or events. Uses: Performance review preparation, resume updates, interview story preparation, tracking progress toward goals, identifying patterns, advocating for promotion/raise. Format: Digital (Notion, Evernote, Google Docs) or physical journal. Structure entries: Date, What happened, Impact/outcome, Skills demonstrated, What I learned. Include quotes from positive feedback emails. Revisit quarterly to assess progress and adjust goals. Years later, you'll forget accomplishments - journal is your memory. Makes writing resumes and preparing for interviews much easier. Self-advocacy requires evidence - journal provides it.",
+    "tags": ["career-journal", "documentation", "self-advocacy", "professional-development"],
+    "source": "curated"
+  },
+  {
+    "id": "ai-career-impact",
+    "category": "career",
+    "title": "Preparing for AI's Impact on Careers",
+    "content": "AI is transforming work - adapt proactively. Jobs at risk: Routine tasks (data entry, basic analysis, simple writing), repetitive processes, predictable work. Jobs less at risk: Creative work, complex problem-solving, interpersonal skills, leadership, roles requiring empathy/emotional intelligence, strategic thinking, physical work requiring dexterity. Adapting: Learn to use AI tools (ChatGPT, Copilot, Midjourney), focus on uniquely human skills (creativity, critical thinking, relationship-building, ethical judgment), become AI-fluent (understand capabilities and limitations), specialize in areas AI struggles with, continuous learning mindset. Opportunities: AI creates new roles (prompt engineering, AI trainers, AI ethics), makes workers more productive (leverage it), opens new possibilities (what becomes possible with AI?). Don't fear replacement - think augmentation. Those who use AI will outcompete those who don't. Stay current with AI developments in your field. Adaptability is your competitive advantage.",
+    "tags": ["AI", "future-of-work", "career-planning", "adaptability"],
+    "source": "curated"
+  },
+  {
+    "id": "career-confidence",
+    "category": "career",
+    "title": "Building Career Confidence and Overcoming Imposter Syndrome",
+    "content": "Imposter syndrome affects 70% of people at some point - you're not alone. Manifestations: Attributing success to luck, fear of being 'found out', discounting accomplishments, overworking to compensate, avoiding opportunities. Reframing: Everyone feels this way sometimes, feeling unsure doesn't mean you're unqualified, growth happens outside comfort zone, you were hired because you're qualified. Building confidence: Document achievements (journal), collect positive feedback, identify your strengths, prepare thoroughly (confidence comes from competence), celebrate wins (small and large), practice self-compassion, surround yourself with supporters, challenge negative self-talk. Reality checks: No one knows everything, asking questions is strength not weakness, mistakes are learning opportunities, senior people were once where you are. Imposter syndrome can actually indicate you're growing - you're in environments that challenge you. When it strikes: Pause, recognize it's imposter syndrome talking, review evidence of competence, talk to someone. You belong.",
+    "tags": ["confidence", "imposter-syndrome", "mental-health", "career-success"],
+    "source": "curated"
+  }
+]

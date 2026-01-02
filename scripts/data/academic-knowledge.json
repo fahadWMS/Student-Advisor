@@ -1,0 +1,426 @@
+[
+  {
+    "id": "study-pomodoro",
+    "category": "academic",
+    "title": "Pomodoro Technique for Studying",
+    "content": "The Pomodoro Technique is a time management method that uses 25-minute focused work sessions followed by 5-minute breaks. After 4 pomodoros, take a longer 15-30 minute break. This technique helps maintain focus, reduces mental fatigue, and makes large study sessions more manageable. Tips: 1) Remove all distractions during the 25 minutes, 2) Use a physical timer if possible, 3) Write down interrupting thoughts to address later, 4) Adjust session length based on your attention span (some prefer 50/10).",
+    "tags": ["study", "time-management", "focus", "productivity"],
+    "source": "curated"
+  },
+  {
+    "id": "active-recall",
+    "category": "academic",
+    "title": "Active Recall Study Method",
+    "content": "Active recall is a learning technique where you actively retrieve information from memory rather than passively reviewing notes. Instead of re-reading, close your book and try to recall key concepts, then check your accuracy. Methods include: flashcards, practice problems, teaching concepts to others, writing summaries from memory, and self-quizzing. Research shows active recall is 50% more effective than passive review for long-term retention.",
+    "tags": ["study", "memory", "learning", "retention"],
+    "source": "curated"
+  },
+  {
+    "id": "spaced-repetition",
+    "category": "academic",
+    "title": "Spaced Repetition for Long-term Retention",
+    "content": "Spaced repetition involves reviewing material at increasing intervals over time. Instead of cramming, review new material after 1 day, then 3 days, then 7 days, then 14 days, then 30 days. This exploits the psychological spacing effect - our brains retain information better when exposed to it multiple times with gaps in between. Use apps like Anki or create your own review schedule. Ideal for vocabulary, formulas, concepts, and facts.",
+    "tags": ["study", "memory", "retention", "learning"],
+    "source": "curated"
+  },
+  {
+    "id": "feynman-technique",
+    "category": "academic",
+    "title": "Feynman Technique for Deep Understanding",
+    "content": "Named after physicist Richard Feynman, this technique involves explaining concepts in simple terms as if teaching a child. Steps: 1) Choose a concept to learn, 2) Explain it in simple language without jargon, 3) Identify gaps in your explanation, 4) Review source material to fill gaps, 5) Simplify and use analogies. If you can't explain it simply, you don't understand it well enough. This technique reveals knowledge gaps and forces deep processing.",
+    "tags": ["study", "understanding", "learning", "comprehension"],
+    "source": "curated"
+  },
+  {
+    "id": "cornell-notes",
+    "category": "academic",
+    "title": "Cornell Note-Taking System",
+    "content": "The Cornell system divides your page into three sections: Notes (right side, 2/3 of page), Cues (left side, 1/3), and Summary (bottom). During class, take notes in the main section. After class, write questions/keywords in the cue column. At the end, write a 2-3 sentence summary. This format encourages active review and makes studying easier. Cover the notes section and try to answer questions from the cue column.",
+    "tags": ["note-taking", "study", "organization", "learning"],
+    "source": "curated"
+  },
+  {
+    "id": "time-blocking",
+    "category": "academic",
+    "title": "Time Blocking for Productivity",
+    "content": "Time blocking involves scheduling specific time slots for specific tasks. Instead of a to-do list, assign each task a time block in your calendar. Example: 9-10am: Math homework, 10-11am: Reading assignment, 11-12pm: Study group. Benefits: prevents multitasking, creates urgency, makes you realistic about time, reduces decision fatigue. Block high-priority tasks during your peak energy hours. Include buffer time between blocks.",
+    "tags": ["time-management", "productivity", "planning", "organization"],
+    "source": "curated"
+  },
+  {
+    "id": "eat-the-frog",
+    "category": "academic",
+    "title": "Eat the Frog - Tackle Hardest Task First",
+    "content": "Mark Twain said 'Eat a live frog first thing in the morning and nothing worse will happen to you the rest of the day.' Apply this to studying: do your most challenging or dreaded task first when your willpower is highest. This prevents procrastination, builds momentum, and reduces anxiety. Identify your 'frog' the night before. Complete it before checking email or social media. The rest of your day feels easier.",
+    "tags": ["productivity", "procrastination", "time-management", "motivation"],
+    "source": "curated"
+  },
+  {
+    "id": "exam-prep-timeline",
+    "category": "academic",
+    "title": "Strategic Exam Preparation Timeline",
+    "content": "Effective exam prep follows a structured timeline. 2 weeks before: Review all materials, identify weak areas. 10 days before: Create study guide or summary notes. 7 days before: Practice problems and active recall. 3 days before: Take practice exam under timed conditions. 2 days before: Review mistakes, focus on weak areas. 1 day before: Light review, organize materials, get good sleep. Exam day: Eat well, arrive early, stay calm. Avoid cramming the night before.",
+    "tags": ["exam-prep", "study", "planning", "time-management"],
+    "source": "curated"
+  },
+  {
+    "id": "practice-testing",
+    "category": "academic",
+    "title": "Practice Testing for Exam Success",
+    "content": "Practice testing is one of the most effective study strategies. Taking practice exams under realistic conditions (timed, no notes, no distractions) improves retention more than re-reading. Benefits: identifies knowledge gaps, reduces test anxiety, improves time management, strengthens memory retrieval. Use past exams, textbook questions, or create your own. Review wrong answers thoroughly. Aim for at least 2-3 full practice exams before the real test.",
+    "tags": ["exam-prep", "study", "testing", "practice"],
+    "source": "curated"
+  },
+  {
+    "id": "chunking-information",
+    "category": "academic",
+    "title": "Chunking: Breaking Down Complex Information",
+    "content": "Chunking involves breaking large amounts of information into smaller, manageable units. Our working memory can hold 7±2 chunks. Examples: remembering phone numbers as 555-123-4567 instead of 5551234567, grouping concepts by theme, creating acronyms. Benefits: reduces cognitive load, improves recall, makes learning less overwhelming. Create meaningful connections between chunks. Use visual organizers like mind maps or concept maps.",
+    "tags": ["study", "memory", "learning", "organization"],
+    "source": "curated"
+  },
+  {
+    "id": "interleaving",
+    "category": "academic",
+    "title": "Interleaving: Mix Up Your Study Topics",
+    "content": "Interleaving means studying multiple related topics in one session rather than blocking (studying one topic at a time). Example: instead of doing 20 algebra problems, then 20 geometry problems, alternate between them. This makes practice harder initially but improves long-term retention and problem-solving. Your brain learns to discriminate between problem types and chooses the right strategy. Especially effective for math, science, and languages.",
+    "tags": ["study", "learning", "practice", "retention"],
+    "source": "curated"
+  },
+  {
+    "id": "syllabus-strategy",
+    "category": "academic",
+    "title": "Syllabus as Your Strategic Roadmap",
+    "content": "Your syllabus is not just a handout - it's your semester roadmap. First week: Highlight all due dates and exam dates. Transfer them to your calendar with reminders 1 week before. Note the grading breakdown - prioritize high-value assignments. Identify office hours and use them early. Look for 'drop one exam' or extra credit policies. Check attendance policies. Read learning objectives for each unit - these often predict exam questions. Treat the syllabus as a binding contract.",
+    "tags": ["planning", "organization", "course-management", "strategy"],
+    "source": "curated"
+  },
+  {
+    "id": "office-hours-strategy",
+    "category": "academic",
+    "title": "Maximizing Office Hours Effectiveness",
+    "content": "Office hours are your secret weapon for academic success. Best practices: 1) Go early in the semester to build rapport, 2) Prepare specific questions (not 'I don't get it'), 3) Show your work/thought process, 4) Ask about concepts, not just answers, 5) Request clarification on grading rubrics, 6) Ask for study tips or resource recommendations, 7) Follow up on feedback from previous assignments. Professors remember students who engage thoughtfully. This helps with letters of recommendation later.",
+    "tags": ["professor-interaction", "learning", "help", "academic-success"],
+    "source": "curated"
+  },
+  {
+    "id": "study-group-best-practices",
+    "category": "academic",
+    "title": "Effective Study Group Best Practices",
+    "content": "Productive study groups follow structure: 1) Set clear agenda and time limit, 2) Everyone comes prepared, 3) Teach each other concepts - teaching is the best learning, 4) Work through practice problems together, 5) Keep group small (3-5 people), 6) Minimize social chat - socialize after studying, 7) Assign roles: timekeeper, note-taker, question-asker. Red flags: if you're always explaining or always confused, the group is imbalanced. Virtual study groups can work via Zoom with screen sharing.",
+    "tags": ["study", "collaboration", "learning", "group-work"],
+    "source": "curated"
+  },
+  {
+    "id": "gpa-recovery-strategy",
+    "category": "academic",
+    "title": "GPA Recovery and Improvement Plan",
+    "content": "Recovering a low GPA requires strategic focus. Priority 1: Calculate how much your GPA can realistically improve (use GPA calculators). Priority 2: Focus on current semester - future grades count more than past regrets. Priority 3: Take manageable course loads to ensure quality over quantity. Priority 4: Use grade replacement policies if available (retake failed courses). Priority 5: Consider taking easier electives to boost GPA while working on challenging major courses. Track your progress each semester. GPA recovery is a marathon, not a sprint.",
+    "tags": ["gpa", "academic-improvement", "planning", "strategy"],
+    "source": "curated"
+  },
+  {
+    "id": "course-selection-strategy",
+    "category": "academic",
+    "title": "Strategic Course Selection and Planning",
+    "content": "Smart course selection balances difficulty, interest, and requirements. Tips: 1) Mix hard and easy courses each semester, 2) Use Rate My Professor for instructor feedback, 3) Check course scheduling to avoid conflicts, 4) Take prerequisites early to unlock future courses, 5) Consider course format (online, hybrid, in-person), 6) Check if courses are offered every semester or only once per year, 7) Don't overload - quality over quantity, 8) Save interesting electives for when you need GPA cushion. Create a 4-year plan but stay flexible.",
+    "tags": ["course-selection", "planning", "registration", "strategy"],
+    "source": "curated"
+  },
+  {
+    "id": "reading-strategies",
+    "category": "academic",
+    "title": "Active Reading Strategies for Textbooks",
+    "content": "Don't just read - engage with the text. SQ3R Method: Survey (skim headings, summaries), Question (turn headings into questions), Read (actively read to answer questions), Recite (summarize in your own words), Review (quiz yourself later). Other strategies: highlight sparingly (only key concepts), write margin notes, create chapter summaries, read with purpose (what do I need to learn?), connect to prior knowledge. Reading is not about finishing pages - it's about understanding and remembering.",
+    "tags": ["reading", "study", "textbooks", "comprehension"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-integrity",
+    "category": "academic",
+    "title": "Academic Integrity and Plagiarism Prevention",
+    "content": "Academic integrity violations can end your academic career. Plagiarism: presenting others' work as your own (includes paraphrasing without citation). Cheating: unauthorized help on exams/assignments, sharing answers, using prohibited resources. Prevention: 1) Cite ALL sources, even if paraphrasing, 2) Use citation managers (Zotero, Mendeley), 3) Learn your school's citation style (APA, MLA, Chicago), 4) When in doubt, cite it, 5) Understand what collaboration is allowed, 6) Use plagiarism checkers before submitting. Consequences: failing grade, expulsion, permanent record.",
+    "tags": ["academic-integrity", "ethics", "plagiarism", "policy"],
+    "source": "curated"
+  },
+  {
+    "id": "research-paper-process",
+    "category": "academic",
+    "title": "Research Paper Writing Process",
+    "content": "Writing research papers requires systematic approach. Week 1: Choose topic, preliminary research, narrow focus. Week 2: Deep research, evaluate sources, take organized notes. Week 3: Create detailed outline, draft thesis statement. Week 4: Write first draft (don't aim for perfection). Week 5: Revise for content, organization, argument strength. Week 6: Edit for clarity, grammar, citations. Week 7: Proofread, format, submit early. Never write in one sitting. Use university writing center. Get peer feedback. Sleep on drafts before editing.",
+    "tags": ["writing", "research", "papers", "process"],
+    "source": "curated"
+  },
+  {
+    "id": "thesis-statement",
+    "category": "academic",
+    "title": "Crafting Strong Thesis Statements",
+    "content": "Your thesis is your paper's main argument - it should be specific, debatable, and defensible. Weak: 'Social media has effects on society.' Strong: 'Social media increases political polarization by creating echo chambers that reinforce existing beliefs.' Formula: [Topic] + [Position] + [Reasoning]. Make one clear claim, not multiple. Avoid vague words like 'interesting' or 'important'. Place thesis at end of introduction. Everything in your paper should support your thesis. Revise your thesis as your argument evolves.",
+    "tags": ["writing", "thesis", "argumentation", "academic-writing"],
+    "source": "curated"
+  },
+  {
+    "id": "citation-management",
+    "category": "academic",
+    "title": "Citation Management and Organization",
+    "content": "Managing sources prevents last-minute citation panic. Tools: Zotero (free, open-source, browser integration), Mendeley (PDF annotation), EndNote (institutional access), or built-in Word/Google Docs tools. Workflow: 1) Save sources immediately when found, 2) Add notes about relevance, 3) Organize by topic/project, 4) Auto-generate bibliographies, 5) Share with collaborators. Learn one tool well. Export citations as you research, not after writing. Most tools have browser extensions to save sources with one click. Backup your library.",
+    "tags": ["research", "citations", "organization", "tools"],
+    "source": "curated"
+  },
+  {
+    "id": "source-evaluation",
+    "category": "academic",
+    "title": "Evaluating Academic Source Credibility",
+    "content": "Not all sources are created equal. Use CRAAP test: Currency (how recent?), Relevance (does it address your topic?), Authority (author credentials?), Accuracy (evidence-based? peer-reviewed?), Purpose (inform, persuade, sell?). Prefer: peer-reviewed journals, academic books, government data, reputable news outlets. Avoid: Wikipedia as final source (use it to find real sources), blogs without credentials, commercial sites, outdated information. Check journal impact factor. Look at citation count. Read abstracts before full papers.",
+    "tags": ["research", "sources", "evaluation", "critical-thinking"],
+    "source": "curated"
+  },
+  {
+    "id": "literature-review",
+    "category": "academic",
+    "title": "Conducting Effective Literature Reviews",
+    "content": "Literature reviews synthesize existing research on a topic. Process: 1) Define research question, 2) Search databases (Google Scholar, JSTOR, PubMed), 3) Screen titles/abstracts for relevance, 4) Read and take notes on key findings, 5) Identify themes and gaps, 6) Organize by theme (not by paper), 7) Write synthesis showing how sources relate. Don't just summarize each paper separately. Show evolution of ideas, debates in field, and how your work fits. Create a matrix comparing studies (methods, findings, limitations).",
+    "tags": ["research", "literature-review", "writing", "scholarship"],
+    "source": "curated"
+  },
+  {
+    "id": "presentation-skills",
+    "category": "academic",
+    "title": "Academic Presentation Best Practices",
+    "content": "Effective presentations balance content and delivery. Content: Clear structure (intro, body, conclusion), one idea per slide, minimal text (6 words per line, 6 lines per slide), visual aids over walls of text, cite sources. Delivery: Practice 3+ times, time yourself, make eye contact, speak clearly and slowly, don't read slides, pause for questions, handle Q&A confidently ('Great question' buys thinking time). Technical: Arrive early, test equipment, have backup (USB, cloud), use presenter view. Anxiety management: breathe, focus on message not perfection.",
+    "tags": ["presentations", "public-speaking", "communication", "academic-skills"],
+    "source": "curated"
+  },
+  {
+    "id": "group-project-management",
+    "category": "academic",
+    "title": "Managing Group Projects Effectively",
+    "content": "Group projects succeed with clear structure. First meeting: Exchange contact info, set communication norms (Slack, email), create shared document/drive, divide roles based on strengths, set deadlines with buffer time, establish conflict resolution process. Throughout: Hold regular check-ins, use project management tools (Trello, Asana), document who does what (for slacker insurance), give constructive feedback, stay flexible. Red flags: someone not responding, missing deadlines. Address early. If major issues, document everything and inform professor before deadline.",
+    "tags": ["group-work", "collaboration", "project-management", "teamwork"],
+    "source": "curated"
+  },
+  {
+    "id": "test-anxiety-management",
+    "category": "academic",
+    "title": "Managing Test Anxiety and Performance",
+    "content": "Test anxiety is normal but manageable. Before exam: Prepare thoroughly (reduces uncertainty), get good sleep, avoid cramming, eat protein-rich breakfast, arrive early. During exam: Read all instructions twice, do a brain dump (write down formulas/facts), start with easy questions (builds confidence), budget time per section, deep breathing if panicking. Physical symptoms: Use 4-7-8 breathing (inhale 4, hold 7, exhale 8), progressive muscle relaxation, positive self-talk. If severe anxiety persists, use campus counseling services or request accommodations.",
+    "tags": ["test-anxiety", "stress-management", "exam-prep", "mental-health"],
+    "source": "curated"
+  },
+  {
+    "id": "learning-styles-myth",
+    "category": "academic",
+    "title": "Learning Styles Myth and Evidence-Based Learning",
+    "content": "The popular 'learning styles' theory (visual, auditory, kinesthetic) lacks scientific support. Research shows: everyone benefits from multimodal learning (seeing, hearing, doing), matching instruction to content (not student preference) works better, testing yourself is more effective than re-reading regardless of 'style'. Evidence-based strategies that work for everyone: spaced repetition, active recall, practice testing, elaborative interrogation (asking why), interleaving. Focus on proven techniques, not unproven style matching.",
+    "tags": ["learning", "study", "cognitive-science", "evidence-based"],
+    "source": "curated"
+  },
+  {
+    "id": "growth-mindset",
+    "category": "academic",
+    "title": "Developing a Growth Mindset for Learning",
+    "content": "Carol Dweck's research shows mindset affects achievement. Fixed mindset: 'I'm bad at math' - views ability as unchangeable. Growth mindset: 'I'm not good at math yet' - views ability as developable through effort. How to develop: 1) Replace 'I can't' with 'I can't yet', 2) View challenges as opportunities, 3) Embrace mistakes as learning, 4) Focus on process over outcome, 5) Learn from criticism, 6) Celebrate effort, not just results. Your brain is like a muscle - it grows with use. Struggling means learning.",
+    "tags": ["mindset", "learning", "motivation", "psychology"],
+    "source": "curated"
+  },
+  {
+    "id": "metacognition",
+    "category": "academic",
+    "title": "Metacognition: Thinking About Your Thinking",
+    "content": "Metacognition means being aware of and controlling your learning process. Before studying: What do I already know? What do I need to learn? How will I approach this? During studying: Am I understanding this? Should I change strategies? Am I staying focused? After studying: What did I learn? What's still unclear? How can I improve next time? Benefits: better self-regulation, adaptive learning strategies, deeper understanding. Practice: keep a learning journal, explain your problem-solving process aloud, assess your confidence in answers.",
+    "tags": ["learning", "self-awareness", "study-strategies", "cognition"],
+    "source": "curated"
+  },
+  {
+    "id": "major-selection",
+    "category": "academic",
+    "title": "Choosing Your Major Strategically",
+    "content": "Selecting a major is a major decision. Consider: 1) Interests (what excites you?), 2) Strengths (where do you excel?), 3) Values (what matters to you?), 4) Career options (research career paths), 5) Job market (but don't let this dominate), 6) Graduate school requirements if applicable. Strategies: Take intro courses in different fields, talk to professors and students in the major, job shadow professionals, check degree requirements and credit hours, consider double major or minor, remember you can change majors. Most students change majors 2-3 times. That's normal.",
+    "tags": ["major-selection", "career-planning", "decision-making", "advising"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-advising",
+    "category": "academic",
+    "title": "Making the Most of Academic Advising",
+    "content": "Your academic advisor is your guide - use them effectively. Before meeting: Review degree requirements, check your academic progress/transcript, prepare specific questions, bring proposed course schedule. During meeting: Ask about course sequencing, degree progress, alternative paths, policy clarifications, resource recommendations. After meeting: Send thank-you email summarizing action items, follow up if needed. Meet at least once per semester, even if not required. Build relationship over time. If advisor is unhelpful, you can usually request a change. Some majors have dedicated advisors.",
+    "tags": ["advising", "academic-planning", "resources", "support"],
+    "source": "curated"
+  },
+  {
+    "id": "undergraduate-research",
+    "category": "academic",
+    "title": "Getting Involved in Undergraduate Research",
+    "content": "Undergraduate research boosts grad school applications and career prospects. How to start: 1) Take courses in area of interest, 2) Identify professors doing interesting research (check department websites), 3) Read their recent publications, 4) Email expressing specific interest in their work, 5) Ask about research opportunities (paid, credit, volunteer), 6) Be prepared to start with basic tasks. Benefits: hands-on experience, mentorship, networking, potential publication/conference presentation, strong letters of recommendation. Even one semester makes a difference. Some schools have formal UROP (Undergraduate Research Opportunities Program).",
+    "tags": ["research", "experience", "faculty-interaction", "career-development"],
+    "source": "curated"
+  },
+  {
+    "id": "study-abroad-planning",
+    "category": "academic",
+    "title": "Study Abroad Planning and Considerations",
+    "content": "Study abroad enriches education but requires planning. Timeline: 1 year before: Research programs, check credit transfer policies, understand costs. 9 months before: Apply, arrange financial aid, get passport. 6 months before: Register for courses, arrange housing, apply for scholarships. 3 months before: Book flights, get visas, pack. Considerations: How do credits transfer? Will this delay graduation? What's the total cost including living expenses? How does this fit career goals? Academic factors: Course availability, language requirements, academic rigor. Many programs now offer summer or winter break options for shorter commitment.",
+    "tags": ["study-abroad", "planning", "international", "experience"],
+    "source": "curated"
+  },
+  {
+    "id": "online-learning-success",
+    "category": "academic",
+    "title": "Succeeding in Online and Hybrid Courses",
+    "content": "Online courses require self-discipline and different strategies. Success factors: 1) Create dedicated study space free from distractions, 2) Stick to regular schedule - treat it like in-person class, 3) Log in daily to check announcements, 4) Read all instructions carefully, 5) Start assignments early, 6) Participate actively in discussion boards, 7) Use office hours (usually Zoom), 8) Form virtual study groups, 9) Minimize multitasking during lectures, 10) Take notes even during recorded lectures. Technical prep: Reliable internet, functioning webcam/mic, required software installed, know how to submit assignments.",
+    "tags": ["online-learning", "remote-education", "study-strategies", "technology"],
+    "source": "curated"
+  },
+  {
+    "id": "semester-planning",
+    "category": "academic",
+    "title": "Strategic Semester Planning and Organization",
+    "content": "Plan your semester holistically on day one. Tools: Use one system for everything (Google Calendar, planner, Notion). Week 1: Input ALL due dates from all syllabi, add exam dates, include non-academic commitments (work, extracurriculars). Color-code by course or priority. Set reminders: 1 week before major deadlines. Identify heavy weeks and light weeks. Start long-term projects early during light weeks. Build in buffer time. Schedule weekly review to assess progress and adjust. Sunday night planning session for upcoming week. Monthly review to ensure on track. This front-loaded effort saves stress later.",
+    "tags": ["planning", "organization", "time-management", "semester-prep"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-resources",
+    "category": "academic",
+    "title": "Essential Campus Academic Resources",
+    "content": "Most students underutilize free campus resources. Writing center: Feedback on papers at any stage, citation help, grammar coaching. Tutoring center: Free peer or professional tutoring for difficult courses. Library: Research help, database access, study spaces, technology lending. Academic success center: Study skills workshops, time management coaching. Supplemental instruction: Peer-led study sessions for difficult courses. Disability services: Testing accommodations, note-taking assistance. Career center: Resume help, interview prep, job search (not just for seniors!). All free with tuition. Using resources is smart, not weak.",
+    "tags": ["resources", "support", "campus-services", "academic-help"],
+    "source": "curated"
+  },
+  {
+    "id": "grade-appeal",
+    "category": "academic",
+    "title": "Understanding Grade Appeals and Disputes",
+    "content": "Grade disputes should be handled professionally and strategically. Valid reasons: Calculation error, grading criteria not followed, unequal treatment. Invalid reasons: You 'need' a certain grade, you worked hard, grade is lower than expected. Process: 1) Review assignment and rubric carefully, 2) Attend office hours to discuss (not via email initially), 3) Ask professor to explain grading, 4) If unresolved, check department policy on formal appeals, 5) Document everything. Approach: Be respectful, stick to facts, bring evidence, focus on specific criteria. Most issues resolve through conversation. Formal appeals rarely succeed without concrete policy violations.",
+    "tags": ["grades", "appeals", "policy", "conflict-resolution"],
+    "source": "curated"
+  },
+  {
+    "id": "summer-courses",
+    "category": "academic",
+    "title": "Strategic Use of Summer Courses",
+    "content": "Summer courses can accelerate graduation or lighten regular semester loads. Advantages: Faster pace, smaller classes, more professor attention, focus on one or few subjects, catch up or get ahead. Disadvantages: Intensive workload (16 weeks compressed to 6-8), less time to absorb material, costs extra at some schools, limits summer work/internship opportunities. Best candidates for summer: prerequisite courses you need, courses you failed, gen-eds, easy electives. Avoid: critical major courses requiring deep understanding, heavy reading courses, challenging math/science unless you're strong in the subject. Check transfer credit policies.",
+    "tags": ["summer-courses", "planning", "acceleration", "strategy"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-probation",
+    "category": "academic",
+    "title": "Academic Probation Recovery Strategies",
+    "content": "Academic probation is serious but recoverable. Immediate actions: 1) Understand requirements (minimum GPA, credit completion), 2) Meet with academic advisor immediately, 3) Identify root causes (poor study habits, health issues, wrong major, too many hours), 4) Create concrete action plan. Strategies: Reduce course load, drop one class if possible, use tutoring heavily, attend all classes, cut back work hours or extracurriculars, address mental health issues, change major if that's the problem. Track your GPA each week. Most schools give 1-2 semesters to improve. Take this seriously - suspension/dismissal affects financial aid and future enrollment.",
+    "tags": ["academic-probation", "gpa-recovery", "academic-support", "crisis-management"],
+    "source": "curated"
+  },
+  {
+    "id": "prerequisite-importance",
+    "category": "academic",
+    "title": "Why Prerequisites Matter and Course Sequencing",
+    "content": "Prerequisites exist for a reason - they build foundational knowledge. Skipping prerequisites or taking them concurrently (usually) sets you up for struggle. Each course assumes you've mastered prior content. Example: Calculus 2 without Calculus 1 is nearly impossible. Some students test out (AP, CLEP) or override prerequisites - only do this if you genuinely have the knowledge. Course sequencing: Take prerequisites early to unlock upper-level courses. Check course offering frequency (some only offered once per year or specific semesters). Map out multi-year sequence for your major to avoid delays. Prerequisite chains can affect graduation timeline.",
+    "tags": ["prerequisites", "course-sequencing", "planning", "academic-requirements"],
+    "source": "curated"
+  },
+  {
+    "id": "lab-course-success",
+    "category": "academic",
+    "title": "Succeeding in Lab-Based Courses",
+    "content": "Lab courses require different strategies than lecture courses. Prep: Read lab manual before each session, understand procedure and theory, review safety protocols. During lab: Arrive on time (critical), work carefully not quickly, record data immediately in lab notebook, ask TA questions, label everything clearly, clean up properly. After lab: Write lab report promptly while memory is fresh, include all required sections (intro, methods, results, discussion, conclusion), proofread for technical writing style, cite sources. Lab reports are often heavily weighted. Partner strategically - find someone reliable. Don't plagiarize lab reports even if data is shared.",
+    "tags": ["lab-courses", "science", "lab-reports", "practical-skills"],
+    "source": "curated"
+  },
+  {
+    "id": "math-success-strategies",
+    "category": "academic",
+    "title": "Math Course Success Strategies",
+    "content": "Math requires consistent practice, not cramming. Daily habits: Review notes same day (15-30 min), do homework without looking at solutions, identify problem types and strategies, create formula sheet. When stuck: Try for 15 minutes, check textbook examples, ask classmates/tutoring, attend office hours with specific questions. Don't: Copy homework, skip steps in solutions, only study by re-reading notes. Do: Practice problems until automatic, teach concepts to others, understand 'why' not just 'how', use multiple resources (textbook, YouTube, Khan Academy). Math builds cumulatively - gaps compound quickly. Start strong and stay caught up.",
+    "tags": ["math", "study-strategies", "problem-solving", "practice"],
+    "source": "curated"
+  },
+  {
+    "id": "writing-improvement",
+    "category": "academic",
+    "title": "Continuous Writing Improvement Strategies",
+    "content": "Good writing is learned through practice and feedback. Improvement cycle: 1) Write draft, 2) Get feedback (writing center, peers, professor), 3) Revise based on feedback, 4) Identify patterns in your errors, 5) Focus on improving 1-2 weaknesses per paper. Common issues: Vague thesis, weak organization, lack of evidence, grammar errors, poor transitions, wordiness. Resources: Purdue OWL (online writing lab), Grammarly, writing center, style guides. Read examples of good academic writing in your field. Read your paper aloud to catch awkward phrasing. Give yourself time to revise - writing is rewriting. Track feedback themes across papers to spot persistent issues.",
+    "tags": ["writing", "improvement", "feedback", "academic-writing"],
+    "source": "curated"
+  },
+  {
+    "id": "independent-study",
+    "category": "academic",
+    "title": "Designing Independent Study or Directed Reading",
+    "content": "Independent study allows customized learning under faculty supervision. Process: 1) Identify specific topic or question you want to explore, 2) Find faculty mentor with expertise and time, 3) Draft proposal (topic, objectives, timeline, deliverables, meeting schedule), 4) Register for independent study credit (check policies), 5) Meet regularly with mentor, 6) Complete agreed-upon work (paper, project, presentation). Benefits: Deep dive into passion area, close mentorship, flexibility, resume builder. Challenges: Requires self-motivation, can be isolating, variable credit. Usually requires junior/senior standing and good GPA. Some students do independent study as honors thesis.",
+    "tags": ["independent-study", "research", "mentorship", "advanced-learning"],
+    "source": "curated"
+  },
+  {
+    "id": "transfer-student-success",
+    "category": "academic",
+    "title": "Transfer Student Academic Success Tips",
+    "content": "Transfer students face unique challenges. Academic: Verify all credits transferred correctly, understand new school's requirements, don't assume courses are equivalent, meet with advisor early. Social: Attend transfer student orientation, join clubs, initiate conversations, remember many students are new too. Logistical: Learn campus resources quickly, set up accounts/systems, understand new academic calendar and policies. Common pitfalls: Assuming you don't need help (you do), staying isolated, not getting involved. Advantages: Maturity, focus, prior college experience, often better study skills. Transfers often outperform traditional students after adjustment period. Give yourself one semester to settle in.",
+    "tags": ["transfer-students", "transition", "academic-adjustment", "student-success"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-calendar",
+    "category": "academic",
+    "title": "Understanding and Using the Academic Calendar",
+    "content": "The academic calendar is your official timeline for critical dates. Key dates: 1) Add/drop deadline (add/drop courses without penalty), 2) Withdrawal deadline (drop with W on transcript), 3) Pass/fail deadline (change grading option), 4) Grade submission dates, 5) Registration dates for next semester, 6) Financial aid deadlines, 7) Holiday breaks, 8) Final exam period. Strategic use: Drop struggling courses before W deadline if needed, register early for best course selection, plan travel around break dates, submit appeals before deadlines. Some schools have multiple withdrawal deadlines with different policies. Missing deadlines can be costly.",
+    "tags": ["academic-calendar", "deadlines", "policy", "planning"],
+    "source": "curated"
+  },
+  {
+    "id": "first-gen-student",
+    "category": "academic",
+    "title": "First-Generation Student Success Strategies",
+    "content": "First-gen students often lack college-knowledge capital but can absolutely succeed. Strategies: 1) Ask questions - no question is stupid, 2) Use support programs (TRIO, first-gen programs), 3) Find mentor (professor, advisor, older student), 4) Learn unwritten rules (office hours, networking, professionalism), 5) Balance family obligations with school, 6) Join first-gen student organizations, 7) Don't compare yourself to peers with college-educated parents. Advantages you bring: Resilience, motivation, diverse perspective, appreciation for opportunity. Challenges: Less family guidance, financial stress, cultural adjustment, imposter syndrome. Remember: You belong here. You earned your spot.",
+    "tags": ["first-generation", "student-success", "support", "identity"],
+    "source": "curated"
+  },
+  {
+    "id": "capstone-project",
+    "category": "academic",
+    "title": "Approaching Senior Capstone Projects",
+    "content": "Capstone projects synthesize your undergraduate learning. Types: Research thesis, creative project, internship, team project. Success strategies: 1) Start early (ideally semester before), 2) Choose topic you're genuinely interested in (you'll spend months on it), 3) Secure advisor early and meet regularly, 4) Create detailed timeline with milestones, 5) Break into manageable chunks, 6) Don't aim for perfection on first draft, 7) Use project management tools, 8) Build in buffer time for revisions. Common mistakes: Choosing too broad topic, procrastinating, poor communication with advisor, ignoring feedback. This is your showcase work - take pride in it.",
+    "tags": ["capstone", "senior-project", "thesis", "culminating-experience"],
+    "source": "curated"
+  },
+  {
+    "id": "digital-literacy",
+    "category": "academic",
+    "title": "Essential Digital Literacy for Academic Success",
+    "content": "Modern academia requires strong digital skills. Essential competencies: 1) Google/library database searching with advanced operators (AND, OR, quotes), 2) Evaluating source credibility online, 3) Using learning management systems (Canvas, Blackboard, Moodle), 4) Word processing (formatting, styles, track changes, page breaks), 5) Spreadsheets for data (formulas, charts, pivot tables), 6) Presentations (design principles, minimal text), 7) Cloud storage and backup (Google Drive, OneDrive), 8) Video conferencing (Zoom etiquette, screen sharing), 9) Citation managers (Zotero, Mendeley), 10) Basic troubleshooting. Many campuses offer workshops. Don't let tech issues derail your success.",
+    "tags": ["digital-literacy", "technology", "skills", "productivity"],
+    "source": "curated"
+  },
+  {
+    "id": "honors-programs",
+    "category": "academic",
+    "title": "Benefits and Considerations of Honors Programs",
+    "content": "Honors programs offer enhanced academic experience. Benefits: Small seminar classes, priority registration, honors housing, special advising, research opportunities, thesis option, resume distinction, scholarships, graduate school preparation. Requirements: Higher GPA threshold, honors courses (more rigorous), thesis or capstone, service requirements. Considerations: Additional workload, need to maintain GPA, less schedule flexibility, may limit time for other activities. Worth it if: You're intellectually curious, want graduate school, thrive on challenge, want tight-knit academic community. Not worth it if: Struggling to maintain GPA, overcommitted, only doing it for resume. You can usually opt out if it's not a fit.",
+    "tags": ["honors", "academic-programs", "enrichment", "challenge"],
+    "source": "curated"
+  },
+  {
+    "id": "gap-year-reentry",
+    "category": "academic",
+    "title": "Academic Reentry After Gap Year or Break",
+    "content": "Returning to academics after time away requires readjustment. Challenges: Getting back into study mode, outdated knowledge, different campus culture, feeling behind peers, changed requirements. Strategies: 1) Start semester before break ends - review key concepts, 2) Take manageable course load first semester back, 3) Reconnect with campus (tour, update IDs, reset passwords), 4) Use academic support services generously, 5) Give yourself grace during adjustment, 6) Leverage skills gained during gap year (work experience, maturity, perspective). Advantages of gap year: Clarity about goals, better focus, real-world context, financial savings. Reentry success is common - many students return stronger.",
+    "tags": ["gap-year", "reentry", "transition", "returning-students"],
+    "source": "curated"
+  },
+  {
+    "id": "collaborative-notes",
+    "category": "academic",
+    "title": "Collaborative Note-Taking and Knowledge Sharing",
+    "content": "Sharing notes benefits everyone when done ethically. Ethical sharing: Compare notes after class to fill gaps, share when someone misses class for legitimate reason, create study guides together, quiz each other. Unethical: Skipping class relying on others' notes, copying homework, sharing exam information across sections. Tools: Google Docs for real-time collaboration, Notion for organized wikis, GroupMe for quick questions, shared Quizlet decks. Benefits: Catches what you missed, exposes you to different perspectives, clarifies confusing points, builds community. Some courses have official note-sharing platforms. Always attend class yourself - others' notes are supplement, not substitute.",
+    "tags": ["note-taking", "collaboration", "study-strategies", "ethics"],
+    "source": "curated"
+  },
+  {
+    "id": "concentration-flow",
+    "category": "academic",
+    "title": "Building Deep Focus and Flow State",
+    "content": "Flow state is peak concentration where time disappears and work feels effortless. How to achieve: 1) Clear goal (know exactly what to accomplish), 2) Right difficulty level (challenging but achievable), 3) Eliminate distractions (phone away, notifications off, quiet space), 4) Time blocking (90-120 minute sessions), 5) Build up gradually (start with 25 min if new), 6) Immediate feedback (know if you're on track). Flow requires: Skill matching challenge, clear progress, intrinsic motivation. Activities that kill flow: Interruptions, multitasking, unclear goals, too easy or too hard tasks. Best for: Writing papers, problem sets, coding, creative work. Checking phone breaks flow - takes 23 min to regain focus.",
+    "tags": ["focus", "concentration", "flow-state", "productivity"],
+    "source": "curated"
+  }
+]

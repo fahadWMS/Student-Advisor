@@ -1,0 +1,394 @@
+[
+  {
+    "id": "box-breathing",
+    "category": "wellness",
+    "title": "Box Breathing for Immediate Calm",
+    "content": "Box breathing (4-4-4-4) is a powerful technique used by Navy SEALs for stress management. Steps: 1) Breathe in through nose for 4 counts, 2) Hold breath for 4 counts, 3) Exhale through mouth for 4 counts, 4) Hold empty lungs for 4 counts. Repeat 4-6 times. This activates the parasympathetic nervous system, lowering heart rate and cortisol. Use before exams, interviews, or whenever feeling overwhelmed. Can be done anywhere discreetly. Benefits appear within 2-3 cycles.",
+    "tags": ["stress", "breathing", "anxiety", "calm"],
+    "source": "curated"
+  },
+  {
+    "id": "478-breathing",
+    "category": "wellness",
+    "title": "4-7-8 Breathing Technique for Sleep and Anxiety",
+    "content": "4-7-8 breathing is a natural tranquilizer for the nervous system. Technique: 1) Exhale completely through mouth, 2) Inhale through nose for 4 counts, 3) Hold breath for 7 counts, 4) Exhale through mouth for 8 counts. Repeat cycle 4 times. Benefits: Falls asleep faster, reduces anxiety, lowers blood pressure, manages cravings, controls anger responses. Practice twice daily for best results. The extended exhale activates the vagus nerve. Developed by Dr. Andrew Weil. Can make you lightheaded initially - that's normal. Great for pre-sleep routine or anxiety attacks.",
+    "tags": ["breathing", "sleep", "anxiety", "relaxation"],
+    "source": "curated"
+  },
+  {
+    "id": "sleep-hygiene",
+    "category": "wellness",
+    "title": "Sleep Hygiene for College Students",
+    "content": "Quality sleep impacts everything: memory, mood, immunity, performance. Sleep hygiene essentials: 1) Consistent schedule (same bedtime/wake time, even weekends), 2) Cool, dark, quiet room (65-68°F ideal), 3) No screens 30-60 min before bed (blue light suppresses melatonin), 4) No caffeine after 2pm, 5) No alcohol before bed (disrupts REM sleep), 6) Regular exercise (but not before bed), 7) Bed only for sleep (not studying), 8) If can't sleep after 20 min, get up and do calm activity. Aim for 7-9 hours. All-nighters have severe cognitive costs. Naps: 20 min power naps okay, avoid long/late naps. Sleep debt accumulates and can't be fully recovered on weekends.",
+    "tags": ["sleep", "health", "wellness", "habits"],
+    "source": "curated"
+  },
+  {
+    "id": "stress-management-strategies",
+    "category": "wellness",
+    "title": "Comprehensive Stress Management Strategies",
+    "content": "Chronic stress harms physical and mental health - manage it actively. Strategies by category: Physical (exercise 30min daily, yoga, progressive muscle relaxation, dance), Mental (meditation, mindfulness, journaling, cognitive reframing), Social (talk to friends, join support groups, spend time with pets), Time management (prioritize tasks, say no, delegate, break large tasks), Lifestyle (adequate sleep, healthy diet, limit alcohol/caffeine, take breaks). Quick stress relief: Deep breathing, 5-minute walk, call a friend, listen to music, stretch. Identify your stress signals (tension, irritability, headaches, poor sleep) and triggers. Prevention better than reaction: build stress-resilient habits. If overwhelmed consistently, seek professional help - that's strength, not weakness.",
+    "tags": ["stress-management", "coping", "mental-health", "wellness"],
+    "source": "curated"
+  },
+  {
+    "id": "mindfulness-basics",
+    "category": "wellness",
+    "title": "Mindfulness and Meditation for Students",
+    "content": "Mindfulness is paying attention to present moment without judgment. Benefits: Reduced stress/anxiety, improved focus, better emotional regulation, enhanced self-awareness. Simple practices: 1) Mindful breathing (5 min: just notice breath), 2) Body scan (notice sensations from toes to head), 3) Mindful walking (notice each step), 4) Mindful eating (savor each bite). Meditation: Start small (2-5 min), increase gradually, use apps (Headspace, Calm, Insight Timer), consistency matters more than duration, it's normal for mind to wander (that's practice - gently return to breath). Common misconception: meditation isn't about emptying mind, it's about observing thoughts without attachment. Even 5 min daily creates benefits. Morning meditation sets positive tone for day.",
+    "tags": ["mindfulness", "meditation", "stress-relief", "mental-health"],
+    "source": "curated"
+  },
+  {
+    "id": "burnout-prevention",
+    "category": "wellness",
+    "title": "Recognizing and Preventing Burnout",
+    "content": "Burnout is state of emotional, physical, mental exhaustion from prolonged stress. Symptoms: Chronic fatigue, cynicism, detachment, reduced performance, physical symptoms (headaches, GI issues), loss of motivation. Stages: 1) Honeymoon (high energy), 2) Onset of stress, 3) Chronic stress, 4) Burnout, 5) Habitual burnout. Prevention: Set boundaries, take regular breaks, maintain hobbies outside school, connect socially, practice self-care, get adequate sleep, ask for help early, celebrate small wins, reassess commitments. Recovery: Acknowledge it, talk to counselor, reduce commitments if possible, prioritize sleep and exercise, reconnect with why you're here, give yourself grace. Red flags: Dreading things you used to enjoy, feeling nothing helps, persistent physical symptoms. Don't push through burnout - address it. Prevention is key: burnout sneaks up gradually.",
+    "tags": ["burnout", "prevention", "mental-health", "wellness"],
+    "source": "curated"
+  },
+  {
+    "id": "exercise-mental-health",
+    "category": "wellness",
+    "title": "Exercise as Mental Health Tool",
+    "content": "Exercise is powerful for mental health, not just physical health. Mental health benefits: Reduces anxiety and depression (as effective as medication for mild-moderate cases), improves mood (endorphin release), enhances sleep, boosts self-esteem, increases energy, sharpens focus, provides stress outlet. How much: 30 min moderate exercise 5x/week, or 150 min/week total. Types: Anything you enjoy (more likely to stick with it) - walking, running, sports, dance, weightlifting, yoga, cycling, swimming. Tips for consistency: Schedule it like class, find exercise buddy, join campus rec classes, make it fun (music, podcasts), start small (5-10 min), outdoor exercise adds extra benefit. Don't need gym - bodyweight exercises, walking, YouTube workouts. Exercise is not punishment for eating or about weight - it's self-care for mind and body. When depressed/anxious, exercise feels impossible but helps most.",
+    "tags": ["exercise", "mental-health", "wellness", "mood"],
+    "source": "curated"
+  },
+  {
+    "id": "nutrition-mental-health",
+    "category": "wellness",
+    "title": "Nutrition's Impact on Mental Health and Focus",
+    "content": "What you eat affects how you feel and think. Brain-healthy foods: Omega-3s (fish, walnuts, flaxseed) for mood and cognition, complex carbs (whole grains, oats) for steady energy, protein (eggs, beans, lean meat) for neurotransmitters, fruits and vegetables (especially berries, leafy greens) for antioxidants, probiotic foods (yogurt, fermented foods) for gut-brain connection. Foods to limit: Excessive sugar (crashes and mood swings), too much caffeine (anxiety, sleep disruption), alcohol (depressant, disrupts sleep), processed foods (inflammation). Eating patterns: Don't skip breakfast (affects focus), eat regularly (low blood sugar affects mood), stay hydrated (dehydration causes fatigue, brain fog). College challenges: Limited budget (beans, eggs, frozen vegetables affordable), time constraints (meal prep, simple meals), dining hall (make best choices available). You don't need perfect diet - small improvements help.",
+    "tags": ["nutrition", "mental-health", "energy", "focus"],
+    "source": "curated"
+  },
+  {
+    "id": "anxiety-management",
+    "category": "wellness",
+    "title": "Managing Academic Anxiety",
+    "content": "Anxiety is common in college - learning to manage it is crucial. Types: Generalized (constant worry), test anxiety, social anxiety, perfectionism-driven. Cognitive strategies: Challenge catastrophic thinking (What's actual probability? What's worst case and is it survivable?), break overwhelming tasks into steps, focus on what you control, reality-test fears (Are they likely?). Physical strategies: Deep breathing, progressive muscle relaxation, exercise, limit caffeine, adequate sleep. Behavioral: Face fears gradually (exposure), prepare thoroughly (reduces uncertainty), arrive early to reduce rushing, practice self-compassion. When to seek help: Anxiety interfering with daily life, physical symptoms (chest pain, dizziness, panic attacks), avoiding classes/activities, can't calm down. Campus counseling center can help with strategies or referrals. Medication can be helpful tool for some. Anxiety lies - don't believe everything you feel.",
+    "tags": ["anxiety", "mental-health", "coping", "stress"],
+    "source": "curated"
+  },
+  {
+    "id": "depression-support",
+    "category": "wellness",
+    "title": "Recognizing and Addressing Depression",
+    "content": "Depression is more than sadness - it's medical condition that's treatable. Symptoms (lasting 2+ weeks): Persistent sad/empty mood, loss of interest in activities, fatigue, sleep changes (too much or too little), appetite changes, difficulty concentrating, feelings of worthlessness, thoughts of death/suicide. College triggers: Academic pressure, social isolation, major life transitions, family issues, financial stress. What helps: Professional help (therapy and/or medication are effective), maintain routine (get out of bed, shower, eat), gentle exercise (even 10-min walk), social connection (even when you don't feel like it), limit alcohol (depressant), challenge negative thoughts, be patient with yourself. What doesn't help: Ignoring it, pushing through alone, self-medicating with substances, isolating. Crisis resources: 988 Suicide & Crisis Lifeline, campus counseling, ER for emergencies. Depression is not weakness or character flaw - it's illness that requires treatment.",
+    "tags": ["depression", "mental-health", "support", "treatment"],
+    "source": "curated"
+  },
+  {
+    "id": "campus-counseling",
+    "category": "wellness",
+    "title": "Making the Most of Campus Counseling Services",
+    "content": "Campus counseling is underutilized resource - it's confidential and usually free. Services offered: Individual therapy, group therapy, workshops, crisis intervention, psychiatric evaluation/medication management, referrals to community providers. Common concerns: Stress management, anxiety, depression, relationship issues, family problems, identity exploration, trauma, eating concerns, substance use. Making appointment: Call/walk-in to counseling center, may have initial triage appointment, some offer same-day urgent appointments. What to expect: Therapist will ask about what brings you in, your history, your goals. You might not click with first therapist - it's okay to request different one. Frequency: Often weekly, but varies. Overcoming barriers: It's not 'weak' to go, confidential (won't tell parents/professors unless safety concern), therapists have heard everything, early help prevents bigger problems. Many successful people use therapy. Your tuition pays for this - use it.",
+    "tags": ["counseling", "mental-health", "campus-resources", "therapy"],
+    "source": "curated"
+  },
+  {
+    "id": "when-seek-help",
+    "category": "wellness",
+    "title": "When to Seek Professional Mental Health Help",
+    "content": "Knowing when to get help can be life-saving. Seek help if: 1) Symptoms interfere with daily functioning (can't attend class, complete work, maintain relationships), 2) Symptoms persist despite self-help efforts, 3) Thoughts of self-harm or suicide, 4) Substance use causing problems, 5) Experiencing trauma or crisis, 6) Major life changes overwhelming you, 7) Others expressing concern about you. You don't need to be 'bad enough' - early intervention is best. Types of providers: Therapist/counselor (talk therapy), psychologist (therapy, testing), psychiatrist (medication), social worker (therapy, case management). Starting points: Campus counseling center, primary care doctor, insurance provider list, Psychology Today directory. In crisis: Call 988, text HOME to 741741 (Crisis Text Line), go to ER, call campus police for wellness check. Barriers: Cost (many sliding scales exist), stigma (your mental health matters), time (your health is priority), fear (therapists are trained to help). Getting help is courageous, not weak.",
+    "tags": ["mental-health", "help-seeking", "support", "crisis"],
+    "source": "curated"
+  },
+  {
+    "id": "social-connection",
+    "category": "wellness",
+    "title": "Building and Maintaining Social Connections",
+    "content": "Social connection is fundamental to wellbeing, yet college can be lonely. Why it matters: Reduces stress, provides support, increases happiness, gives sense of belonging, improves physical health. Making friends in college: Join clubs related to interests, attend campus events, talk to classmates, use shared spaces (library, rec center), volunteer, study groups, intramural sports, religious organizations. Quality over quantity - few close friends better than many acquaintances. Maintaining friendships: Regular contact (texts, coffee dates, walks), be vulnerable (share real feelings), show up for others, forgive minor conflicts, make time despite busy schedule. Overcoming barriers: Social anxiety (start small, remember everyone wants connection), commuter student (intentionally stay on campus, join organizations), transfer student (attend transfer events, remember adjustment takes time). Digital connection supplements but doesn't replace in-person. Loneliness is normal and temporary - take action to connect.",
+    "tags": ["social-connection", "relationships", "friendship", "belonging"],
+    "source": "curated"
+  },
+  {
+    "id": "healthy-relationships",
+    "category": "wellness",
+    "title": "Healthy Relationship Patterns and Red Flags",
+    "content": "Healthy relationships (romantic and platonic) share key characteristics. Healthy signs: Mutual respect, trust, honesty, good communication, supporting each other's goals, maintaining individual identity, resolving conflicts constructively, equality in decision-making, feeling safe and comfortable. Red flags: Controlling behavior (monitoring phone, limiting friends), jealousy/possessiveness, verbal/physical/emotional abuse, manipulation, constant criticism, isolating you from others, pressure for sex or substances, extreme mood swings, blaming you for their problems. Boundaries: Right to say no, have privacy, spend time with others, express feelings, have own opinions, end relationship. If unsafe: Tell trusted person, create safety plan, contact campus resources (Title IX, counseling, police), National Domestic Violence Hotline 1-800-799-7233. Unhealthy relationships affect academic performance and mental health. You deserve respect and safety. Breaking up is hard but sometimes necessary for wellbeing.",
+    "tags": ["relationships", "healthy-relationships", "boundaries", "safety"],
+    "source": "curated"
+  },
+  {
+    "id": "time-off-importance",
+    "category": "wellness",
+    "title": "Importance of Rest and Downtime",
+    "content": "Rest is productive, not lazy - your brain and body need recovery. Types of rest: Physical (sleep, naps, gentle movement), mental (meditation, quiet time, no decision-making), sensory (screen breaks, nature, silence), creative (art, music, play without productivity goal), emotional (therapy, journaling, crying), social (connecting with loved ones), spiritual (meaning-making, prayer, awe). Signs you need rest: Irritability, difficulty focusing, getting sick frequently, everything feels hard, no enjoyment in activities, diminishing returns on work. Building in rest: Schedule breaks during study, one full day off per week, disconnect from devices regularly, vacation during breaks (even staying home), short walks between classes, hobby time. Productivity culture lies: You're not machine, rest enables better performance, worth isn't tied to productivity. Self-care isn't selfish - you can't pour from empty cup. Rest is not earned through exhaustion - it's biological necessity.",
+    "tags": ["rest", "self-care", "recovery", "wellness"],
+    "source": "curated"
+  },
+  {
+    "id": "perfectionism-management",
+    "category": "wellness",
+    "title": "Managing Perfectionism and Setting Realistic Standards",
+    "content": "Perfectionism is often praised but can be destructive. Healthy striving vs. perfectionism: Striving sets high standards and feels accomplished when meeting them. Perfectionism sets impossible standards, never feels good enough, ties self-worth to achievement, fears failure. Costs: Chronic stress, anxiety, depression, procrastination (fear of not doing perfectly), missed opportunities (not trying unless guaranteed success), strained relationships. Origins: Often learned from family, academic culture, social media comparison. Challenging perfectionism: Practice 'good enough' intentionally, set time limits on tasks, celebrate progress not just outcomes, separate self-worth from performance, expose yourself to small failures (learn they're survivable), notice perfectionist thoughts and challenge them. Self-compassion: Treat yourself like you'd treat a struggling friend. Progress > perfection. Done is better than perfect. B+ work submitted beats A+ work never finished. Your worth isn't determined by achievements.",
+    "tags": ["perfectionism", "self-compassion", "mental-health", "standards"],
+    "source": "curated"
+  },
+  {
+    "id": "gratitude-practice",
+    "category": "wellness",
+    "title": "Gratitude Practice for Mental Wellbeing",
+    "content": "Gratitude practice rewires brain toward positivity. Benefits: Increased happiness, reduced depression, improved relationships, better sleep, enhanced resilience, greater life satisfaction. Research-backed practices: 1) Gratitude journal (write 3 things you're grateful for daily), 2) Gratitude letter (write to someone who impacted you), 3) Mental subtraction (imagine life without something you value), 4) Gratitude walk (notice things to appreciate), 5) Share gratitude with others. Keys to effectiveness: Specificity (not just 'family' but 'mom calling to check on me'), depth over breadth (detail why you're grateful), surprise (new things rather than same things), savoring (pause to really feel it). When to practice: Morning (sets positive tone), evening (ends day well), during hard times (especially helpful). Start small: One thing per day. Gratitude doesn't deny problems - it provides perspective and highlights resources. Can feel forced initially - benefits come with consistency.",
+    "tags": ["gratitude", "positive-psychology", "mental-health", "happiness"],
+    "source": "curated"
+  },
+  {
+    "id": "digital-wellness",
+    "category": "wellness",
+    "title": "Digital Wellness and Healthy Tech Habits",
+    "content": "Technology offers benefits but can harm wellbeing without boundaries. Problems: Sleep disruption (blue light), attention fragmentation, FOMO and comparison, reduced face-to-face interaction, posture issues, dopamine dysregulation. Healthy habits: 1) No phones in bedroom (use alarm clock), 2) No screens 30-60 min before bed, 3) Turn off non-essential notifications, 4) Scheduled social media time (not constant checking), 5) Phone-free meals and conversations, 6) Digital sabbath (tech-free day), 7) Grayscale mode (reduces appeal), 8) Delete time-wasting apps. Managing social media: Curate feed (unfollow accounts making you feel bad), remember it's highlight reel not reality, limit comparison, post authentically. Phone addiction signs: Phantom vibrations, anxiety without phone, checking first thing in morning/last thing at night, using phone when bored. Track screen time to awareness. Technology is tool - use intentionally, not reflexively. Real life > digital life.",
+    "tags": ["digital-wellness", "technology", "social-media", "boundaries"],
+    "source": "curated"
+  },
+  {
+    "id": "procrastination-psychology",
+    "category": "wellness",
+    "title": "Understanding and Overcoming Procrastination",
+    "content": "Procrastination is emotion regulation problem, not time management problem. Why we procrastinate: Task feels overwhelming, fear of failure (or success), perfectionism, lack of interest, unclear how to start, avoiding negative emotions (boredom, anxiety, frustration), low energy. Short-term: Feels good (relief from negative emotions). Long-term: Increases stress, guilt, poorer work quality, confirms negative beliefs. Overcoming: 1) Break task into tiny steps, 2) Start with 5-minute commitment (lower barrier), 3) Remove distractions, 4) Use deadlines strategically, 5) Address underlying emotion (what am I avoiding?), 6) Practice self-compassion (guilt makes it worse), 7) Make starting easier (lay out materials), 8) Reward progress. Prevent: Start assignments early (even 15 min), work in time blocks with breaks, make tasks meaningful (connect to values/goals). Chronic procrastination may indicate underlying issue (ADHD, anxiety, depression) - consider evaluation. You're not lazy - your brain is protecting you from perceived threat.",
+    "tags": ["procrastination", "productivity", "psychology", "motivation"],
+    "source": "curated"
+  },
+  {
+    "id": "substance-use-awareness",
+    "category": "wellness",
+    "title": "Substance Use Awareness and Healthy Choices",
+    "content": "College culture normalizes substance use - make informed decisions. Alcohol: Impacts sleep quality, memory consolidation, academic performance, impairs judgment, health risks (liver, heart, cancer), addiction potential. Binge drinking: 4-5+ drinks in 2 hours - common in college, dangerous (alcohol poisoning, accidents, assault). Cannabis: Affects short-term memory, motivation, lung health if smoking, unclear long-term brain effects for developing brains (brain develops until 25), impairs driving, can trigger anxiety/paranoia. Other drugs: Each carries risks - research before experimenting. Signs of problem: Using to cope with stress, needing more to get effect, neglecting responsibilities, failed attempts to cut back, others expressing concern. Harm reduction if using: Never drive impaired, stay hydrated, eat before drinking, pace yourself, stay with trusted friends, don't mix substances. Getting help: Campus resources, AA/NA, counseling, medical provider. Sobriety is valid choice - you don't need substances to have fun or fit in.",
+    "tags": ["substance-use", "alcohol", "health", "decision-making"],
+    "source": "curated"
+  },
+  {
+    "id": "financial-stress",
+    "category": "wellness",
+    "title": "Managing Financial Stress in College",
+    "content": "Financial stress impacts mental health and academics - address proactively. Common stressors: Tuition costs, living expenses, student loans, limited income, comparison to wealthier peers, uncertainty about post-grad finances. Strategies: 1) Budget realistically (track spending, identify essentials vs. wants), 2) Use campus resources (food pantry, emergency funds, financial aid office), 3) Apply for scholarships (ongoing, not just freshman year), 4) Work-study or part-time job (limit hours to protect academics), 5) Buy used textbooks or use library, 6) Take advantage of free campus events/food, 7) Talk to financial aid about struggles. Loans: Understand what you're borrowing, minimize when possible, prioritize subsidized loans, only borrow what you need. Avoid: High-interest credit cards, payday loans, comparing yourself to others (you don't know their situation). Money problems feel shameful - they're not. Many students struggle financially. Future earnings will come. Ask for help - many resources available.",
+    "tags": ["financial-stress", "money", "budgeting", "wellness"],
+    "source": "curated"
+  },
+  {
+    "id": "impostor-syndrome",
+    "category": "wellness",
+    "title": "Overcoming Impostor Syndrome",
+    "content": "70% of people experience impostor syndrome - feeling like fraud despite evidence of competence. Manifestations: Attributing success to luck/external factors, fear of being 'exposed', discounting achievements, overworking to compensate, avoiding challenges (might fail and confirm you're fraud). Especially common: High achievers, underrepresented groups, new environments (starting college). Why it persists: Confirmation bias (you remember mistakes, not successes), perfectionism, comparison to others' outsides with your insides, actually being in challenging environment (sign of growth!). Overcoming: 1) Name it (recognition reduces power), 2) Collect evidence (compliments, grades, feedback), 3) Share feelings with others (realize you're not alone), 4) Separate feelings from facts, 5) Reframe (challenge is opportunity, not proof of inadequacy), 6) Practice self-compassion, 7) Mentor others (realize you have knowledge). Remember: You were admitted because you're qualified, struggle doesn't mean you don't belong, everyone feels uncertain sometimes. Feeling like impostor can actually indicate you're growing.",
+    "tags": ["impostor-syndrome", "self-confidence", "mental-health", "identity"],
+    "source": "curated"
+  },
+  {
+    "id": "identity-exploration",
+    "category": "wellness",
+    "title": "Identity Development and Exploration in College",
+    "content": "College is prime time for identity exploration - this is healthy and normal. Areas of exploration: Career path, values and beliefs, political views, sexual orientation, gender identity, cultural identity, spirituality/religion, interests and passions. Process: Often involves questioning childhood beliefs, trying on different identities, feeling uncertain, conflict with family expectations. This can feel destabilizing but is developmentally appropriate. Supporting exploration: 1) Give yourself permission to change, 2) Explore without commitment initially, 3) Seek diverse perspectives, 4) Find communities that accept you, 5) Therapy can help process, 6) Journaling for self-reflection, 7) Remember identity evolves throughout life. Challenges: Family expectations, cultural messages, peer pressure, fear of judgment. Intersectionality: Multiple identities interact (race, class, gender, sexuality, ability, religion). Identity development isn't linear - you might cycle through certainty and uncertainty. Who you are doesn't need to be figured out by 22. You're allowed to be work in progress.",
+    "tags": ["identity", "self-discovery", "development", "college-life"],
+    "source": "curated"
+  },
+  {
+    "id": "sexual-health",
+    "category": "wellness",
+    "title": "Sexual Health and Wellness",
+    "content": "Sexual health is part of overall wellbeing. Comprehensive view: Physical health (STI prevention, contraception), emotional health (consent, communication, boundaries), relationship health (respect, trust), pleasure and satisfaction. Consent: Ongoing, enthusiastic, freely given, specific, revocable. Consent requires: Sobriety, consciousness, capacity, freely made decision. 'Yes means yes' - absence of no isn't consent. Communication: Talk about boundaries, desires, history, STI testing, contraception before sexual activity. Contraception options: Discuss with health provider to find best fit. STI prevention: Condoms, regular testing, communication with partners. Campus resources: Health center (testing, contraception, education), Title IX (sexual assault), counseling (processing experiences). Red flags: Pressure, manipulation, ignoring boundaries, coercion. Healthy sexuality: Consensual, respectful, communicative, pleasurable for all involved. You have right to say no or change your mind. Sexual assault is never victim's fault - get support from campus SART/counseling.",
+    "tags": ["sexual-health", "consent", "relationships", "wellness"],
+    "source": "curated"
+  },
+  {
+    "id": "body-image",
+    "category": "wellness",
+    "title": "Developing Healthy Body Image",
+    "content": "Many students struggle with body image - you're not alone. Influences: Media, social media, peer comparison, diet culture, family messages, past experiences. Negative body image impacts: Self-esteem, relationships, academic focus, mental health, eating behaviors. Developing positive body image: 1) Follow body-positive social media, unfollow accounts that trigger comparison, 2) Practice body gratitude (what can it do vs. how it looks), 3) Wear clothes that feel good, 4) Challenge negative thoughts, 5) Reduce body checking (mirror, scale, measuring), 6) Engage in movement for joy not punishment, 7) Diversify media consumption (see various body types), 8) Heal relationship with food (food is not moral). Warning signs of eating disorder: Obsessive food/calorie thoughts, excessive exercise, significant weight change, avoiding eating with others, body image obsession, health complications. ED is serious and treatable - campus counseling or NEDA (nationaleatingdisorders.org) can help. Body neutrality: You don't have to love your body, just respect it.",
+    "tags": ["body-image", "self-esteem", "eating-disorders", "wellness"],
+    "source": "curated"
+  },
+  {
+    "id": "grief-loss",
+    "category": "wellness",
+    "title": "Coping with Grief and Loss",
+    "content": "Loss in college is common but often overlooked. Types of loss: Death of loved one, relationship breakup, friendship ending, leaving home, lost opportunities, trauma, changed identity/beliefs. Grief stages (not linear): Denial, anger, bargaining, depression, acceptance - you may cycle through these. How grief affects students: Difficulty concentrating, reduced motivation, isolation, physical symptoms, grade impact, questioning meaning. Coping: 1) Allow yourself to grieve (no timeline), 2) Express feelings (cry, talk, write, create), 3) Maintain routine when possible, 4) Connect with others (don't isolate), 5) Take care of body (sleep, eat, move), 6) Reduce expectations temporarily, 7) Find meaning-making rituals. Campus supports: Counseling, support groups, religious/spiritual resources, professors (often understanding with documentation), medical leave if needed. Complicated grief: If grief interferes with functioning beyond expected time, therapy helps. Grief is not linear - you may feel okay then suddenly not. That's normal. Healing doesn't mean forgetting.",
+    "tags": ["grief", "loss", "coping", "mental-health"],
+    "source": "curated"
+  },
+  {
+    "id": "seasonal-affective-disorder",
+    "category": "wellness",
+    "title": "Managing Seasonal Affective Disorder (SAD)",
+    "content": "SAD is depression that follows seasonal pattern, typically fall/winter. Symptoms: Low mood, fatigue, increased sleep, weight gain, social withdrawal, difficulty concentrating, loss of interest. More common in northern climates (less sunlight) and often starts in college years. Biological cause: Reduced sunlight affects circadian rhythm and serotonin. Treatment: 1) Light therapy (10,000 lux light box, 20-30 min morning), 2) Maximize natural light (open blinds, sit by windows, go outside midday), 3) Regular exercise (especially outdoors), 4) Vitamin D supplement (check level with doctor), 5) Maintain social connections (resist hibernation), 6) Stick to sleep schedule, 7) Plan enjoyable winter activities. Professional help: If symptoms severe, therapy (especially CBT) and/or medication effective. Don't dismiss as 'winter blues' if significantly impacting life. Planning ahead helps: Start light therapy before symptoms hit, build winter coping strategies. Some students benefit from spring semester study abroad in sunny location.",
+    "tags": ["SAD", "seasonal-depression", "mental-health", "treatment"],
+    "source": "curated"
+  },
+  {
+    "id": "adhd-strategies",
+    "category": "wellness",
+    "title": "Managing ADHD in College",
+    "content": "ADHD affects executive functions critical for college success - strategies help. Challenges: Sustaining attention, starting tasks, time management, organization, working memory, emotional regulation, impulsivity. Strategies: 1) External structure (detailed schedules, timers, alarms, checklists), 2) Break tasks into tiny steps, 3) Body doubling (work alongside others), 4) Minimize distractions (apps, quiet spaces, headphones), 5) Movement breaks (fidgets, walking, standing desk), 6) Use planners/apps religiously, 7) Build routines (reduces decisions), 8) Accommodate your brain (audio books, voice memos, visual notes), 9) Medication if prescribed (take consistently). Campus resources: Disability services (accommodations like extended time, note-takers, flexible deadlines), ADHD coaching, counseling. Accommodations aren't cheating - they level playing field. Undiagnosed ADHD common - if you struggle with these issues despite effort, consider evaluation. ADHD has strengths too: creativity, hyperfocus on interests, resilience, outside-the-box thinking. Understanding your brain helps you work with it, not against it.",
+    "tags": ["ADHD", "executive-function", "accommodations", "strategies"],
+    "source": "curated"
+  },
+  {
+    "id": "trauma-informed-coping",
+    "category": "wellness",
+    "title": "Trauma-Informed Coping Strategies",
+    "content": "Trauma affects how you experience college - healing is possible. Trauma responses: Re-experiencing (flashbacks, nightmares), avoidance (of reminders), hypervigilance (on edge, easily startled), negative changes in mood/thoughts. Trauma can be: One-time event or ongoing, recent or childhood. Grounding techniques: 5-4-3-2-1 (name 5 things you see, 4 hear, 3 touch, 2 smell, 1 taste), holding ice, splashing cold water, stamping feet, deep breathing. Safety: Identify safe people and places, create safety plan, establish routines, set boundaries. Processing: Trauma therapy (EMDR, CPT, prolonged exposure) helps - regular therapy alone may not. You don't have to share details before you're ready. Self-care: Everything is harder with trauma - be gentle with yourself, expect PTSD symptoms in high-stress times (exams), know your triggers. Campus resources: Counseling, SART (sexual assault response), disability services (if impacting academics), medical leave if needed. Healing isn't linear. You survived - that's strength. You deserve support.",
+    "tags": ["trauma", "PTSD", "coping", "mental-health"],
+    "source": "curated"
+  },
+  {
+    "id": "self-compassion",
+    "category": "wellness",
+    "title": "Practicing Self-Compassion",
+    "content": "Self-compassion is treating yourself with kindness, especially during struggle. Three components: 1) Self-kindness vs. self-judgment (talk to yourself like a good friend), 2) Common humanity vs. isolation (everyone struggles, you're not alone), 3) Mindfulness vs. over-identification (acknowledge pain without exaggerating). Why it matters: Self-criticism increases anxiety/depression, motivation doesn't require harshness, self-compassion improves resilience and wellbeing. Practicing: 1) Notice self-critical thoughts, 2) Pause and place hand on heart, 3) Say 'This is a moment of suffering', 4) Ask 'What do I need right now?', 5) Offer yourself understanding, 6) Consider what you'd tell a friend. Self-compassion break: Acknowledge difficulty, remember others face this too, offer yourself kindness. Write yourself compassionate letter during hard times. Misconception: Self-compassion isn't self-indulgence or letting yourself off the hook - it's self-support enabling growth. Research shows self-compassion increases motivation and success. You deserve same kindness you'd give others.",
+    "tags": ["self-compassion", "kindness", "mental-health", "resilience"],
+    "source": "curated"
+  },
+  {
+    "id": "progressive-muscle-relaxation",
+    "category": "wellness",
+    "title": "Progressive Muscle Relaxation for Tension",
+    "content": "PMR systematically releases physical tension held in body. How it works: Tense then release muscle groups, teaching body to recognize and release tension. Technique: 1) Find comfortable position, 2) Tense muscle group for 5 seconds (not painfully), 3) Release and notice relaxation for 10 seconds, 4) Move to next group. Order: Feet, calves, thighs, glutes, stomach, chest, hands, arms, shoulders, neck, face. Full body cycle takes 15-20 minutes. Benefits: Reduces physical tension, lowers anxiety, improves sleep, increases body awareness, portable (can do anywhere). When to use: Before sleep, during stress, before exams/presentations, when body feels tight. Shortened version: Just do major areas (legs, arms, face) in 5 minutes. Apps can guide you. Regular practice makes it more effective. Works especially well for people who hold stress physically (tension headaches, tight shoulders, clenched jaw). Pair with deep breathing for enhanced effect.",
+    "tags": ["relaxation", "stress-relief", "anxiety", "body"],
+    "source": "curated"
+  },
+  {
+    "id": "resilience-building",
+    "category": "wellness",
+    "title": "Building Psychological Resilience",
+    "content": "Resilience is ability to bounce back from adversity - it's developable. Components: Optimism (realistic, not denial), self-efficacy (belief you can handle challenges), purpose (meaningful reasons to keep going), social support (strong connections), flexibility (adapting to change), emotional regulation (managing feelings). Building resilience: 1) Reframe challenges as opportunities, 2) Focus on what you can control, 3) Maintain perspective (will this matter in 5 years?), 4) Practice problem-solving, 5) Build support network, 6) Take care of physical health, 7) Practice gratitude, 8) Embrace change as normal, 9) Learn from setbacks, 10) Help others (builds sense of agency). Growth through adversity: Facing challenges develops confidence, identifying your strengths in crisis, discovering who supports you. Resilience doesn't mean never struggling - it means not staying down. Everyone has resilient moments in their past - remember those. Small adversities prepare you for larger ones. Asking for help is resilient behavior.",
+    "tags": ["resilience", "adversity", "coping", "growth"],
+    "source": "curated"
+  },
+  {
+    "id": "boundary-setting",
+    "category": "wellness",
+    "title": "Setting and Maintaining Healthy Boundaries",
+    "content": "Boundaries protect your wellbeing and enable healthy relationships. Types: Physical (personal space, touch), emotional (sharing feelings, taking on others' emotions), time (how you spend time), intellectual (respecting views), material (lending belongings, money). Signs of poor boundaries: Feeling resentful, saying yes when you mean no, feeling responsible for others' feelings, difficulty saying no, feeling taken advantage of, oversharing. Setting boundaries: 1) Identify your limits (what feels comfortable?), 2) Communicate directly ('I need...', 'I'm not comfortable with...'), 3) Be consistent, 4) Don't over-explain (you don't need elaborate justification), 5) Expect testing (people push back initially), 6) Follow through with consequences. Examples: 'I can't lend money', 'I need alone time to recharge', 'I don't discuss politics', 'Please ask before borrowing', 'I'm not available after 10pm'. Boundary-setting feels uncomfortable initially but gets easier. Boundaries aren't mean - they enable sustainable relationships. You teach people how to treat you.",
+    "tags": ["boundaries", "relationships", "self-care", "communication"],
+    "source": "curated"
+  },
+  {
+    "id": "commuter-student-wellness",
+    "category": "wellness",
+    "title": "Wellness Strategies for Commuter Students",
+    "content": "Commuting adds unique challenges to college experience. Challenges: Time/energy spent traveling, harder to connect socially, missing campus life, feeling disconnected, balancing home/school, limited campus resource access. Strategies: 1) Create on-campus routine (claim study spot, regular meal times), 2) Maximize time between classes (use library, join clubs, attend events), 3) Pack essentials (snacks, water, chargers, umbrella, change of clothes), 4) Build friend groups (other commuters, classmates, club members), 5) Use commute time (audiobooks, podcasts, decompress), 6) Communicate boundaries at home (space for studying), 7) Stay on campus some evenings (events, study groups), 8) Know your resources (commuter lounge, lockers if available). Wellbeing tips: Prep night before (pack bag, pick outfit, make lunch), build community (attend commuter student events), advocate for needs (evening office hours, flexible deadlines), practice self-care despite time constraints. You're not less-than residential students - your experience is valid. Many successful students commute.",
+    "tags": ["commuter", "student-life", "connection", "balance"],
+    "source": "curated"
+  },
+  {
+    "id": "first-gen-wellness",
+    "category": "wellness",
+    "title": "Wellness Considerations for First-Generation Students",
+    "content": "First-gen students face unique stressors affecting wellness. Common experiences: Imposter syndrome, family pressure/guilt, financial stress, navigating college alone, cultural adjustment, feeling caught between two worlds, lack of college-knowledge capital, pressure to succeed (representing family), guilt about opportunities family lacks. Mental health impacts: Higher rates of stress, anxiety, depression, often hesitant to seek help (stigma, cost concerns, don't want to burden family). Wellness strategies: 1) Find community (first-gen groups, cultural centers), 2) Use campus resources (free counseling, tutoring, career services), 3) Connect with mentors who get it, 4) Practice self-compassion (you're pioneering), 5) Set boundaries with family (it's okay to prioritize school), 6) Celebrate your accomplishments, 7) Process identity tension (therapy helps), 8) Remember you belong here. Unique strengths: Resilience, motivation, gratitude, diverse perspective, problem-solving. Being first-gen is asset. Your experience matters. Seek spaces that affirm your identity.",
+    "tags": ["first-generation", "identity", "mental-health", "support"],
+    "source": "curated"
+  },
+  {
+    "id": "international-student-wellness",
+    "category": "wellness",
+    "title": "Wellness for International Students",
+    "content": "International students navigate unique challenges affecting wellbeing. Stressors: Culture shock, language barriers, homesickness, visa concerns, distance from support system, financial pressure (no financial aid), discrimination, adjustment to academic culture, food/climate differences. Mental health: Higher rates of depression/anxiety, but less likely to seek help (stigma in home culture, unfamiliarity with counseling, cost, language). Support strategies: 1) Connect with other international students (ISS, cultural groups), 2) Build diverse friend network (not only your country), 3) Use ISS resources (advisors, events, emergency support), 4) Maintain connection with home (but not excessively), 5) Learn campus mental health resources, 6) Find familiar foods/cultural practices, 7) Be patient with culture adjustment (takes 6-12 months), 8) Develop language skills without shame. Cultural adjustment stages: Honeymoon (excitement), frustration (reality hits), adjustment (finding rhythm), adaptation (balance of old/new). Homesickness: Normal, especially holidays. Create traditions, video call home, connect with cultural center. Your perspective enriches campus.",
+    "tags": ["international-students", "culture-shock", "adjustment", "mental-health"],
+    "source": "curated"
+  },
+  {
+    "id": "veteran-student-wellness",
+    "category": "wellness",
+    "title": "Wellness for Student Veterans",
+    "content": "Student veterans face unique transition challenges. Common issues: Age/maturity gap with peers, difficulty with authority structure, need for structured environment, PTSD or TBI, physical disabilities, identity shift, translating military experience to civilian context, feeling like outsider. Strengths: Discipline, leadership, time management, diverse experience, resilience, clear goals. Wellness strategies: 1) Connect with other veterans (student veterans organization), 2) Use veteran-specific resources (certifying official, VA benefits, veteran center), 3) Consider VA mental health services (especially for PTSD), 4) Request accommodations if needed (disability services), 5) Find professors who value military experience, 6) Give yourself time to adjust (transition is process), 7) Build new identity that integrates military and student roles, 8) Use leadership skills in student organizations. Academic tips: Translate military skills to resume, leverage GI Bill fully, communicate with professors about needs. Remember military service is strength, not deficit. Many campuses have veteran-specific supports - use them.",
+    "tags": ["veterans", "military", "transition", "student-life"],
+    "source": "curated"
+  },
+  {
+    "id": "lgbtq-wellness",
+    "category": "wellness",
+    "title": "LGBTQ+ Student Wellness and Support",
+    "content": "LGBTQ+ students experience higher rates of mental health challenges but also resilience. Unique stressors: Coming out process, identity development, family rejection, discrimination, microaggressions, finding community, dating challenges, safety concerns, minority stress (chronic stress from stigma). Higher rates of: Depression, anxiety, substance use, eating disorders, suicidal ideation. Protective factors: Connection with LGBTQ+ community, accepting family/friends, campus climate of inclusion, identity pride. Resources: LGBTQ+ center (support, events, resources), Pride groups, counseling (find LGBTQ+-affirming therapists), gender-inclusive housing, preferred name/pronoun changes, Gender Sexuality Alliances. Self-care: Find your people (community reduces stress), selective disclosure (you decide who to tell), practice self-compassion, celebrate your identity, use on-campus safe spaces, engage in activism if that's healing for you. Coming out: Only when safe, on your timeline, some people may need time to adjust, you don't owe anyone disclosure. Campus climate varies - assess safety. Your identity is valid.",
+    "tags": ["LGBTQ", "identity", "mental-health", "community"],
+    "source": "curated"
+  },
+  {
+    "id": "disability-wellness",
+    "category": "wellness",
+    "title": "Wellness for Students with Disabilities",
+    "content": "Students with disabilities navigate both disability and college life. Types: Physical, sensory, learning, chronic illness, mental health, invisible disabilities. Common challenges: Accessibility barriers, fatigue, medical management, stigma, disclosure decisions, academic accommodations, independence vs. support balance, social inclusion. Wellness strategies: 1) Register with disability services (accommodations), 2) Know your rights (ADA, Section 504), 3) Communicate needs to professors (accommodation letter), 4) Build support network, 5) Practice self-advocacy, 6) Manage energy wisely (pacing), 7) Find campus accessibility resources, 8) Connect with other students with disabilities. Accommodations aren't unfair advantage - they level playing field. Examples: Extended time, note-takers, accessible housing, flexible attendance, reduced course load, exam modifications. Disclosure: Your choice - strategic disclosure to relevant people (professors, disability services), not required to disclose to peers. Disabled identity: Some embrace, others don't - both valid. Your accommodation needs are legitimate. You belong here.",
+    "tags": ["disability", "accommodations", "accessibility", "self-advocacy"],
+    "source": "curated"
+  },
+  {
+    "id": "chronic-illness-management",
+    "category": "wellness",
+    "title": "Managing Chronic Illness in College",
+    "content": "Chronic illness adds complexity to college - planning helps. Common in college: Diabetes, asthma, epilepsy, IBD, chronic pain, autoimmune conditions, migraines. Challenges: Medical management, unpredictable symptoms, energy limitations, frequent appointments, medication schedules, dietary needs, emergency situations, explaining to others. Academic strategies: 1) Register with disability services (flexible deadlines, attendance, exam accommodations), 2) Communicate with professors early, 3) Have emergency plan, 4) Keep medications accessible, 5) Build in recovery time, 6) Consider lighter course load, 7) Medical leave option if needed. Wellness: 1) Prioritize self-care (sleep, nutrition, stress management), 2) Keep medical appointments (don't skip for school), 3) Track symptoms (identify patterns), 4) Build support network, 5) Practice self-compassion (you're dealing with extra burden), 6) Educate close friends (what to do in emergency). Balance: Illness is part of identity but not all of it. You can have full college experience with modifications. Advocate for your needs.",
+    "tags": ["chronic-illness", "health", "accommodations", "self-care"],
+    "source": "curated"
+  },
+  {
+    "id": "spiritual-wellness",
+    "category": "wellness",
+    "title": "Spiritual Wellness and Meaning-Making",
+    "content": "Spiritual wellness involves purpose, meaning, values - not necessarily religion. Components: Sense of purpose, connection to something larger than self, values alignment, meaning-making, inner peace, compassion, gratitude. Benefits: Reduces stress, provides coping framework, offers community, guides decisions, increases life satisfaction, fosters resilience. Developing spiritual wellness: 1) Clarify values (what matters most?), 2) Explore big questions (purpose, meaning, ethics), 3) Connect with nature (awe experiences), 4) Practice gratitude, 5) Engage in service, 6) Creative expression, 7) Meditation/prayer/reflection, 8) Read philosophy/theology, 9) Find community sharing your values. Campus resources: Religious centers (many faiths represented), interfaith dialogue, meditation groups, service opportunities, chaplains, philosophy courses. College as time of questioning: Normal to question childhood beliefs, explore different traditions, develop personal spirituality. This exploration can be destabilizing but leads to authentic beliefs. Your spiritual path is personal.",
+    "tags": ["spirituality", "meaning", "values", "purpose"],
+    "source": "curated"
+  },
+  {
+    "id": "roommate-wellness",
+    "category": "wellness",
+    "title": "Navigating Roommate Relationships for Wellbeing",
+    "content": "Roommate relationships significantly impact wellness. Initial conversation: Discuss sleep schedules, cleanliness standards, guests, quiet hours, sharing food/belongings, study preferences, communication styles. Set expectations early. Healthy roommate relationship: Respectful communication, honoring agreements, flexibility, addressing issues promptly, giving each other space, basic cleanliness. Red flags: Passive-aggressiveness, borrowing without asking, disrespect for space/belongings, excessive noise, bringing conflict. Conflict resolution: 1) Address issues directly and calmly, 2) Use 'I' statements, 3) Listen to their perspective, 4) Propose solutions together, 5) Revisit agreements as needed, 6) Involve RA if unresolved. When to involve RA: Safety concerns, repeated rule violations, unresolvable conflict, harassment. Room change: Available if situation is intolerable. Living together doesn't require friendship - mutual respect is enough. Protect your wellbeing: If roommate situation affecting sleep, safety, or mental health, advocate for change. Some roommate situations are learning experiences about boundaries and communication.",
+    "tags": ["roommates", "relationships", "conflict-resolution", "housing"],
+    "source": "curated"
+  },
+  {
+    "id": "family-communication",
+    "category": "wellness",
+    "title": "Managing Family Relationships While at College",
+    "content": "Renegotiating family relationships is part of college. Changes: Increased independence, physical distance, different experiences, evolving identity, sometimes conflicting values. Common tensions: How often to communicate, sharing grades/personal info, visits home, summer plans, career choices, lifestyle choices. Healthy communication: 1) Set boundaries (how often you'll call, what you'll share), 2) Be honest about your experience (within comfort zone), 3) Listen to their concerns, 4) Give them time to adjust to your changes, 5) Pick your battles, 6) Maintain important traditions. Challenges: Helicopter parents (set firm boundaries), family disapproval (seek campus support), homesickness (stay busy, give adjustment time), guilt about being away (your education is investment). For family: Call/text regularly (even if brief), share successes, ask their advice sometimes, visit when possible, remember they're adjusting too. Cultural considerations: Family expectations vary by culture - navigate tension between individual independence and family obligations. Campus resources: Counseling to process family dynamics. You can love your family and need distance.",
+    "tags": ["family", "relationships", "boundaries", "communication"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-accommodation",
+    "category": "wellness",
+    "title": "Understanding Academic Accommodations and Advocacy",
+    "content": "Accommodations provide equal access, not unfair advantage. Who qualifies: Any documented disability (physical, sensory, learning, chronic health, mental health, temporary injury). Documentation: Professional diagnosis, description of impairment, how it affects academics, recommended accommodations. Process: 1) Register with disability services, 2) Provide documentation, 3) Meet with coordinator to determine appropriate accommodations, 4) Receive accommodation letter each semester, 5) Give letter to professors (your choice when/how), 6) Follow up with professors as needed. Common accommodations: Extended test time, separate testing room, note-takers, recording lectures, flexible attendance, deadline extensions, reduced course load, accessible materials, assistive technology. Rights: Accommodations legally required (ADA), confidential, no proof/documentation required to professors (just accommodation letter), can't be denied if registered. Advocacy: If professor resistant, contact disability services. Accommodations aren't cheating or special treatment - they level playing field so you can show your knowledge. You deserve academic success.",
+    "tags": ["accommodations", "disability", "advocacy", "rights"],
+    "source": "curated"
+  },
+  {
+    "id": "transition-home-breaks",
+    "category": "wellness",
+    "title": "Managing Transitions Between Campus and Home",
+    "content": "Going home for breaks involves psychological transitions. Common experiences: Feeling different (you've changed), family treats you like kid, old friends on different paths, hometown feels small, miss independence, readjusting to family rules. Reverse culture shock: Your college life is now familiar, home feels foreign. Strategies: 1) Communicate expectations (with family and yourself), 2) Bring schoolwork if needed, 3) Balance family time with independence, 4) Be patient with family adjustment, 5) Reconnect with hometown friends but accept drift, 6) Anticipate re-entry adjustment, 7) Have self-care routines that travel. Family: They haven't changed (usually), you have - that's normal. Respect their home/rules while there. Talk about college but don't be condescending. Appreciate things about home. Friends: Some friendships deepen, others fade - both natural. After break: Readjusting to campus takes few days too. Transitions are inherently stressful - be gentle with yourself. Eventually home visits feel more comfortable as everyone adjusts to new dynamic.",
+    "tags": ["transitions", "breaks", "family", "adjustment"],
+    "source": "curated"
+  },
+  {
+    "id": "crisis-resources",
+    "category": "wellness",
+    "title": "Mental Health Crisis Resources and Support",
+    "content": "Crisis = immediate danger to self or others, or overwhelming distress. When to use crisis resources: Suicidal thoughts/plans, self-harm urges, thoughts of hurting others, panic you can't manage, psychotic symptoms, overwhelming trauma response, substance overdose. Crisis resources: 988 Suicide & Crisis Lifeline (call/text), Crisis Text Line (text HOME to 741741), campus police (wellness check), campus counseling (after-hours crisis line), hospital ER, local crisis center. What happens: You'll talk to trained counselor who assesses risk and connects to appropriate help. May involve: Safety planning, referral to services, hospitalization if imminent danger (voluntary or involuntary). Supporting someone in crisis: Take seriously, don't leave alone, call for help, remove means (pills, weapons), listen without judgment, don't promise confidentiality if safety issue, follow up after. After crisis: Develop safety plan, increase support, address underlying issues, remember crisis is temporary. Using crisis resources isn't overreacting - better safe than sorry. You deserve help. Crisis is not permanent state.",
+    "tags": ["crisis", "mental-health", "suicide", "emergency"],
+    "source": "curated"
+  },
+  {
+    "id": "therapy-types",
+    "category": "wellness",
+    "title": "Understanding Types of Therapy and Finding Fit",
+    "content": "Different therapy types treat different issues - finding right fit matters. Common types: CBT (Cognitive-Behavioral Therapy - change thought patterns, evidence-based for anxiety/depression), DBT (Dialectical Behavior Therapy - emotion regulation, distress tolerance, for intense emotions), ACT (Acceptance and Commitment Therapy - values-based living, psychological flexibility), Psychodynamic (explore unconscious patterns, past experiences), Humanistic (self-actualization, client-led). Specialized: EMDR (trauma processing), ERP (for OCD), interpersonal therapy (relationship focus). Finding therapist: Ask about their approach, what they specialize in, experience with your concerns, therapy goals. Good fit: Feel comfortable, feel heard, sense of progress, align on goals, techniques resonate. Poor fit: Don't feel heard, judgment, no progress, techniques don't work, personality clash. It's okay to switch therapists - fit is crucial. First session: Assessment, background, treatment plan discussion. Therapy requires: Honesty, commitment, time (takes multiple sessions), homework between sessions. Therapy is investment in yourself. Telehealth expanding access. Many therapists offer sliding scale fees.",
+    "tags": ["therapy", "mental-health", "treatment", "counseling"],
+    "source": "curated"
+  },
+  {
+    "id": "positive-psychology",
+    "category": "wellness",
+    "title": "Applying Positive Psychology to College Life",
+    "content": "Positive psychology studies what makes life worth living. Not toxic positivity - acknowledges struggle while building wellbeing. Key concepts: Strengths-based (focus on what you're good at), growth mindset, resilience, meaning and purpose, positive emotions, engagement, accomplishment, relationships (PERMA model). Practices: 1) Gratitude (journal 3 good things daily), 2) Savor positive experiences (pause to appreciate), 3) Acts of kindness (helps others and yourself), 4) Use signature strengths (identify and deploy your strengths), 5) Set meaningful goals (connected to values), 6) Optimistic thinking (realistic, not denial), 7) Celebrate wins (track progress), 8) Find flow activities (absorbing, challenging). Benefits: Increased happiness, reduced depression, better relationships, improved performance, enhanced resilience. Balance: Positive psychology complements therapy (not replaces it). Negative emotions are valid and useful - don't suppress them. Wellbeing is cultivated through intentional practices. Small changes compound over time. Happiness is skill, not destination.",
+    "tags": ["positive-psychology", "wellbeing", "happiness", "flourishing"],
+    "source": "curated"
+  },
+  {
+    "id": "work-life-balance-students",
+    "category": "wellness",
+    "title": "Work-Life Balance for Student Workers",
+    "content": "Balancing work and school requires strategy and boundaries. Challenges: Time scarcity, fatigue, competing demands, financial need vs. academic performance, guilt about prioritizing. Strategies: 1) Limit work hours (15-20 max if full-time student), 2) Work on campus if possible (reduces commute, flexible with classes), 3) Communicate with employer about exam schedules, 4) Use time management techniques, 5) Protect study time, 6) Don't sacrifice sleep, 7) Cluster work shifts if possible, 8) Consider work-study (built-in flexibility). When work threatens academics: Reduce hours, explore financial aid options, talk to financial aid office about emergency funds, prioritize education (it's investment). Red flags: Missing classes, grades slipping, constant exhaustion, no time for self-care. Work experience is valuable: Time management, responsibility, resume-building. Balance: School is your primary job, work is necessary but secondary. Protect one day off per week. Communicate needs to boss. After graduation, full-time work won't have homework - temporary intensity.",
+    "tags": ["work-life-balance", "student-employment", "time-management", "priorities"],
+    "source": "curated"
+  }
+]

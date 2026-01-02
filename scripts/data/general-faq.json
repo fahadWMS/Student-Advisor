@@ -1,0 +1,242 @@
+[
+  {
+    "id": "registration-process",
+    "category": "general",
+    "title": "Course Registration Process and Timeline",
+    "content": "Course registration typically occurs months before semester starts. Process: 1) Registration opens in waves based on seniority (seniors first, then juniors, sophomores, freshmen), 2) Log into registration system during your assigned time window, 3) Enter course codes (CRN numbers), 4) System confirms or shows conflicts/full classes, 5) Add to waitlist if closed, 6) Finalize schedule before deadline. Before registering: Meet with academic advisor, check prerequisites, review degree requirements, plan backup courses, note course times/conflicts. After registering: Monitor for opens in waitlisted courses, adjust during add/drop period (first week of classes), verify tuition charges. Priority registration: Available for honors students, athletes, students with disabilities, sometimes seniors. Tips: Register exactly when your window opens (popular courses fill fast), have backup plan, know your time zone for registration time.",
+    "tags": ["registration", "enrollment", "courses", "academic-calendar"],
+    "source": "curated"
+  },
+  {
+    "id": "add-drop-withdrawal",
+    "category": "general",
+    "title": "Add/Drop vs. Withdrawal Policies",
+    "content": "Understanding deadlines prevents transcript issues and financial penalties. Add/Drop Period (typically first week): Add new courses or drop courses with 100% refund and no transcript record. Deadline strictly enforced. Use this to: Try courses before committing, adjust for difficulty, fix schedule conflicts, balance workload. Withdrawal Period (typically through week 8-12): Drop courses with 'W' on transcript (doesn't affect GPA but shows you withdrew), partial/no refund, may affect financial aid. When to withdraw: Failing despite effort, medical/family emergency, taking too many credits. Strategic withdrawals: One or two W's not concerning to grad schools/employers if you have reason, pattern of W's raises questions. Avoid: Withdrawing impulsively without trying resources (tutoring, professor help), withdrawing so often you don't make progress. Financial implications: Dropping below 12 credits affects full-time status and financial aid. Check with financial aid before withdrawing.",
+    "tags": ["withdrawal", "add-drop", "policy", "deadlines"],
+    "source": "curated"
+  },
+  {
+    "id": "grading-system",
+    "category": "general",
+    "title": "Understanding the Grading System and GPA Calculation",
+    "content": "Most US colleges use 4.0 GPA scale. Letter grades: A (4.0), A- (3.7), B+ (3.3), B (3.0), B- (2.7), C+ (2.3), C (2.0), C- (1.7), D+ (1.3), D (1.0), F (0.0). Some schools use plus/minus, others don't. GPA calculation: (Grade points x Credit hours) summed for all courses, divided by total credit hours. Example: A in 3-credit course = 12 points, B in 4-credit course = 12 points, total 24 points / 7 credits = 3.43 GPA. Types of GPA: Semester (one term), cumulative (all terms), major (only major courses). Weighted vs unweighted: Some high schools weight, colleges typically don't. Pass/Fail option: Some courses offered P/F or can elect P/F by deadline, doesn't affect GPA but counts for credit. Grade replacement: Some schools allow retake to replace failing grade, check policy. Understanding GPA helps set realistic goals and track progress toward graduate school or honors requirements.",
+    "tags": ["grading", "GPA", "academic-policy", "grades"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-calendar",
+    "category": "general",
+    "title": "Academic Calendar and Important Dates",
+    "content": "Academic calendar governs entire semester. Key dates by phase: Before semester: Registration, payment deadline, housing check-in. First week: Classes begin, add/drop period, syllabus review. Mid-semester: Midterm exams (week 7-9), withdrawal deadline (typically week 10-12), spring break or fall break, advising for next semester. End of semester: Last day of classes, reading day, final exams (finals week), residence halls close, grades due. Special dates: Holidays (campus closed), no-class days, graduation/commencement, summer/winter session dates. Financial dates: Tuition due, refund deadlines, financial aid disbursement. Consequences of missing deadlines: Late registration fees, dropped for non-payment, can't withdraw (stuck with F), late graduation. Where to find: School website, student portal, printed calendar. Add to personal calendar: Set reminders 1 week before major deadlines. Academic calendar is different from regular calendar - semesters don't align with months neatly. Summer sessions condensed with different deadlines.",
+    "tags": ["academic-calendar", "deadlines", "semester", "schedule"],
+    "source": "curated"
+  },
+  {
+    "id": "dean-list-honors",
+    "category": "general",
+    "title": "Dean's List and Academic Honors Criteria",
+    "content": "Academic honors recognize high achievement. Dean's List: Typically requires 3.5+ GPA for semester, full-time enrollment (12+ credits), no incomplete grades, no academic integrity violations. Listed on transcript, sometimes published. Frequency: Each semester or annually. Latin Honors (graduation): Cum Laude (with honors, typically 3.5-3.7 GPA), Magna Cum Laude (with great honors, 3.7-3.9), Summa Cum Laude (with highest honors, 3.9-4.0). Appears on diploma and transcript. Some schools rank-based (top 10%, 5%, 1%). Departmental Honors: Separate from GPA honors, requires thesis/project and defense. Honors College: Special program with smaller classes, may have separate GPA requirement to graduate with honors college distinction. Benefits: Resume credential, graduate school applications, personal achievement. Note: Thresholds vary by institution - check your school's specific requirements. Don't obsess over honors to detriment of learning, but worth aiming for if interested in grad school.",
+    "tags": ["honors", "dean-list", "recognition", "achievement"],
+    "source": "curated"
+  },
+  {
+    "id": "transcript-requests",
+    "category": "general",
+    "title": "Requesting Official Transcripts",
+    "content": "Transcripts document your academic record officially. Types: Official (sealed, sent directly, required for applications), unofficial (for personal reference, printable from portal). When needed: Graduate school applications, job applications (sometimes), transfer applications, credential verification, professional licensing. Information included: All courses taken, grades received, GPA, degrees earned, academic honors, sometimes disciplinary actions. How to request: Through registrar (online portal, in-person, by mail), specify recipient address, pay fee ($5-15 typically), processing takes 3-10 business days. Electronic transcripts: Faster (same-day to 48 hours), through services like Parchment or National Student Clearinghouse. Holds: Can't request transcripts if you have financial hold (unpaid balance), parking tickets, or library fines - resolve first. Sending to multiple schools: Request multiple copies at once (sometimes cheaper). Keep unofficial copies for your records. After graduation, transcripts show degree conferred with date.",
+    "tags": ["transcripts", "registrar", "records", "applications"],
+    "source": "curated"
+  },
+  {
+    "id": "financial-aid-basics",
+    "category": "general",
+    "title": "Financial Aid Process and Requirements",
+    "content": "Financial aid makes college affordable for many students. Types: Grants (free money, need-based), scholarships (free money, merit or criteria-based), loans (borrowed, must repay), work-study (part-time campus jobs). FAFSA (Free Application for Federal Student Aid): File annually by deadline (Oct 1 for following year), requires tax information, determines Expected Family Contribution (EFC), opens eligibility for federal/state/institutional aid. Process: 1) File FAFSA, 2) Receive Student Aid Report (SAR), 3) School sends financial aid package, 4) Accept/decline aid components, 5) Complete loan counseling if taking loans. Maintaining aid: Satisfactory Academic Progress (SAP) required - typically 2.0 GPA minimum, 67% completion rate, maximum timeframe (150% of program length). Losing aid: Below SAP, dropped courses, changed enrollment status (part-time). Appeals: If extenuating circumstances. Renewal: FAFSA required each year, don't assume automatic renewal. Contact financial aid office with questions - they want to help you afford school.",
+    "tags": ["financial-aid", "FAFSA", "scholarships", "funding"],
+    "source": "curated"
+  },
+  {
+    "id": "credit-requirements",
+    "category": "general",
+    "title": "Credit Hour Requirements and Course Loads",
+    "content": "Credit hours measure academic work. Typical credit: 1 credit = 1 hour in class + 2-3 hours outside class per week. Standard course: 3 credits (3 hours class, 6-9 hours homework weekly). Labs: Often 1 credit for 2-3 lab hours. Degree requirements: Bachelor's typically requires 120-128 credits total (varies by major). Full-time status: 12-18 credits per semester (for financial aid, housing, insurance). Typical load: 15 credits per semester (5 three-credit courses) = 45 hours total work per week, equals on-time graduation (120 credits / 8 semesters). Overload: 18+ credits, often requires permission and sometimes extra fee. Underload: Below 12 credits = part-time (affects financial aid, housing eligibility, graduation timeline). Strategic course loads: Heavier load in easier semesters, lighter load with difficult courses or when working, summer/winter courses to lighten regular semester load. Accelerating graduation: Take 16-18 credits, summer courses, AP/transfer credits. Maximum timeframe: Most schools limit years to complete degree (typically 6 years for bachelor's).",
+    "tags": ["credits", "course-load", "requirements", "degree-progress"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-standing",
+    "category": "general",
+    "title": "Academic Standing and Probation Policies",
+    "content": "Academic standing reflects your academic progress. Levels: Good standing (meeting standards), Academic warning (first semester below standards, probation next semester if continues), Academic probation (below standards, conditions to return to good standing), Academic suspension (dismissed for one or more semesters), Academic dismissal (permanent removal). Standards: Typically 2.0 GPA minimum, some schools have higher requirements for majors/programs, satisfactory progress toward degree. Probation conditions: Minimum GPA requirement for semester (often 2.0 or 2.5), credit completion requirements, sometimes reduced course load, mandatory advising, workshops or tutoring. Duration: Usually one semester to improve, sometimes two. Consequences: Loss of financial aid, ineligibility for some programs/activities, cannot register without meeting with advisor. Academic suspension: Typically 1-2 semesters away, automatic readmission if improved elsewhere or after time period. Appeal process: If extenuating circumstances (medical, family emergency), submit written appeal with documentation to academic standards committee.",
+    "tags": ["academic-standing", "probation", "suspension", "policy"],
+    "source": "curated"
+  },
+  {
+    "id": "class-attendance",
+    "category": "general",
+    "title": "Class Attendance Policies and Excused Absences",
+    "content": "Attendance policies vary by professor and course. Typical policies: Some professors mandate attendance (absence affects grade), others don't take attendance, most fall in between (allow 2-3 absences). Syllabi specify policy. Why attendance matters: Participation grades, pop quizzes, material not in textbook, professor notices (affects recommendations), missing instructions for assignments. Excused absences: Illness, family emergency, religious observance, university-sanctioned activities (sports, conferences), court appearances, military duty. Usually require documentation (doctor's note, obituary, official letter). Process: Email professor ASAP, provide documentation when possible, ask about make-up work, get notes from classmate. Unexcused absences: Oversleeping, not feeling like it, personal travel - these count against you. Red flags: Missing more than 3 classes per semester (typically), missing first day (professors often drop no-shows), missing before breaks. Long-term absence: Medical leave or emergency - work with Dean of Students office. Attendance is your responsibility - professors not required to remind you. Some courses (labs, seminars, clinicals) have stricter policies due to hands-on nature.",
+    "tags": ["attendance", "absences", "class-policy", "expectations"],
+    "source": "curated"
+  },
+  {
+    "id": "incomplete-grades",
+    "category": "general",
+    "title": "Incomplete Grade Policy and Procedures",
+    "content": "Incomplete (I) grade allows extended time to finish coursework. When appropriate: Significant portion of course completed successfully (usually 75%+), extenuating circumstances prevent completion (serious illness, family emergency), student was passing before circumstances arose. NOT appropriate for: Poor performance throughout semester, avoiding failing grade, procrastination, too heavy course load. Process: 1) Student requests incomplete from professor before semester ends, 2) Complete Incomplete Grade Contract specifying work to be completed and deadline, 3) Both sign contract, 4) Professor submits I grade, 5) Student completes work by deadline, 6) Professor submits final grade. Deadline: Typically next semester or one year, varies by school. Default grade: If not completed by deadline, I becomes F (or agreed-upon grade in contract). Impact: Incomplete courses don't count toward credits earned or GPA until resolved, may affect financial aid SAP, can delay graduation if required course. Strategy: Only use for true emergencies, complete work quickly (easier with material fresh), incomplete easier than withdrawal late in semester.",
+    "tags": ["incomplete-grade", "policy", "extensions", "procedures"],
+    "source": "curated"
+  },
+  {
+    "id": "course-substitution-waiver",
+    "category": "general",
+    "title": "Course Substitutions and Requirement Waivers",
+    "content": "Sometimes course requirements can be substituted or waived. Course substitution: Taking different course to fulfill requirement. Reasons: Prerequisite issues, scheduling conflicts, course discontinued, transfer credits don't align perfectly, accessibility needs. Process: Petition to department or academic dean, provide justification, document similarity of substitute course, get approval before taking substitute. Requirement waiver: Exemption from requirement without substitute. Rare and requires strong justification. Reasons: Already mastered content (foreign language native speakers), physical limitations (PE requirement with disability), transfer student with equivalent completed. Language placement: Often can test out of language requirement, place into higher level or fulfill requirement. General education: Sometimes inflexible, but petitions possible. Major requirements: Department decides, typically more flexible than gen-eds. Documentation: Keep approval letters, note substitution on degree audit. Strategic use: If requirement prevents timely graduation, substitution may be approved. Don't assume substitution okay without approval - could affect graduation. Work with advisor to navigate process.",
+    "tags": ["substitution", "waiver", "requirements", "petitions"],
+    "source": "curated"
+  },
+  {
+    "id": "dean-students-office",
+    "category": "general",
+    "title": "Dean of Students Office Services and Support",
+    "content": "Dean of Students office provides non-academic support. Services: Crisis intervention, emergency assistance (food, housing, financial), student advocacy, medical/personal leave coordination, absence notifications to professors, conflict resolution, disciplinary process (conduct violations), emergency contacts for parents/family, connecting to resources. When to contact: Family emergency, medical crisis, homelessness/food insecurity, financial emergency, personal crisis affecting academics, conflict with professor (after trying to resolve directly), reporting concerning behavior, need to miss extended classes. What they do: Verify emergencies to professors (so you don't need to share private info), help navigate university systems, advocate on your behalf, provide referrals to resources, coordinate support services, ensure you have what you need to succeed. Emergency funds: Many Dean of Students offices have small emergency grants for unexpected crises (medical bills, family emergency travel, textbooks). Student advocacy: If you're overwhelmed navigating systems (financial aid, housing, disability), Dean of Students can help. Think of them as student support central hub.",
+    "tags": ["dean-of-students", "support", "emergency", "advocacy"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-integrity-violations",
+    "category": "general",
+    "title": "Academic Integrity Violations and Consequences",
+    "content": "Academic integrity is fundamental to higher education. Violations: Plagiarism (using others' work without citation), cheating (unauthorized help on exam/assignment, looking at others' exams), fabrication (making up data, sources), facilitating dishonesty (sharing your work for others to copy), unauthorized collaboration, using prohibited resources, purchasing papers/assignments. Consequences: First offense - often failing grade on assignment or course, academic integrity workshop, notation on transcript (sometimes). Repeat offense - suspension or expulsion, permanent transcript notation. Process: Professor suspects violation → reports to academic integrity office → investigation → hearing or meeting → determination and sanctions → appeal option. Defense: If accused, take seriously, gather evidence, attend hearing, explain your side, consider advisor/advocate. Prevention: Cite all sources (even if paraphrasing), understand what collaboration is allowed, use plagiarism checkers, ask if unsure, manage time to avoid desperation shortcuts, understand consequences before risking it. Grey areas: Discussing homework, using tutors, AI tools - ask professor for clarity. One violation can derail graduation, grad school, career - not worth the risk.",
+    "tags": ["academic-integrity", "cheating", "plagiarism", "policy"],
+    "source": "curated"
+  },
+  {
+    "id": "technology-requirements",
+    "category": "general",
+    "title": "Technology Requirements and Campus IT Support",
+    "content": "Technology is essential for modern college. Required technology: Laptop (most schools), reliable internet, webcam/microphone (for online classes), basic software (word processor, PDF reader). Provided by school: Learning management system (Canvas, Blackboard), email account, library database access, software licenses (Microsoft Office, Adobe Creative Suite often free), cloud storage, campus Wi-Fi. IT support services: Help desk (technical issues, password resets, account access), computer labs (if no personal laptop), device loaner programs, software installation, training workshops. Common issues IT helps with: Can't access email, forgotten password, trouble connecting to Wi-Fi, LMS issues, software licensing, printing problems, security (phishing emails). Free software for students: Microsoft Office 365, Google Workspace, many academic software through university license, student discounts on hardware (Apple, Dell, etc.). Cybersecurity: Use strong passwords, enable two-factor authentication, don't share login info, watch for phishing, back up your work. Equipment issues during exams/assignments: Contact IT and professor immediately. Most schools have 24/7 IT help desk.",
+    "tags": ["technology", "IT-support", "campus-resources", "requirements"],
+    "source": "curated"
+  },
+  {
+    "id": "library-services",
+    "category": "general",
+    "title": "Library Resources and Services for Students",
+    "content": "Library is much more than books. Resources: Books (physical and ebooks), academic journals, databases, streaming media, course reserves, archives, government documents, newspaper access. Study spaces: Quiet study, group study rooms (reserve online), computer labs, 24-hour study areas, printing, collaboration spaces. Services: Research assistance (librarians help find sources), interlibrary loan (request materials from other libraries), citation help, technology lending (laptops, chargers, cameras, hotspots), workshops (research skills, citation managers, database use), tours, book a librarian (one-on-one research help). Digital access: Most resources available online 24/7, access from anywhere with login. Cost: Everything free with student ID - take advantage. How to use: Start with library website or ask librarian, databases searchable by topic, request interlibrary loan if we don't have it (takes 3-7 days), reserve study rooms early before finals. Research support: Librarians are experts in finding information - use them for major papers. Many libraries have subject specialist librarians. Library workshops count as professional development.",
+    "tags": ["library", "research", "campus-resources", "academic-support"],
+    "source": "curated"
+  },
+  {
+    "id": "housing-policies",
+    "category": "general",
+    "title": "Campus Housing Policies and Procedures",
+    "content": "Understanding housing policies prevents issues. Room assignment process: Apply by deadline, indicate preferences (building, roommate), assignments made over summer, can request room change after semester starts. Housing requirements: Some schools require freshmen to live on campus, exemptions for commuters within certain distance or living with family. Occupancy: Room assignments specify number of occupants, temporary overflow housing sometimes used. Guests: Policies vary - typically guests allowed with roommate approval, must sign in, limits on consecutive nights. Quiet hours: Typically 10pm-8am weekdays, longer on weekends, 24-hour during finals. Violations: Noise complaints, unauthorized guests, pets (unless ESA approved), candles/incense, alcohol/drugs, property damage result in fines and potentially housing removal. RA (Resident Assistant): Peer who lives on floor, enforces policies, plans programs, available for support, reports violations. Room condition: Document condition at move-in (photos), responsible for damages beyond normal wear, checkout inspection at move-out. Housing contract: Binding for academic year, early termination fees unless approved reasons (study abroad, medical). Breaks: Some halls close during breaks (winter, spring).",
+    "tags": ["housing", "residence-halls", "policy", "campus-life"],
+    "source": "curated"
+  },
+  {
+    "id": "meal-plans",
+    "category": "general",
+    "title": "Meal Plans and Campus Dining Options",
+    "content": "Campus dining serves nutrition needs. Meal plan types: All-you-can-eat (swipes), declining balance (flex dollars), combination plans. Required: Often required for on-campus residents, especially freshmen. Options: Various plans based on meals per week, flex dollars amount. Where accepted: Dining halls (buffet style, included meals), retail dining (restaurants, cafes, pay with flex dollars or out of pocket), vending machines. Dietary restrictions: Most dining services accommodate allergies, religious requirements, vegetarian/vegan - speak with dietitian. Meal equivalency: Using meal swipe at retail location, typically covers up to certain dollar amount. Flex dollars: Part of meal plan, use at any campus dining, rolls over within semester usually, doesn't roll to next semester. Adding to plan: Can often add flex dollars or upgrade mid-semester. Special programs: Late night dining, grab-and-go, meals for events. Saving money: Don't waste swipes, utilize all-you-can-eat strategically, take fruit for later (if allowed), use flex wisely. Off-campus: Meal plan often cheaper than buying groceries and cooking time-wise, but more expensive than cooking if you're frugal. Commuters can purchase meal plans too.",
+    "tags": ["meal-plans", "dining", "campus-services", "food"],
+    "source": "curated"
+  },
+  {
+    "id": "student-id-card",
+    "category": "general",
+    "title": "Student ID Card Uses and Importance",
+    "content": "Student ID card is essential access and identification. Functions: Campus identification, building access (swipe to enter dorms, facilities), meal plan access, library checkout, recreation center entry, event admission, exam identification, campus store purchases, printing/copying. Financial: Often serves as declining balance card (add money, use like debit), bus pass in some cities. Discounts: Student discounts at local businesses, software discounts (Adobe, Microsoft), travel discounts, Amazon Prime student rate, museum/entertainment discounts. Getting ID: Visit ID card office early in first week, bring photo ID, free for first card. Replacement: If lost/stolen, report immediately (deactivate card), get replacement (typically $25 fee). Protection: Treat like credit card, don't let others use it (violates policy), keep safe. Lost card concerns: Access to your buildings, meal plan, declining balance (report immediately to freeze). Digital ID: Some schools now offer digital ID on phone app. Required: Always carry it on campus, professors may check during exams, required for campus resources. Special features: Often doubles as library card, sometimes bus pass.",
+    "tags": ["student-id", "campus-card", "access", "identification"],
+    "source": "curated"
+  },
+  {
+    "id": "parking-transportation",
+    "category": "general",
+    "title": "Campus Parking and Transportation Options",
+    "content": "Getting around campus requires planning. Parking permits: Required to park on campus, purchase online or in-person, various types (resident, commuter, faculty), cost varies ($50-500+ per semester), limited spaces - buy early. Parking rules: Park only in designated areas for your permit type, visitor parking separate, overnight parking restrictions in some lots, tickets for violations (unpaid tickets hold transcript/registration). Parking challenges: Limited spaces, expensive, far from classes. Alternatives: Campus shuttle (free loops around campus), public transportation (bus routes serve campus, often free/discounted with ID), bike (bike racks, bike share programs), walking (most campuses walkable), carpool. Rideshare: Uber/Lyft, school-specific rideshare apps. Zipcars: Car-sharing on some campuses. Special permits: Disability parking (requires documentation), motorcycle parking (often easier), overnight guests. Tips: Living on campus typically don't need car, commuters factor in parking when choosing classes, park in cheaper lots and shuttle in. Tickets: Pay promptly to avoid holds, appeal if you have valid reason. Freshmen: Many schools don't allow freshmen to have cars on campus.",
+    "tags": ["parking", "transportation", "campus-services", "commuting"],
+    "source": "curated"
+  },
+  {
+    "id": "health-services",
+    "category": "general",
+    "title": "Campus Health Services and Insurance",
+    "content": "Health services keep students healthy. Campus health center: Primary care (illness, minor injuries), lab tests, immunizations, physical exams, women's health, mental health, health education, pharmacy. Hours: Typically business hours on weekdays, limited weekend hours, on-call nurse after hours. Cost: Usually free or minimal copay, covered by health fee in tuition. Insurance: Required for all students, can purchase school plan or waive if covered by parents' plan (proof required annually). School insurance: Covers campus health center and local providers, emergency care, prescriptions, mental health, preventive care. Using insurance: Show card at appointments, understand copays and deductibles, stay in-network when possible. Emergencies: Go to ER or call 911, campus health center can't handle major emergencies. After hours: Nurse advice line, urgent care, ER depending on severity. Prescriptions: Campus pharmacy convenient, or use local pharmacy. Mental health: Counseling center separate from health center, free therapy sessions. Mandatory health forms: Immunization records required before enrollment (measles, meningitis, etc.).",
+    "tags": ["health-services", "insurance", "medical", "campus-resources"],
+    "source": "curated"
+  },
+  {
+    "id": "recreation-fitness",
+    "category": "general",
+    "title": "Campus Recreation and Fitness Facilities",
+    "content": "Recreation centers promote physical wellness. Facilities: Gym (cardio equipment, weights), group fitness studios (classes), pools, rock climbing walls, sports courts (basketball, racquetball, volleyball), indoor tracks, locker rooms. Access: Free with student ID, sign in at front desk. Hours: Extended hours (6am-midnight typical), reduced hours during breaks. Services: Personal training (often free or discounted), fitness assessments, equipment checkout (basketballs, yoga mats), towel service. Group fitness classes: Yoga, cycling, Zumba, HIIT, pilates - free, check schedule and reserve if required. Intramural sports: Recreational leagues (flag football, basketball, soccer), various skill levels, great for meeting people. Club sports: More competitive than intramurals, practice and compete against other schools, dues often required. Outdoor recreation: Some schools offer equipment rental (camping, kayaking), outdoor trips, climbing outings. Wellbeing programs: Nutrition counseling, health workshops, fitness challenges. Tips: Go during off-peak hours (early morning or late evening) to avoid crowds, bring lock for locker, wipe down equipment.",
+    "tags": ["recreation", "fitness", "wellness", "campus-facilities"],
+    "source": "curated"
+  },
+  {
+    "id": "student-conduct",
+    "category": "general",
+    "title": "Student Conduct Code and Disciplinary Process",
+    "content": "Student conduct code outlines behavioral expectations. Violations: Academic dishonesty, alcohol/drug violations, property damage, theft, harassment, hazing, assault, weapons, trespassing, disruptive behavior, policy violations. Reporting: Violations reported by professors, RAs, police, other students. Process: 1) Incident report filed, 2) Meeting with conduct officer, 3) Hearing (informal or formal), 4) Determination and sanctions, 5) Appeal option. Sanctions: Warning, probation, educational sanctions (reflection papers, community service, workshops), restitution, housing removal, suspension, expulsion. Conduct probation: Additional violations result in harsher sanctions, sometimes limits on activities/leadership. Academic vs. conduct: Academic integrity handled separately, other violations through conduct process. Rights: You have right to hear charges, tell your side, bring advisor, appeal. Advisor: Can bring parent, attorney, student, but they typically can't speak for you. Criminal vs. campus: Same behavior can violate both law and student code, handled separately (arrested doesn't mean automatically expelled). Record: Conduct record separate from academic transcript, may or may not be disclosed to employers/grad schools depending on violation. Take conduct meetings seriously - consequences can be severe.",
+    "tags": ["student-conduct", "discipline", "policy", "behavior"],
+    "source": "curated"
+  },
+  {
+    "id": "title-ix",
+    "category": "general",
+    "title": "Title IX Protections and Reporting",
+    "content": "Title IX prohibits sex-based discrimination in education. Protections: Sexual harassment, sexual assault, dating/domestic violence, stalking, discrimination based on sex/gender, pregnancy discrimination, retaliation. Applies to: Students, faculty, staff, visitors. Where: On campus or affecting campus (off-campus party). Title IX Coordinator: Designated person handles reports, investigates, coordinates response. Reporting options: Confidential resources (counseling center, health center, off-campus resources), responsible employees (must report to Title IX - includes professors, RAs, coaches, most staff), anonymous reports, police (criminal process separate). Response: Title IX office investigates, interim measures (no-contact order, housing change, academic accommodations), hearing if policy violation, sanctions (suspension, expulsion), appeals process. Confidential resources: Won't report to Title IX unless you want them to, can still access support services. Supportive measures: Available regardless of formal complaint - counseling, schedule changes, extensions. Timeframe: No statute of limitations for Title IX reporting. Rights: Both parties have rights in process, advisors allowed, no retaliation. If you experience sexual violence: Get medical care, preserve evidence, report when ready, access resources, know your options.",
+    "tags": ["title-ix", "sexual-assault", "policy", "reporting"],
+    "source": "curated"
+  },
+  {
+    "id": "ferpa-privacy",
+    "category": "general",
+    "title": "FERPA and Student Privacy Rights",
+    "content": "FERPA (Family Educational Rights and Privacy Act) protects student education records. What's protected: Grades, transcripts, course schedules, financial information, conduct records, student account information. School cannot share with: Parents (unless student grants permission or student is dependent), future employers, other schools without permission, anyone without legitimate educational interest. Exceptions: Directory information (name, email, major, dates of attendance) unless student opts out, health/safety emergency, court order, school officials with legitimate interest. Over 18: Parents no longer have automatic access to grades or conduct info, student must grant permission explicitly. FERPA release: Form to authorize specific people (parents, counselor) to access certain information. Directory information: Can opt out if you want phone number, email, major kept private (prevents school from confirming you're a student). Access your records: Right to review your education records, request amendments if inaccurate. Why it matters: Professors can't discuss your grades via email (insecure), can't post grades with names/IDs, schools take privacy seriously. Violations: Can result in school losing federal funding. If you want parents to access student account to pay bills: Grant them access through student portal.",
+    "tags": ["FERPA", "privacy", "rights", "policy"],
+    "source": "curated"
+  },
+  {
+    "id": "veterans-services",
+    "category": "general",
+    "title": "Veterans Affairs and Military Student Services",
+    "content": "Veteran services support military-connected students. Who qualifies: Veterans, active duty, National Guard, Reservists, dependents using transferred benefits. Benefits: GI Bill (tuition coverage), Yellow Ribbon Program (covers difference between GI Bill and private school tuition), vocational rehab, dependent benefits. Certifying official: Designated person who verifies enrollment to VA for benefits payment, processes paperwork each semester. Services: Benefits certification, priority registration, academic advising, career counseling, transition support, deployment accommodations, veteran-specific orientation. Resources: Veterans lounge, student veteran organization, peer support, emergency financial assistance. Using benefits: Meet with certifying official before each semester, maintain required enrollment (typically full-time), passing grades required (F or W may require repayment), understand Post-9/11 vs. Montgomery GI Bill differences. Dependents: If using parent's transferred benefits, different process. Deployment: Withdraw with refund or grade based on agreement with professors, easy re-enrollment. Academic considerations: Credit for military training (submit transcripts), understanding that military leadership translates to college. Mental health: VA healthcare available, campus counseling, veteran-specific support groups. Priority for certain services and registration.",
+    "tags": ["veterans", "military", "GI-bill", "benefits"],
+    "source": "curated"
+  },
+  {
+    "id": "international-student-services",
+    "category": "general",
+    "title": "International Student Services and Visa Requirements",
+    "content": "International Student Services office supports visa compliance and student success. Visa types: F-1 (academic students), J-1 (exchange visitors, scholars). Services: Visa advising, employment authorization, travel signatures, cultural adjustment programs, tax filing assistance, orientation, workshops, advocacy. Maintaining status: Full-time enrollment (12 credits undergrad), making academic progress, approved address, valid passport and I-20, limited employment (on-campus only usually, or CPT/OPT), report changes to ISS. CPT (Curricular Practical Training): Work authorization for internships related to major, must be part of curriculum, apply through ISS before starting. OPT (Optional Practical Training): Work authorization after graduation in field of study, 12 months (36 for STEM), apply 90 days before graduation. Travel: Need travel signature on I-20 (valid 6-12 months), maintain valid visa (or automatic revalidation for quick Canada/Mexico trips), don't overstay. Employment: On-campus jobs allowed up to 20 hours/week during semester, full-time during breaks, need SSN. Requirements: Report address changes within 10 days, enroll full-time every semester, don't drop below full-time without authorization, keep passport valid, maintain insurance. Resources: Cultural events, conversation partners, advocacy for international students, emergency support. Violations: Can result in loss of status, deportation - stay in compliance.",
+    "tags": ["international-students", "visa", "F1", "immigration"],
+    "source": "curated"
+  },
+  {
+    "id": "commencement-graduation",
+    "category": "general",
+    "title": "Graduation Requirements and Commencement Ceremony",
+    "content": "Graduation is culmination of degree completion. Degree requirements: Complete all major requirements, fulfill general education, minimum total credits (typically 120-128), minimum GPA (2.0 usually, higher for some majors), residency requirement (certain number of credits at this institution), application for graduation. Application process: File graduation application semester before (sometimes year before), deadline strictly enforced (miss it, graduate next term), graduation fee, verify all requirements met via degree audit. Degree conferral: Date degree officially awarded (end of semester), appears on transcript, distinct from ceremony date. Commencement ceremony: Celebration event, typically at end of spring semester, can walk in ceremony before degree conferred (if close to completion), register to participate, tickets for guests. Regalia: Cap and gown rental/purchase, honors cords, department cords/stoles, customize cap (within policy). Ceremony: Line up by major, hear name called, walk across stage, receive diploma cover (actual diploma mailed later). Multiple ceremonies: University-wide and sometimes department-specific. Graduating in fall or summer: Can walk in previous or next spring ceremony. Photos: Professional and personal photo opportunities. Not attending ceremony: Still receive diploma, save money on regalia, but miss celebration.",
+    "tags": ["graduation", "commencement", "degree", "requirements"],
+    "source": "curated"
+  },
+  {
+    "id": "student-organizations",
+    "category": "general",
+    "title": "Student Organizations and Campus Involvement",
+    "content": "Student organizations enhance college experience. Types: Academic/professional (major-related), cultural, religious, recreational, service, political, Greek life, special interest, club sports, honor societies. Benefits: Meet people with shared interests, develop leadership skills, resume building, networking, sense of belonging, fun and stress relief. Finding orgs: Activities fair (start of semester), student organization directory online, social media, flyers around campus, ask peers. Joining: Attend meetings (usually open to all), sometimes dues required, varying commitment levels. Starting organization: If interest doesn't exist, can start new org with minimum members and faculty advisor, register with student activities office, access to funding and campus resources. Leadership: Run for officer positions, plan events, manage budget, develop transferable skills. Commitment: Be realistic - quality over quantity (better active in 2-3 than passive in 10). Employers and grad schools value: Leadership roles, longevity, meaningful involvement over many random memberships. Overcommitment: Watch for academic impact, can scale back if needed. Student activities office: Provides funding, event planning support, leadership development, manages organization registration.",
+    "tags": ["student-organizations", "clubs", "involvement", "campus-life"],
+    "source": "curated"
+  },
+  {
+    "id": "academic-calendar-breaks",
+    "category": "general",
+    "title": "Academic Breaks and University Closures",
+    "content": "Academic calendar includes built-in breaks. Fall semester breaks: Labor Day, Thanksgiving (Wed-Sun typically), reading days (before finals). Spring semester breaks: MLK Day, spring break (week-long), reading days. University closed: Classes canceled, offices closed, limited services. Winter break: 3-6 weeks between fall and spring semesters, residence halls close (usually), have to move out or pay to stay. Summer break: 3-4 months, optional summer sessions (condensed courses). Planning considerations: Book travel early (prices increase), housing during breaks (on-campus usually closed, plan ahead), international students (check visa travel requirements), work (holiday breaks good for earning money), assignments (professors often give work over breaks). Reading days: 1-2 days between last class and finals for studying, no new material introduced. Dead week: Week before finals, some schools prohibit major tests/projects. Break housing: Some schools offer limited break housing for students unable to go home, international student housing, early arrival/late stay for athletes or job commitments. Mental health: Breaks provide needed rest, but can be stressful for students with difficult home situations - campus resources available. Family expectations: Balance time with family and personal needs during breaks.",
+    "tags": ["breaks", "academic-calendar", "holidays", "planning"],
+    "source": "curated"
+  }
+]
